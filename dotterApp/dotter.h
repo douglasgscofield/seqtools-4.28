@@ -100,6 +100,7 @@ typedef struct _DotterOptions
     
     BlxMessageData msgData;   /* data to be passed to the message handlers */
 
+    char *breaklineColor;     /* if not null, color for breaklines between multiple sequences */
     char *windowColor;        /* if not null, background color for the window */
   } DotterOptions;
 

@@ -411,12 +411,13 @@ static void destroyDotterColors(DotterContext *dc)
 
 
 /* Create the colors that Dotter will use for various specific purposes */
-static void createDotterColors(DotterContext *dc)
+static void createDotterColors(DotterContext *dc,
+                               DotterOptions *options)
 {
   /* Initialise the array with empty BlxColor structs */
   dc->defaultColors = g_array_sized_new(FALSE, FALSE, sizeof(BlxColor), DOTCOLOR_NUM_COLORS);
   int i = DOTCOLOR_MIN + 1;
-  
+
   for ( ; i < DOTCOLOR_NUM_COLORS; ++i)
     {
       BlxColor *blxColor = (BlxColor*)g_malloc(sizeof(BlxColor));
@@ -425,6 +426,9 @@ static void createDotterColors(DotterContext *dc)
       g_array_append_val(dc->defaultColors, *blxColor);
     }
 
+  /* Set default colors that can be set by user options */
+  const char* breaklineColor = options->breaklineColor ? options->breaklineColor : BLX_GREEN;
+  
   /* Get the default background color of our widgets (i.e. that inherited from the theme).
    * Convert it to a string so we can use the same creation function as the other colors */
   GtkWidget *tmp = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -457,7 +461,7 @@ static void createDotterColors(DotterContext *dc)
   createBlxColor(dc->defaultColors, DOTCOLOR_MARKER_FILL, "Greyramp marker fill color", "Fill color of the triangle markers on the greyramp tool", BLX_WHITE, BLX_WHITE, NULL, NULL);
 
   /* misc */
-  createBlxColor(dc->defaultColors, DOTCOLOR_BREAKLINE, "Breakline color", "Color of the separator lines between sequences, if there were multiple sequences in the input file", BLX_GREEN, BLX_GREEN, NULL, NULL);
+  createBlxColor(dc->defaultColors, DOTCOLOR_BREAKLINE, "Breakline color", "Color of the separator lines between sequences, if there were multiple sequences in the input file", breaklineColor, breaklineColor, NULL, NULL);
   createBlxColor(dc->defaultColors, DOTCOLOR_CANONICAL, "Canonical", "Canonical splice sites", BLX_GREEN, BLX_GREEN, NULL, NULL);
   createBlxColor(dc->defaultColors, DOTCOLOR_NON_CANONICAL, "Non-canonical", "Non-canonical splice sites", BLX_RED, BLX_RED, NULL, NULL);
 }
@@ -624,7 +628,7 @@ static DotterContext* createDotterContext(DotterOptions *options,
   
   if (showWindow)
     { 
-      createDotterColors(result);
+      createDotterColors(result, options);
     }
   
   /* Calculate the height and width of the horizontal and vertical scales */

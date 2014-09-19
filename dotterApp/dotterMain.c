@@ -137,6 +137,9 @@
   --abbrev-title-off\n\
     Do not abbreviate window title prefixes\n\
 \n\
+  --breakline_colour=<colour_str>\n\
+    Set the colour used for breaklines between multiple sequences\n\
+\n\
   --session_colour=<colour_str>\n\
     Set the background colour of the dotter window\n\
 \n\
@@ -211,6 +214,7 @@ static void setDefaultOptions(DotterOptions *options)
   options->msgData.parent = NULL;
   options->msgData.statusBar = NULL;
 
+  options->breaklineColor = NULL;
   options->windowColor = NULL;
 }
 
@@ -389,6 +393,7 @@ int main(int argc, char **argv)
       {"horizontal-type",       required_argument,  0, 0},
       {"vertical-type",         required_argument,  0, 0},
       {"negate-coords",         no_argument,        0, 'N'},
+      {"breakline_colour",      required_argument,  0, 0},
       {"session_colour",        required_argument,  0, 0},
       {0, 0, 0, 0}
     };
@@ -426,6 +431,10 @@ int main(int argc, char **argv)
                 else
                   g_critical("Invalid value for vertical-type argument: expected 'p' or 'd'\n");
               }                
+            else if (stringsEqual(long_options[optionIndex].name, "breakline_colour", TRUE))
+              {
+                options.breaklineColor = g_strdup(optarg);
+              }
             else if (stringsEqual(long_options[optionIndex].name, "session_colour", TRUE))
               {
                 options.windowColor = g_strdup(optarg);
