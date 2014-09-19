@@ -1,0 +1,27 @@
+#!/bin/ksh
+#
+# Description:
+#   Test Dotter in nucleotide->protein mode, using the reverse-complemented version of the 
+#   reference sequence. Also tests starting up in HSP mode.
+#
+# Results:
+#   Dotter starts up showing HSPs. Enable the pixelmap from the View menu to see if the alignments
+#   in the calculated dot-plot match the positions of the HSPs. HSPs for both strands will be shown,
+#   but the pixelmap will only show matches for the reverse strand.
+#
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+
+dotter -q 246634 -r -H -f $data_dir/chr4_protein_align.gff $data_dir/chr4_ref_seq.fasta $data_dir/Q9H8G1.fasta 
+
+# If there was an error, set RC
+if [ $? -ne 0 ] 
+then
+  RC=1
+fi
+
+exit $RC

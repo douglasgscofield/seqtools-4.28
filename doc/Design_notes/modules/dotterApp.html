@@ -1,0 +1,83 @@
+<head>
+  <title>SeqTools - dotterApp</title>
+</head>
+
+
+<body>
+<div class="outer">
+  <h1>dotterApp</h1>
+  <p>
+    The dotterApp module contains the code for the Dotter application. Dotter can be called standalone from the command line, but is often called from Blixem.
+  </p>
+
+  <h2><code>main()</code> function</h2>
+  <p>
+    The Dotter <code>main()</code> function lives in <code>dotterMain.c</code>.  The <code>main()</code> function performs the following jobs:
+    <ul>
+      <li>read in the command-line arguments that were passed to Dotter, OR read in the streamed-in arguments if called from within SeqTools;
+      <li>parse the input files;
+      <li>create the Dotter window; and
+      <li>enter the main GTK loop to await user interaction.
+    </ul>
+  </p>
+
+  <h2>The Dotter window</h2>
+  <p><code>dotter.h/.c</code></p>
+  <p>
+    We use GTK+ widgets to create the Dotter graphical components. The main Dotter window is created by the <code>dotter()</code> function in <code>dotter.c</code>. <code>dotter()</code> also does any initialisation required and creates a main dotter context (a struct containing properties for the current dotter session).  Note that there can be multiple Dotter windows for the same Dotter session. Each Dotter window has a separate context for Dotter-wide properties pertaining only to that particular Dotter.  Multiple Dotters in the same session will share the same input sequences, for example, but may display different ranges of those sequences.  A new Dotter can be opened from an existing Dotter by middle-dragging to select a range to open the new Dotter on.
+  </p>
+  <p>
+    A Dotter window comprises the following components:
+    <ul>
+      <li>The menu bar
+      <li>The dot-matrix plot
+      <li>Exons/introns for the active strand
+      <li>Exons/introns for the other strand
+    </ul>
+  </p>
+
+  <h3>The dot-matrix plot</h3>
+  <p><code>dotplot.c, dotterKarlin.c</code></p>
+  <p>
+    This is the main portion of the Dotter window and shows the actual dot-plot or 'pixelmap'.  The 'pixelmap' that represents the dot-plot is actually just an array whose length is the image width times the image height. The calculation of this array can be intensive for large sequences, but it only needs to be calculated once on startup (or if the settings are changed). The pixelmap is transformed to a GdkImage using info the Greyramp Tool. The image is then drawn by the dot-plot widget's expose function, along with the grid markers, labels and other cosmetic paraphernalia.
+  </p>
+  <p>
+    By default, a crosshair is displayed on the dot-plot to indicate the currently-selected coordinate and can be moved by left-clicking or by pressing the arrow keys.
+  </p>
+
+  <h4>HSPs</h4>
+  <p>
+    This is the High Scoring Pair view. It is off by default, but can be toggled by the user or by a command-line argument. HSPs are high-scoring alignments that have known start and end coordinates - they are drawn as a straight, solid line between those coordinates.  There are three different modes for the HSP view:
+    <ul>
+      <li>Red lines: in this mode, all HSPs are drawn as red lines. The HSPs are drawn over the top of the standard dot-plot image.
+      <li>Score-based: in this mode, HSPs are drawn in different colors depending on their score. The HSPs are drawn over the top of the standard dot-plot image.
+      <li>Greyramp: in this mode, the HSPs are drawn in a shade of grey based on their score (by default, the darker the shade the higher the score). Greyramp-tool filtering applies.  In this mode, the HSP image REPLACES the standard dot-plot image.
+    </ul>
+  </p>
+
+  <h3>The exon/intron view</h3>
+  This is a drawing area showing the exons and introns within the Dotter display range for a particular strand. Two exon views are used - the 'active' strand exon view is shown first, with the other strand underneath it. The 'active' strand is the strand of the reference sequence that was passed to Dotter. The exons and introns are lined up with the scale on the dot-plot, and by default the crosshair extends over the exon view. 
+
+  <h3>Saving a dot-plot</h3>
+  A dot-plot can be saved. Dotter dumps chunks of data (whose size is known) to a binary file. If the size of any data changes, the file format must be changed. Old file formats should still be supported. A saved dot-plot can be loaded by calling Dotter from the command line with the <code>-l</code> argument.
+
+  <h2>The Greyramp Tool</h2>
+  <p><code>greyramp.c</code></p>
+  <p>
+    This window is associated with a particular Dotter window and controls the filtering of noise on the dot-plot.  The Greyramp Tool is owned by the Dotter window and will be destroyed along with it.
+  </p>
+
+  <h2>The Alignment Tool</h2>
+  <p><code>alignment.c</code></p>
+  <p>
+    This window is associated with a particular Dotter window.  It shows the sequence data for both of the sequences at the currently-selected coordinate in the Dotter window, and highlights the sequences to indicate matching/mis-matching bases.  The Alignment Tool window is owned by the Dotter window and will be destroyed along with it.
+  </p>
+
+  <h2>Batch mode</h2>
+  <p>
+    Calculating a dot-plot can take a long time.  Batch mode allows Dotter to be run in the background. The dot-plot is saved to file and can be loaded by running Dotter from the command-line with the <code>-l</code> argument.
+  </p>
+  
+
+</div>
+</body>

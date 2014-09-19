@@ -1,0 +1,30 @@
+#!/bin/ksh
+#
+# Description:
+#   Tests calling Dotter on a long sequence versus itself. Transcripts are supplied via a features
+#   file.
+#
+# Results:
+#   Dotter's graphical display should start up, showing a dot-plot where strong matching regions
+#   between the two sequences are shown as diagonal lines: since the two sequences match exactly, 
+#   there will be a diagonal line from the top-left to the bottom-right corner. Any other matching
+#   regions (i.e. internal repeats) will also display as diagonal lines.
+#
+#   Transcripts from the features file should be shown along both axes.
+#
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+
+dotter -q 246634 -s 246634 -f $data_dir/chr4_dna_align.gff $data_dir/chr4_ref_seq.fasta $data_dir/chr4_ref_seq.fasta
+
+# If there was an error, set RC
+if [ $? -ne 0 ] 
+then
+  RC=1
+fi
+
+exit $RC

@@ -1,0 +1,30 @@
+#!/bin/ksh
+#
+# Description:
+#   Test Dotter in nucleotide->protein mode. Tests the dot-matrix calculation as well
+#   as the display of transcripts and HSPs supplied via a features file.
+#
+# Results:
+#   Dotter's graphical display should start up, showing a dot-plot where strong matching regions
+#   between the two sequences are shown as diagonal lines. The greyramp tool can be used to adjust
+#   the contrast of the dot plot. Transcripts from the features file should be shown along the
+#   horizontal axis and HSPs from the features file can be displayed by enabling the relevant
+#   option in the View menu (note that HSPs on both strands of the reference sequence are shown,
+#   but the pixelmap will only draw matches against the forward strand in protein mode).
+#
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+
+dotter -q 246634 -f $data_dir/chr4_protein_align.gff $data_dir/chr4_ref_seq.fasta $data_dir/Q9H8G1.fasta 
+
+# If there was an error, set RC
+if [ $? -ne 0 ] 
+then
+  RC=1
+fi
+
+exit $RC

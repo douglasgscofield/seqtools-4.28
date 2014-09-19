@@ -1,0 +1,26 @@
+#!/bin/ksh
+#
+
+# Description:
+#   Sort by score on start up. Also tests saving
+#   without coords in Selex format.
+
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+results_file="$test_dir/$test_name""_results"
+
+# Run belvu and check if there are any differences to the saved results
+diffs=`belvu -o Selex -S s -C -s $data_dir/PF02171_seed.scores $data_dir/PF02171_seed.selex >&1 | diff "$results_file" -`
+
+# If there were any problems or differences, set RC
+if [[ $? -ne 0 || $diffs != "" ]]
+then
+  print "$test_name FAILED"
+  RC=1
+fi
+
+exit $RC

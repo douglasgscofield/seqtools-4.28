@@ -1,0 +1,19 @@
+SEQTOOLS PACKAGE TESTS
+
+This directory contains test descriptions, datasets and scripts that can be used to verify the basic functionality of Blixem, Dotter and Belvu. The test scripts are not extensive, particularly for graphical functions, but they are a good starting point. To supplement the test scripts, there are also some manual tests described in test_plan.ods.
+
+The directory contents are:
+- data: test datasets
+- scripts: contains the test scripts
+- scripts/automated: contains tests that can be run on the command line. Tests are organised into subdirectories by program. The program output on stdout for, say, test1, should match the recorded results in test1_results. The intent is that these tests can be automated at some point.
+- scripts/manual: contains tests that must be run manually, e.g. graphical tests for checking that colors are displayed correctly etc. Tests are organised into subdirectories by program. These tests start up the graphical user interface and require user interaction/verification.  See the description inside the individual test scripts for details of what the script is testing and the expected results.
+- test_plan.ods: an Open Office spreadsheet detailing the manual tests.
+
+Note that the blixem/dotter/belvu executables must be in your path for the test scripts to work.
+
+ISSUES
+The test scripts are a work in progress and there are the following outstanding issues:
+- Some tests in automated/belvu place the relative path name into the results file, so they will fail if you run them from a different directory to where they were originally run. Run them from the 'scripts' directory to get around this.
+- Some tests in automated/dotter try to do a diff between PDF files, which does not work reliably, so the tests may fail; currently the PDF files must be inspected manually to verify the results.
+- Some belvu tests may fail due to small differences in rounding of decimal values on different machines, so the tests will fail. Currently you need to compare the results manually to verify the results.
+- Some belvu processes output data in a somewhat arbitrary order; if the order differs from the saved results, the tests will fail. Currently you need to compare the results manually to verify the results.

@@ -1,0 +1,1119 @@
+PileUp
+
+ automated/belvu/../../../data/ALIGN.selex  MSF: 65  Type: X  Check: 8382  ..
+
+  Name: Q9UPQ9.4/2-1714     Len:     65  Check:   7685  Weight: 1.0000
+  Name: A8MYY3.2/16-949     Len:     65  Check:   6005  Weight: 1.0000
+  Name: A8MYY3.2/946-1098   Len:     65  Check:   6005  Weight: 1.0000
+  Name: A8MYY3.2/1098-1618  Len:     65  Check:   7685  Weight: 1.0000
+  Name: B0QY77.1/1-879      Len:     65  Check:   6005  Weight: 1.0000
+  Name: B0QY77.1/879-1390   Len:     65  Check:   5245  Weight: 1.0000
+  Name: B1ATC3.1/2-1028     Len:     65  Check:   6005  Weight: 1.0000
+  Name: B1ATC3.1/1015-1647  Len:     65  Check:   6005  Weight: 1.0000
+  Name: B1ATC3.1/1646-1790  Len:     65  Check:   8255  Weight: 1.0000
+  Name: B3N1G0.1/6-1168     Len:     65  Check:   6834  Weight: 1.0000
+  Name: B3P9S0.1/6-1187     Len:     65  Check:   7576  Weight: 1.0000
+  Name: B4E231.1/1-251      Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4E231.1/251-762    Len:     65  Check:   5245  Weight: 1.0000
+  Name: B4IIY1.1/6-1184     Len:     65  Check:   7548  Weight: 1.0000
+  Name: B4PW21.1/6-1181     Len:     65  Check:   7713  Weight: 1.0000
+  Name: B4R2G2.1/6-1123     Len:     65  Check:   7548  Weight: 1.0000
+  Name: B5ME23.2/16-165     Len:     65  Check:   6005  Weight: 1.0000
+  Name: B5ME23.2/165-368    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B5ME23.2/368-888    Len:     65  Check:   7685  Weight: 1.0000
+  Name: B7ZC94.1/2-868      Len:     65  Check:   6005  Weight: 1.0000
+  Name: B7ZC94.1/855-1477   Len:     65  Check:   6005  Weight: 1.0000
+  Name: B7ZC94.1/1478-1622  Len:     65  Check:   8255  Weight: 1.0000
+  Name: C9J5L7.1/16-949     Len:     65  Check:   6005  Weight: 1.0000
+  Name: C9J5L7.1/946-1098   Len:     65  Check:   6005  Weight: 1.0000
+  Name: C9J5L7.1/1098-1618  Len:     65  Check:   7685  Weight: 1.0000
+  Name: C9JA83.1/3-471      Len:     65  Check:   6005  Weight: 1.0000
+  Name: C9JA83.1/468-986    Len:     65  Check:   9424  Weight: 1.0000
+  Name: C9JAR8.1/20-121     Len:     65  Check:   6005  Weight: 1.0000
+  Name: C9JAR8.1/119-1283   Len:     65  Check:   6005  Weight: 1.0000
+  Name: C9JAR8.1/1280-1798  Len:     65  Check:   9424  Weight: 1.0000
+  Name: D2GZL8.1/5-902      Len:     65  Check:   6005  Weight: 1.0000
+  Name: D2GZL8.1/900-1051   Len:     65  Check:   6005  Weight: 1.0000
+  Name: D2GZL8.1/1051-1571  Len:     65  Check:   7475  Weight: 1.0000
+  Name: D2H997.1/2-866      Len:     65  Check:   6005  Weight: 1.0000
+  Name: D2H997.1/853-1477   Len:     65  Check:   6005  Weight: 1.0000
+  Name: D2H997.1/1476-1620  Len:     65  Check:   8593  Weight: 1.0000
+  Name: D2I222.1/1-1790     Len:     65  Check:   9424  Weight: 1.0000
+  Name: D3ZRA6.1/2-1000     Len:     65  Check:   6005  Weight: 1.0000
+  Name: D4A372.1/1-97       Len:     65  Check:   6005  Weight: 1.0000
+  Name: D4A372.1/95-1822    Len:     65  Check:   9424  Weight: 1.0000
+  Name: Q05CE3.1/20-1014    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q29CP6.2/6-1206     Len:     65  Check:   7686  Weight: 1.0000
+  Name: Q3TRH0.1/1-49       Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q3TRH0.1/46-194     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q3TRH0.1/194-719    Len:     65  Check:   7685  Weight: 1.0000
+  Name: Q3UHC0.2/4-818      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q3UHC0.2/805-1437   Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q3UHC0.2/1436-1580  Len:     65  Check:   8255  Weight: 1.0000
+  Name: Q3UHK8.1/20-1269    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q3UHK8.1/1266-1782  Len:     65  Check:   9424  Weight: 1.0000
+  Name: Q4S9I4.1/33-1574    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4S9I4.1/1569-1729  Len:     65  Check:   7052  Weight: 1.0000
+  Name: Q4T574.1/1-220      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4T574.1/239-596    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4T574.1/639-850    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4T574.1/894-1324   Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4T574.1/1322-1473  Len:     65  Check:   8230  Weight: 1.0000
+  Name: Q8BKI2.2/38-1167    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q8BKI2.2/1167-1691  Len:     65  Check:   7685  Weight: 1.0000
+  Name: Q8BWL0.1/2-169      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q8BWL0.1/169-693    Len:     65  Check:   7685  Weight: 1.0000
+  Name: Q8NDV7.2/20-121     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q8NDV7.2/119-1847   Len:     65  Check:   9424  Weight: 1.0000
+  Name: Q8SY33.1/6-1183     Len:     65  Check:   7548  Weight: 1.0000
+  Name: Q9HCJ0.3/4-822      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q9HCJ0.3/810-1437   Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q9HCJ0.3/1434-1580  Len:     65  Check:   8255  Weight: 1.0000
+  Name: Q9UPQ9.4/2-1714     Len:     65  Check:   7685  Weight: 1.0000
+  Name: B4H887.1/32-1036    Len:     65  Check:   7686  Weight: 1.0000
+  Name: Q3TRK2.1/1-88       Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q3TRK2.1/88-612     Len:     65  Check:   7685  Weight: 1.0000
+  Name: Q8BNF0.2/9-877      Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4MF11.1/6-1186     Len:     65  Check:   7563  Weight: 1.0000
+  Name: B4NHM7.1/6-1235     Len:     65  Check:   8501  Weight: 1.0000
+  Name: D0Z7B2.1/6-1203     Len:     65  Check:   7563  Weight: 1.0000
+  Name: B4JZV3.1/6-1211     Len:     65  Check:   6726  Weight: 1.0000
+  Name: Q1LZM4.1/2-292      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q1LZM4.1/292-736    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4S4D3.1/1-379      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4S4D3.1/395-556    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4S4D3.1/557-654    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4S4D3.1/651-825    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4S4D3.1/823-1014   Len:     65  Check:   6991  Weight: 1.0000
+  Name: Q4S4D3.1/1091-1092  Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q3UUG8.1/1-613      Len:     65  Check:   9424  Weight: 1.0000
+  Name: C3ZJT1.1/159-315    Len:     65  Check:   6005  Weight: 1.0000
+  Name: C3ZJT1.1/328-369    Len:     65  Check:   6005  Weight: 1.0000
+  Name: C3ZJT1.1/371-689    Len:     65  Check:   6005  Weight: 1.0000
+  Name: C3ZJT1.1/730-1268   Len:     65  Check:   7030  Weight: 1.0000
+  Name: B0WTJ5.1/228-1292   Len:     65  Check:   6979  Weight: 1.0000
+  Name: Q8BXM6.1/4-513      Len:     65  Check:   9424  Weight: 1.0000
+  Name: Q99JR3.2/24-541     Len:     65  Check:   9424  Weight: 1.0000
+  Name: Q172C6.1/6-1041     Len:     65  Check:   7039  Weight: 1.0000
+  Name: B4L7C4.1/6-1178     Len:     65  Check:   2117  Weight: 1.0000
+  Name: Q172C7.1/363-538    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q172C7.1/573-1399   Len:     65  Check:   7539  Weight: 1.0000
+  Name: Q6P7B1.1/2-313      Len:     65  Check:   7685  Weight: 1.0000
+  Name: Q3UQ45.1/7-386      Len:     65  Check:   9424  Weight: 1.0000
+  Name: Q4T0A8.1/27-228     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4T0A8.1/329-402    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4T0A8.1/405-529    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4T0A8.1/526-678    Len:     65  Check:   8410  Weight: 1.0000
+  Name: B7ZB91.1/13-478     Len:     65  Check:   7547  Weight: 1.0000
+  Name: Q7Q3B9.4/7-766      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q7Q3B9.4/781-1165   Len:     65  Check:   6502  Weight: 1.0000
+  Name: Q8BX83.2/38-410     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q172C8.1/192-646    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q172C8.1/672-1173   Len:     65  Check:   6249  Weight: 1.0000
+  Name: B0WXH0.1/311-1189   Len:     65  Check:   6005  Weight: 1.0000
+  Name: B0WXH0.1/1191-1389  Len:     65  Check:   7973  Weight: 1.0000
+  Name: B0R1E2.1/1-289      Len:     65  Check:   6005  Weight: 1.0000
+  Name: B0R1E2.1/290-439    Len:     65  Check:   8275  Weight: 1.0000
+  Name: B1H1W1.1/13-388     Len:     65  Check:   6005  Weight: 1.0000
+  Name: A7UUT0.1/13-626     Len:     65  Check:   6005  Weight: 1.0000
+  Name: A7UUT0.1/686-771    Len:     65  Check:   6005  Weight: 1.0000
+  Name: A7UUT0.1/838-1165   Len:     65  Check:   7183  Weight: 1.0000
+  Name: Q66JU9.1/2-193      Len:     65  Check:   7685  Weight: 1.0000
+  Name: B4DKJ5.1/2-276      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q8BWM2.1/1-223      Len:     65  Check:   9424  Weight: 1.0000
+  Name: A0NFA3.2/8-516      Len:     65  Check:   6005  Weight: 1.0000
+  Name: A0NFA3.2/687-1082   Len:     65  Check:   6107  Weight: 1.0000
+  Name: B7PWH5.1/252-389    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B7PWH5.1/349-695    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B7PWH5.1/720-969    Len:     65  Check:   5086  Weight: 1.0000
+  Name: Q8VD67.1/1-130      Len:     65  Check:   7685  Weight: 1.0000
+  Name: Q148P0.1/1-130      Len:     65  Check:   7685  Weight: 1.0000
+  Name: Q9JHZ1.1/1-130      Len:     65  Check:   7685  Weight: 1.0000
+  Name: B0WXG8.1/386-1198   Len:     65  Check:   6005  Weight: 1.0000
+  Name: B0WXG8.1/1199-1242  Len:     65  Check:   9217  Weight: 1.0000
+  Name: Q4TA89.1/1-282      Len:     65  Check:   8009  Weight: 1.0000
+  Name: Q4T0A9.1/1-255      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4T0A9.1/370-579    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q6ZPQ4.1/1-243      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4TA88.1/5-275      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4TA88.1/319-457    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B3KSX2.1/4-277      Len:     65  Check:   6005  Weight: 1.0000
+  Name: B8RJB3.1/9-266      Len:     65  Check:   6005  Weight: 1.0000
+  Name: A7SDW4.1/430-1260   Len:     65  Check:   6005  Weight: 1.0000
+  Name: A7SDW4.1/1319-1584  Len:     65  Check:   9340  Weight: 1.0000
+  Name: A8PU70.1/566-908    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4T5V2.1/1-136      Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4DST4.1/1-168      Len:     65  Check:   6005  Weight: 1.0000
+  Name: B3RQ20.1/1143-1332  Len:     65  Check:   9945  Weight: 1.0000
+  Name: Q8BXV9.1/2-142      Len:     65  Check:   6005  Weight: 1.0000
+  Name: A7T6Q0.1/2-56       Len:     65  Check:   7556  Weight: 1.0000
+  Name: C1K8B6.1/4-244      Len:     65  Check:   6005  Weight: 1.0000
+  Name: C1K890.1/4-244      Len:     65  Check:   6005  Weight: 1.0000
+  Name: A5BE57.1/246-278    Len:     65  Check:   8909  Weight: 1.0000
+  Name: A5BE57.1/307-381    Len:     65  Check:   7622  Weight: 1.0000
+  Name: C1K8V5.1/4-177      Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q2GV87.1/66-278     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q8MSF0.1/1-14       Len:     65  Check:   6440  Weight: 1.0000
+  Name: B4H886.1/6-148      Len:     65  Check:   6005  Weight: 1.0000
+  Name: A9USE7.1/720-774    Len:     65  Check:   4611  Weight: 1.0000
+  Name: A9USE7.1/997-1077   Len:     65  Check:   7394  Weight: 1.0000
+  Name: C5WVW4.1/223-289    Len:     65  Check:   7564  Weight: 1.0000
+  Name: P20105.2/153-385    Len:     65  Check:   6005  Weight: 1.0000
+  Name: P20105.2/537-654    Len:     65  Check:   6005  Weight: 1.0000
+  Name: C4IYK3.1/223-290    Len:     65  Check:   7563  Weight: 1.0000
+  Name: B6UA93.1/223-290    Len:     65  Check:   7563  Weight: 1.0000
+  Name: B9RQB9.1/109-178    Len:     65  Check:   6302  Weight: 1.0000
+  Name: B9RQB9.1/236-270    Len:     65  Check:   1677  Weight: 1.0000
+  Name: B9RQB9.1/300-374    Len:     65  Check:   5147  Weight: 1.0000
+  Name: B8APB9.1/226-292    Len:     65  Check:   7461  Weight: 1.0000
+  Name: Q10R21.1/226-292    Len:     65  Check:   7461  Weight: 1.0000
+  Name: Q0DUQ0.1/248-314    Len:     65  Check:   7461  Weight: 1.0000
+  Name: Q8BZH2.1/5-63       Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4PJL3.1/173-393    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4PJL3.1/533-654    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B5DF80.1/306-375    Len:     65  Check:   8088  Weight: 1.0000
+  Name: C1GEW9.1/11-129     Len:     65  Check:   6005  Weight: 1.0000
+  Name: C1GVG2.1/279-439    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B2GUY3.1/194-262    Len:     65  Check:   6555  Weight: 1.0000
+  Name: B2GUY3.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: B3M4K4.1/89-378     Len:     65  Check:   6005  Weight: 1.0000
+  Name: B3M4K4.1/533-691    Len:     65  Check:   6005  Weight: 1.0000
+  Name: D4AC14.1/194-262    Len:     65  Check:   6555  Weight: 1.0000
+  Name: D4AC14.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: Q4T1P6.1/6-46       Len:     65  Check:   6005  Weight: 1.0000
+  Name: D4AC21.1/123-191    Len:     65  Check:   6555  Weight: 1.0000
+  Name: D4AC21.1/225-294    Len:     65  Check:   7809  Weight: 1.0000
+  Name: C5WPD4.1/242-292    Len:     65  Check:   1616  Weight: 1.0000
+  Name: B9GH32.1/107-174    Len:     65  Check:   7680  Weight: 1.0000
+  Name: B9GH32.1/295-362    Len:     65  Check:   5303  Weight: 1.0000
+  Name: A5B3Z9.1/212-283    Len:     65  Check:   4932  Weight: 1.0000
+  Name: Q6IQ30.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: O04319.1/114-183    Len:     65  Check:   8288  Weight: 1.0000
+  Name: O04319.1/304-375    Len:     65  Check:   7501  Weight: 1.0000
+  Name: P31209.2/366-435    Len:     65  Check:   8326  Weight: 1.0000
+  Name: B2RXY9.1/193-253    Len:     65  Check:   3890  Weight: 1.0000
+  Name: B2RXY9.1/296-365    Len:     65  Check:   8775  Weight: 1.0000
+  Name: A2A5N3.1/193-253    Len:     65  Check:   3890  Weight: 1.0000
+  Name: A2A5N3.1/296-365    Len:     65  Check:   8775  Weight: 1.0000
+  Name: Q9D4E6.1/307-375    Len:     65  Check:   7658  Weight: 1.0000
+  Name: Q4VC03.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: Q13310.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: D3Z5M2.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: A4IFC3.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: B1ANR0.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: B4NNJ8.1/320-445    Len:     65  Check:   6005  Weight: 1.0000
+  Name: D2I596.1/309-378    Len:     65  Check:   7809  Weight: 1.0000
+  Name: B4JL62.1/290-395    Len:     65  Check:   6005  Weight: 1.0000
+  Name: C5YBU9.1/128-201    Len:     65  Check:   5798  Weight: 1.0000
+  Name: C5YBU9.1/329-399    Len:     65  Check:   8035  Weight: 1.0000
+  Name: Q99LF8.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: C0PPV9.1/259-363    Len:     65  Check:   7544  Weight: 1.0000
+  Name: Q91YZ8.1/296-365    Len:     65  Check:   7928  Weight: 1.0000
+  Name: B9GNX9.1/266-364    Len:     65  Check:   7797  Weight: 1.0000
+  Name: A3KFU8.1/296-365    Len:     65  Check:   7928  Weight: 1.0000
+  Name: B9N4W3.1/235-341    Len:     65  Check:   7352  Weight: 1.0000
+  Name: Q6PHQ9.1/296-365    Len:     65  Check:   7928  Weight: 1.0000
+  Name: B9MVK8.1/264-361    Len:     65  Check:   6951  Weight: 1.0000
+  Name: D3AVQ3.1/284-354    Len:     65  Check:   8547  Weight: 1.0000
+  Name: A3KFU5.1/296-365    Len:     65  Check:   7928  Weight: 1.0000
+  Name: A5BPW5.1/140-241    Len:     65  Check:   7453  Weight: 1.0000
+  Name: Q3UX16.1/225-294    Len:     65  Check:   7928  Weight: 1.0000
+  Name: C0PT30.1/259-364    Len:     65  Check:   7544  Weight: 1.0000
+  Name: B4K3C6.1/67-191     Len:     65  Check:   6005  Weight: 1.0000
+  Name: C4Q4K6.1/224-340    Len:     65  Check:   8129  Weight: 1.0000
+  Name: B9H7X8.1/113-180    Len:     65  Check:   6585  Weight: 1.0000
+  Name: B9H7X8.1/304-377    Len:     65  Check:   7031  Weight: 1.0000
+  Name: B3S2W8.1/76-163     Len:     65  Check:   7814  Weight: 1.0000
+  Name: B3S2W8.1/165-267    Len:     65  Check:   7944  Weight: 1.0000
+  Name: Q6CDH3.1/332-401    Len:     65  Check:   8450  Weight: 1.0000
+  Name: B9R7H3.1/281-377    Len:     65  Check:   7841  Weight: 1.0000
+  Name: Q7T3G5.1/297-366    Len:     65  Check:   7809  Weight: 1.0000
+  Name: Q3UTA6.1/197-266    Len:     65  Check:   7771  Weight: 1.0000
+  Name: B3NHT3.1/152-330    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4MHJ9.1/106-306    Len:     65  Check:   6005  Weight: 1.0000
+  Name: A5BF74.1/281-378    Len:     65  Check:   7969  Weight: 1.0000
+  Name: Q8QGJ7.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: B4J985.1/306-430    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B8LRZ2.1/277-352    Len:     65  Check:   7245  Weight: 1.0000
+  Name: A5E351.1/72-416     Len:     65  Check:   6005  Weight: 1.0000
+  Name: D2H6M0.1/296-365    Len:     65  Check:   8589  Weight: 1.0000
+  Name: O42323.1/299-489    Len:     65  Check:   6005  Weight: 1.0000
+  Name: A9NX92.1/275-351    Len:     65  Check:   7245  Weight: 1.0000
+  Name: B9GT62.1/311-387    Len:     65  Check:   7397  Weight: 1.0000
+  Name: Q5KBW2.1/367-401    Len:     65  Check:   4130  Weight: 1.0000
+  Name: Q2PEV8.1/238-322    Len:     65  Check:   8488  Weight: 1.0000
+  Name: B6U4M0.1/324-393    Len:     65  Check:   7419  Weight: 1.0000
+  Name: A8NF86.1/337-404    Len:     65  Check:   6240  Weight: 1.0000
+  Name: B4N2I1.1/44-159     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q2I2V8.1/539-606    Len:     65  Check:   5583  Weight: 1.0000
+  Name: B3MYX8.1/14-153     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4RNX8.1/296-365    Len:     65  Check:   7809  Weight: 1.0000
+  Name: D1ZFW1.1/794-871    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B9RIB9.1/231-294    Len:     65  Check:   6252  Weight: 1.0000
+  Name: C0SAP5.1/281-410    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B9HRX8.1/250-356    Len:     65  Check:   7408  Weight: 1.0000
+  Name: Q7SGG0.1/13-167     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q9FPJ8.1/236-325    Len:     65  Check:   7081  Weight: 1.0000
+  Name: Q9FFU0.1/236-325    Len:     65  Check:   7081  Weight: 1.0000
+  Name: A5E1Y8.1/358-537    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q15164.1/107-176    Len:     65  Check:   7809  Weight: 1.0000
+  Name: D3ZAS7.1/296-365    Len:     65  Check:   8762  Weight: 1.0000
+  Name: B6K033.1/364-434    Len:     65  Check:   7638  Weight: 1.0000
+  Name: Q5TST0.3/683-841    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B6K6T8.1/356-424    Len:     65  Check:   6980  Weight: 1.0000
+  Name: C1GDP1.1/281-415    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B9H7X9.1/314-387    Len:     65  Check:   7031  Weight: 1.0000
+  Name: Q7Q9F7.4/282-381    Len:     65  Check:   8971  Weight: 1.0000
+  Name: Q10N87.1/216-288    Len:     65  Check:   8444  Weight: 1.0000
+  Name: A3F293.1/10-109     Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4JPX4.1/284-409    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q8RXR5.1/110-177    Len:     65  Check:   6752  Weight: 1.0000
+  Name: P42731.1/126-193    Len:     65  Check:   6752  Weight: 1.0000
+  Name: Q2VIP3.1/296-365    Len:     65  Check:   7799  Weight: 1.0000
+  Name: A3F295.1/6-117      Len:     65  Check:   6005  Weight: 1.0000
+  Name: A9S4M3.1/42-65      Len:     65  Check:   8023  Weight: 1.0000
+  Name: Q54BM2.1/286-356    Len:     65  Check:   8332  Weight: 1.0000
+  Name: Q3ZCS4.1/296-365    Len:     65  Check:   7799  Weight: 1.0000
+  Name: A3F290.1/9-110      Len:     65  Check:   6005  Weight: 1.0000
+  Name: A9TLC5.1/312-382    Len:     65  Check:   8406  Weight: 1.0000
+  Name: A5E7X5.1/33-235     Len:     65  Check:   6005  Weight: 1.0000
+  Name: A3F299.1/12-111     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q5VX58.1/296-365    Len:     65  Check:   7799  Weight: 1.0000
+  Name: Q9H361.2/296-365    Len:     65  Check:   7799  Weight: 1.0000
+  Name: Q2VIN9.1/296-365    Len:     65  Check:   7715  Weight: 1.0000
+  Name: A9T3C5.1/56-79      Len:     65  Check:   8071  Weight: 1.0000
+  Name: Q4PF35.1/18-283     Len:     65  Check:   6005  Weight: 1.0000
+  Name: C5WUD2.1/243-339    Len:     65  Check:   9000  Weight: 1.0000
+  Name: Q4P8R9.1/368-401    Len:     65  Check:   2315  Weight: 1.0000
+  Name: Q55F37.1/112-343    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q54LR6.1/53-262     Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4NBP3.1/171-277    Len:     65  Check:   6491  Weight: 1.0000
+  Name: D3B9K1.1/622-823    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B8AL31.1/216-288    Len:     65  Check:   8444  Weight: 1.0000
+  Name: Q4P3Y1.1/128-184    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q4VXU2.1/296-365    Len:     65  Check:   8576  Weight: 1.0000
+  Name: Q9VYA6.1/174-225    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q25AW7.1/146-228    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q2VIN7.1/296-365    Len:     65  Check:   7799  Weight: 1.0000
+  Name: D0N277.1/201-234    Len:     65  Check:     79  Weight: 1.0000
+  Name: Q6R969.1/253-362    Len:     65  Check:   6414  Weight: 1.0000
+  Name: B4KT28.1/222-266    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q98SP8.2/296-365    Len:     65  Check:   8414  Weight: 1.0000
+  Name: B9RY32.1/285-382    Len:     65  Check:   6561  Weight: 1.0000
+  Name: B4NP54.1/2-69       Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q86KE5.1/77-311     Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q2V9C2.1/258-357    Len:     65  Check:   6481  Weight: 1.0000
+  Name: Q9LEB4.1/261-347    Len:     65  Check:   8349  Weight: 1.0000
+  Name: Q4P2T9.1/335-396    Len:     65  Check:   6005  Weight: 1.0000
+  Name: A5C5B3.1/256-335    Len:     65  Check:   6406  Weight: 1.0000
+  Name: B3MKU5.1/256-639    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q86NT0.1/173-270    Len:     65  Check:   6005  Weight: 1.0000
+  Name: A8NN12.1/68-136     Len:     65  Check:   6005  Weight: 1.0000
+  Name: A3CUY7.1/2-69       Len:     65  Check:   6142  Weight: 1.0000
+  Name: B0X8C2.1/150-263    Len:     65  Check:   6005  Weight: 1.0000
+  Name: A5E3S9.1/278-450    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q9FX88.1/338-415    Len:     65  Check:   6705  Weight: 1.0000
+  Name: Q54X31.1/100-217    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q10HZ8.1/240-333    Len:     65  Check:   9058  Weight: 1.0000
+  Name: Q9AY92.1/240-333    Len:     65  Check:   9058  Weight: 1.0000
+  Name: Q10HZ7.1/240-333    Len:     65  Check:   9058  Weight: 1.0000
+  Name: B8AKU6.1/240-333    Len:     65  Check:   9058  Weight: 1.0000
+  Name: Q2V9A1.1/201-306    Len:     65  Check:   6452  Weight: 1.0000
+  Name: A2YEJ5.1/343-416    Len:     65  Check:   5574  Weight: 1.0000
+  Name: B4KQM5.1/242-419    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q69X94.1/342-415    Len:     65  Check:   5574  Weight: 1.0000
+  Name: Q8LBV8.1/233-325    Len:     65  Check:   6907  Weight: 1.0000
+  Name: C0P488.1/242-336    Len:     65  Check:   9477  Weight: 1.0000
+  Name: B3M300.1/220-284    Len:     65  Check:   4430  Weight: 1.0000
+  Name: Q9SAB3.1/234-326    Len:     65  Check:   6907  Weight: 1.0000
+  Name: Q0DQQ8.1/284-377    Len:     65  Check:   9058  Weight: 1.0000
+  Name: C0PFW8.1/269-336    Len:     65  Check:   8794  Weight: 1.0000
+  Name: C0HHH3.1/270-337    Len:     65  Check:   8794  Weight: 1.0000
+  Name: Q9M6E6.1/117-184    Len:     65  Check:   5513  Weight: 1.0000
+  Name: Q2FSR7.1/6-69       Len:     65  Check:   6714  Weight: 1.0000
+  Name: C0SUE2.1/77-175     Len:     65  Check:   6005  Weight: 1.0000
+  Name: A0CJW3.1/434-742    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4ME65.1/311-417    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B9I0E1.1/253-334    Len:     65  Check:   8072  Weight: 1.0000
+  Name: Q8LFI9.1/244-343    Len:     65  Check:   6439  Weight: 1.0000
+  Name: B4PH83.1/181-247    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B9FTY9.1/365-439    Len:     65  Check:   5574  Weight: 1.0000
+  Name: B3M562.1/702-895    Len:     65  Check:   6005  Weight: 1.0000
+  Name: C4QZM5.1/235-294    Len:     65  Check:   1116  Weight: 1.0000
+  Name: D3BFK6.1/320-381    Len:     65  Check:   5659  Weight: 1.0000
+  Name: A3GHN7.2/350-468    Len:     65  Check:   5518  Weight: 1.0000
+  Name: Q54C48.1/271-342    Len:     65  Check:   6503  Weight: 1.0000
+  Name: Q0WW84.1/287-386    Len:     65  Check:   6439  Weight: 1.0000
+  Name: Q54FL0.1/951-1244   Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4MC02.1/171-283    Len:     65  Check:   4057  Weight: 1.0000
+  Name: A7AT74.1/621-689    Len:     65  Check:    524  Weight: 1.0000
+  Name: Q9LJL7.1/287-386    Len:     65  Check:   6439  Weight: 1.0000
+  Name: B4NE44.1/470-686    Len:     65  Check:   6005  Weight: 1.0000
+  Name: A0BQD1.1/165-319    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q05196.2/328-400    Len:     65  Check:   7276  Weight: 1.0000
+  Name: A9TFH5.1/223-287    Len:     65  Check:   5602  Weight: 1.0000
+  Name: A1C5H3.1/188-267    Len:     65  Check:   6005  Weight: 1.0000
+  Name: A9NWA0.1/248-328    Len:     65  Check:   7731  Weight: 1.0000
+  Name: B4JY35.1/15-92      Len:     65  Check:   6005  Weight: 1.0000
+  Name: D0H0K7.1/432-591    Len:     65  Check:   6005  Weight: 1.0000
+  Name: Q6DGV1.1/174-209    Len:     65  Check:   9921  Weight: 1.0000
+  Name: B4KN27.1/225-337    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B3NV15.1/1200-1273  Len:     65  Check:   6005  Weight: 1.0000
+  Name: B5LEQ5.1/179-214    Len:     65  Check:   9618  Weight: 1.0000
+  Name: Q6C9A9.1/660-764    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4JIH9.1/171-286    Len:     65  Check:   3456  Weight: 1.0000
+  Name: Q5TSQ4.3/457-676    Len:     65  Check:   6005  Weight: 1.0000
+  Name: A9TZW4.1/245-319    Len:     65  Check:   5602  Weight: 1.0000
+  Name: B4PZT3.1/1188-1272  Len:     65  Check:   6005  Weight: 1.0000
+  Name: D4APH2.1/480-541    Len:     65  Check:   9770  Weight: 1.0000
+  Name: D3BH34.1/115-236    Len:     65  Check:   6005  Weight: 1.0000
+  Name: C4XVP0.1/46-78      Len:     65  Check:   2963  Weight: 1.0000
+  Name: C5GQY8.1/409-612    Len:     65  Check:   6005  Weight: 1.0000
+  Name: B4L803.1/240-323    Len:     65  Check:   6005  Weight: 1.0000
+  Name: C5DIP1.1/2-75       Len:     65  Check:   6913  Weight: 1.0000
+  Name: D3B7T2.1/209-345    Len:     65  Check:   6005  Weight: 1.0000
+
+//
+
+Q9UPQ9.4/2-1714     LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+A8MYY3.2/16-949     ---------- ---------- ---------- ---------- ---------- 
+A8MYY3.2/946-1098   ---------- ---------- ---------- ---------- ---------- 
+A8MYY3.2/1098-1618  LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+B0QY77.1/1-879      ---------- ---------- ---------- ---------- ---------- 
+B0QY77.1/879-1390   LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+B1ATC3.1/2-1028     ---------- ---------- ---------- ---------- ---------- 
+B1ATC3.1/1015-1647  ---------- ---------- ---------- ---------- ---------- 
+B1ATC3.1/1646-1790  LVLRNLTPQI DGSTLRTLCL QHGPLITFHL NLTQGNAVVR YSSKEEAAKA 
+B3N1G0.1/6-1168     LLLKNLTAQI DGSTLRTLCM QHGPLVSFHL YLSQGIALCK YATREEANKA 
+B3P9S0.1/6-1187     LLLRNLTAQI DGPTLRTLCM QHGPLVSFHP YLNQGIALCK YTTREEANKA 
+B4E231.1/1-251      ---------- ---------- ---------- ---------- ---------- 
+B4E231.1/251-762    LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+B4IIY1.1/6-1184     LLLKNLTAQI DGPTLRTLCM QHGPLVSFHP YLNQGIALCK YTTREEANKA 
+B4PW21.1/6-1181     LLLKNLTAQI DGPTLRTLCM QHGPLVSFHP YLSQGIALCK YTTREEANKA 
+B4R2G2.1/6-1123     LLLKNLTAQI DGPTLRTLCM QHGPLVSFHP YLNQGIALCK YTTREEANKA 
+B5ME23.2/16-165     ---------- ---------- ---------- ---------- ---------- 
+B5ME23.2/165-368    ---------- ---------- ---------- ---------- ---------- 
+B5ME23.2/368-888    LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+B7ZC94.1/2-868      ---------- ---------- ---------- ---------- ---------- 
+B7ZC94.1/855-1477   ---------- ---------- ---------- ---------- ---------- 
+B7ZC94.1/1478-1622  LVLRNLTPQI DGSTLRTLCL QHGPLITFHL NLTQGNAVVR YSSKEEAAKA 
+C9J5L7.1/16-949     ---------- ---------- ---------- ---------- ---------- 
+C9J5L7.1/946-1098   ---------- ---------- ---------- ---------- ---------- 
+C9J5L7.1/1098-1618  LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+C9JA83.1/3-471      ---------- ---------- ---------- ---------- ---------- 
+C9JA83.1/468-986    LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+C9JAR8.1/20-121     ---------- ---------- ---------- ---------- ---------- 
+C9JAR8.1/119-1283   ---------- ---------- ---------- ---------- ---------- 
+C9JAR8.1/1280-1798  LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+D2GZL8.1/5-902      ---------- ---------- ---------- ---------- ---------- 
+D2GZL8.1/900-1051   ---------- ---------- ---------- ---------- ---------- 
+D2GZL8.1/1051-1571  LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YNTKQEAAKA 
+D2H997.1/2-866      ---------- ---------- ---------- ---------- ---------- 
+D2H997.1/853-1477   ---------- ---------- ---------- ---------- ---------- 
+D2H997.1/1476-1620  LVLRNLTPQI DGSTLRTLCL QHGPLVTFHL NLTQGNAVVR YSSKEEAAKA 
+D2I222.1/1-1790     LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+D3ZRA6.1/2-1000     ---------- ---------- ---------- ---------- ---------- 
+D4A372.1/1-97       ---------- ---------- ---------- ---------- ---------- 
+D4A372.1/95-1822    LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+Q05CE3.1/20-1014    ---------- ---------- ---------- ---------- ---------- 
+Q29CP6.2/6-1206     LLLKNLTAQI DGPTLRTLCM QHGPLVSFHL YLNQGIALCK YTTREEASKA 
+Q3TRH0.1/1-49       ---------- ---------- ---------- ---------- ---------- 
+Q3TRH0.1/46-194     ---------- ---------- ---------- ---------- ---------- 
+Q3TRH0.1/194-719    LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+Q3UHC0.2/4-818      ---------- ---------- ---------- ---------- ---------- 
+Q3UHC0.2/805-1437   ---------- ---------- ---------- ---------- ---------- 
+Q3UHC0.2/1436-1580  LVLRNLTPQI DGSTLRTLCL QHGPLITFHL NLTQGNAVVR YSSKEEAAKA 
+Q3UHK8.1/20-1269    ---------- ---------- ---------- ---------- ---------- 
+Q3UHK8.1/1266-1782  LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+Q4S9I4.1/33-1574    ---------- ---------- ---------- ---------- ---------- 
+Q4S9I4.1/1569-1729  LVLKNLTPQI DGSTLKTLCM QHGPLITFHL NLPHGNAVVC YSSKDEAAKA 
+Q4T574.1/1-220      ---------- ---------- ---------- ---------- ---------- 
+Q4T574.1/239-596    ---------- ---------- ---------- ---------- ---------- 
+Q4T574.1/639-850    ---------- ---------- ---------- ---------- ---------- 
+Q4T574.1/894-1324   ---------- ---------- ---------- ---------- ---------- 
+Q4T574.1/1322-1473  LVLRNLTPQI DGSTLRTLCM QHGPLITFHL NLTQGNAVVR YSSKDEAAKA 
+Q8BKI2.2/38-1167    ---------- ---------- ---------- ---------- ---------- 
+Q8BKI2.2/1167-1691  LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+Q8BWL0.1/2-169      ---------- ---------- ---------- ---------- ---------- 
+Q8BWL0.1/169-693    LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+Q8NDV7.2/20-121     ---------- ---------- ---------- ---------- ---------- 
+Q8NDV7.2/119-1847   LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+Q8SY33.1/6-1183     LLLKNLTAQI DGPTLRTLCM QHGPLVSFHP YLNQGIALCK YTTREEANKA 
+Q9HCJ0.3/4-822      ---------- ---------- ---------- ---------- ---------- 
+Q9HCJ0.3/810-1437   ---------- ---------- ---------- ---------- ---------- 
+Q9HCJ0.3/1434-1580  LVLRNLTPQI DGSTLRTLCL QHGPLITFHL NLTQGNAVVR YSSKEEAAKA 
+Q9UPQ9.4/2-1714     LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+B4H887.1/32-1036    LLLKNLTAQI DGPTLRTLCM QHGPLVSFHL YLNQGIALCK YTTREEASKA 
+Q3TRK2.1/1-88       ---------- ---------- ---------- ---------- ---------- 
+Q3TRK2.1/88-612     LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+Q8BNF0.2/9-877      ---------- ---------- ---------- ---------- ---------- 
+B4MF11.1/6-1186     LLLKNLNAQI DGSTLRTLCM QHGPLVSFHP YLNQGIALCK YTTREEANKA 
+B4NHM7.1/6-1235     LLLKNLTAQI DGPTLRTLCM QHGPLVSFHL YLNQGIALCK YATREESNKA 
+D0Z7B2.1/6-1203     LLLKNLNAQI DGSTLRTLCM QHGPLVSFHP YLNQGIALCK YTTREEANKA 
+B4JZV3.1/6-1211     LLLKNLNAQI DGPTLRTLCM QHGPLVSFHP YLNQGIALCK YATREEANKA 
+Q1LZM4.1/2-292      ---------- ---------- ---------- ---------- ---------- 
+Q1LZM4.1/292-736    ---------- ---------- ---------- ---------- ---------- 
+Q4S4D3.1/1-379      ---------- ---------- ---------- ---------- ---------- 
+Q4S4D3.1/395-556    ---------- ---------- ---------- ---------- ---------- 
+Q4S4D3.1/557-654    ---------- ---------- ---------- ---------- ---------- 
+Q4S4D3.1/651-825    ---------- ---------- ---------- ---------- ---------- 
+Q4S4D3.1/823-1014   LVLSNLTPQI DGSTLRTICM QHGPLLTFHL GLTQGNALIR YNSKQEAAKA 
+Q4S4D3.1/1091-1092  ---------- ---------- ---------- ---------- ---------- 
+Q3UUG8.1/1-613      LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+C3ZJT1.1/159-315    ---------- ---------- ---------- ---------- ---------- 
+C3ZJT1.1/328-369    ---------- ---------- ---------- ---------- ---------- 
+C3ZJT1.1/371-689    ---------- ---------- ---------- ---------- ---------- 
+C3ZJT1.1/730-1268   LILKNLTPQI DGSTLRTLCM QHGPLLTFHL NLSQGCALVC YMSKEEAAKA 
+B0WTJ5.1/228-1292   VLLKNLTAQI DGSTLRTLCM QHGPVQNFHL YLNHGIALCK YLSREEANKA 
+Q8BXM6.1/4-513      LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+Q99JR3.2/24-541     LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+Q172C6.1/6-1041     ILLKNLTTQI DGPTLRTLCM QHGPLQNFHL YLNHGIALCK YQSREEANKA 
+B4L7C4.1/6-1178     LLLKNLTAQV CEKLFLLLCI ---------- ---------- ---------- 
+Q172C7.1/363-538    ---------- ---------- ---------- ---------- ---------- 
+Q172C7.1/573-1399   LLLKNLTPQI DVATLRTLCM QHGPLQNLQL YANHGLALIK YSSREEANKA 
+Q6P7B1.1/2-313      LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+Q3UQ45.1/7-386      LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+Q4T0A8.1/27-228     ---------- ---------- ---------- ---------- ---------- 
+Q4T0A8.1/329-402    ---------- ---------- ---------- ---------- ---------- 
+Q4T0A8.1/405-529    ---------- ---------- ---------- ---------- ---------- 
+Q4T0A8.1/526-678    LVLRNLTPQI DGSTLRTLCM QHGPLITFHL NLTQGSAVVR YSSKDEAAKA 
+B7ZB91.1/13-478     LVLHNLTPQ- ---------- ---------- ---------- ---------- 
+Q7Q3B9.4/7-766      ---------- ---------- ---------- ---------- ---------- 
+Q7Q3B9.4/781-1165   LLLKNLTAQI DGSTLRTLCM QHGPLQNFHL YLNHGIALCK YLTREEANKA 
+Q8BX83.2/38-410     ---------- ---------- ---------- ---------- ---------- 
+Q172C8.1/192-646    ---------- ---------- ---------- ---------- ---------- 
+Q172C8.1/672-1173   ILLKNLSAQI DGPTLRTLCI QHGPLLAFHL YLNHGIALCK YSTREEANKA 
+B0WXH0.1/311-1189   ---------- ---------- ---------- ---------- ---------- 
+B0WXH0.1/1191-1389  LLLKNLTSQI DGATLRTLCM QHGPLQSLQL YPNHGLALCK YSSREEASKA 
+B0R1E2.1/1-289      ---------- ---------- ---------- ---------- ---------- 
+B0R1E2.1/290-439    LVLRNLTPQI DGSTLRTLCM QHGPLITFHL NLTQGNAVVR YSSKEEAAKA 
+B1H1W1.1/13-388     ---------- ---------- ---------- ---------- ---------- 
+A7UUT0.1/13-626     ---------- ---------- ---------- ---------- ---------- 
+A7UUT0.1/686-771    ---------- ---------- ---------- ---------- ---------- 
+A7UUT0.1/838-1165   IMLRNLTAQI EGSTLRTLCL QHGPVVNFHL YLNQGIALCK YGTREEAQKA 
+Q66JU9.1/2-193      LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+B4DKJ5.1/2-276      ---------- ---------- ---------- ---------- ---------- 
+Q8BWM2.1/1-223      LVLKNLTPQI DGSTLRTLCM QHGPLITFHL NLPHGNALVR YSSKEEVVKA 
+A0NFA3.2/8-516      ---------- ---------- ---------- ---------- ---------- 
+A0NFA3.2/687-1082   LLLKNFTSQI DASTLRTLCM QHGPILTFHS YPAHGLALCR YATREEAAKA 
+B7PWH5.1/252-389    ---------- ---------- ---------- ---------- ---------- 
+B7PWH5.1/349-695    ---------- ---------- ---------- ---------- ---------- 
+B7PWH5.1/720-969    LAKQ---ARI DGSTLKTLCM QHGPLQLFHL FLKHGLALAQ YSSREEAAKA 
+Q8VD67.1/1-130      LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+Q148P0.1/1-130      LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+Q9JHZ1.1/1-130      LVLHNLTPQI DGSTLRTICM QHGPLLTFHL NLTQGTALIR YSTKQEAAKA 
+B0WXG8.1/386-1198   ---------- ---------- ---------- ---------- ---------- 
+B0WXG8.1/1199-1242  ---------- ---------- -HGPLLAFHV YLHHGIALCK YSSRDEATKA 
+Q4TA89.1/1-282      LLLSNLTPQI DGSTLRTICM QHGPLLTFHL GLTQGSALIR YSSQQEAVKA 
+Q4T0A9.1/1-255      ---------- ---------- ---------- ---------- ---------- 
+Q4T0A9.1/370-579    ---------- ---------- ---------- ---------- ---------- 
+Q6ZPQ4.1/1-243      ---------- ---------- ---------- ---------- ---------- 
+Q4TA88.1/5-275      ---------- ---------- ---------- ---------- ---------- 
+Q4TA88.1/319-457    ---------- ---------- ---------- ---------- ---------- 
+B3KSX2.1/4-277      ---------- ---------- ---------- ---------- ---------- 
+B8RJB3.1/9-266      ---------- ---------- ---------- ---------- ---------- 
+A7SDW4.1/430-1260   ---------- ---------- ---------- ---------- ---------- 
+A7SDW4.1/1319-1584  LVLRNLSPRA DPTAMRAVCQ QYGPLLTFTL NLRHGNSLIR YSNKDQAASA 
+A8PU70.1/566-908    ---------- ---------- ---------- ---------- ---------- 
+Q4T5V2.1/1-136      ---------- ---------- ---------- ---------- ---------- 
+B4DST4.1/1-168      ---------- ---------- ---------- ---------- ---------- 
+B3RQ20.1/1143-1332  ILIKGFSSQV DENLLQALCL QHGRITEFVF DPRKRAVFVS YSSVDEAVRA 
+Q8BXV9.1/2-142      ---------- ---------- ---------- ---------- ---------- 
+A7T6Q0.1/2-56       ---------- DPTAMRAVCQ QYGPLLTFTL NLRHGNSLIR YSNKDQAASA 
+C1K8B6.1/4-244      ---------- ---------- ---------- ---------- ---------- 
+C1K890.1/4-244      ---------- ---------- ---------- ---------- ---------- 
+A5BE57.1/246-278    ---------- ---------- ---------- --SRGFGFVN FESPDEAKKA 
+A5BE57.1/307-381    LYVKNLDASV DDDKLQESCG QIAKVMRHDS GLSKGFGFVC FSTSEEAQKA 
+C1K8V5.1/4-177      ---------- ---------- ---------- ---------- ---------- 
+Q2GV87.1/66-278     ---------- ---------- ---------- ---------- ---------- 
+Q8MSF0.1/1-14       ---------- ---------- ---------- ---------- ---------- 
+B4H886.1/6-148      ---------- ---------- ---------- ---------- ---------- 
+A9USE7.1/720-774    LLVKNLPFAA EEKTLRPLFE AHGDLSNFVM PPSRTMALVE YMEPSEARR- 
+A9USE7.1/997-1077   LVVRNIAFEA TPKEVQQLFS PHGNIVSVRL PRKQGFAFIE FSTKQEARDA 
+C5WVW4.1/223-289    IFIGNLDPNV TEDELRQICV QFGELIYVKI PVGKGCGFVQ YASRASAEEA 
+P20105.2/153-385    ---------- ---------- ---------- ---------- ---------- 
+P20105.2/537-654    ---------- ---------- ---------- ---------- ---------- 
+C4IYK3.1/223-290    IFIGNLDPNV IEDELRQICV QFGELIYVKI PVGKGCGFVQ YASRASAEEA 
+B6UA93.1/223-290    IFIGNLDPNV IEDELRQICV QFGELIYVKI PVGKGCGFVQ YASRASAEEA 
+B9RQB9.1/109-178    LYVKNLDASI DSAGLQSLFS KFGTILSCKV VEEHGYGFVQ FDSEDSALAA 
+B9RQB9.1/236-270    ---------- ---------- ---------- GKSRGFGFVD FESPEDAKKA 
+B9RQB9.1/300-374    LYVKNLALCI DNDKLQELFS CSGKIVSYDN GASRGFGFVC FSSPEEAKKA 
+B8APB9.1/226-292    IFIGNLDQNV TEDELRQICV QFGELIYVKI PANKACGFVQ YASRASAEEA 
+Q10R21.1/226-292    IFIGNLDQNV TEDELRQICV QFGELIYVKI PANKACGFVQ YASRASAEEA 
+Q0DUQ0.1/248-314    IFIGNLDQNV TEDELRQICV QFGELIYVKI PANKACGFVQ YASRASAEEA 
+Q8BZH2.1/5-63       ---------- ---------- ---------- ---------- ---------- 
+B4PJL3.1/173-393    ---------- ---------- ---------- ---------- ---------- 
+B4PJL3.1/533-654    ---------- ---------- ---------- ---------- ---------- 
+B5DF80.1/306-375    LYVKNLDDGI DDERLRKEFS PFGTITSAKV TMSKGFGFVC FSSPEEATKA 
+C1GEW9.1/11-129     ---------- ---------- ---------- ---------- ---------- 
+C1GVG2.1/279-439    ---------- ---------- ---------- ---------- ---------- 
+B2GUY3.1/194-262    -YIKNFGEEV DDENLRELFS QFGKTLSVKV GKSKGFGFVS YEKHEDANKA 
+B2GUY3.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+B3M4K4.1/89-378     ---------- ---------- ---------- ---------- ---------- 
+B3M4K4.1/533-691    ---------- ---------- ---------- ---------- ---------- 
+D4AC14.1/194-262    -YIKNFGEEV DDENLRELFS QFGKTLSVKV GKSKGFGFVS YEKHEDANKA 
+D4AC14.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+Q4T1P6.1/6-46       ---------- ---------- ---------- ---------- ---------- 
+D4AC21.1/123-191    -YIKNFGEEV DDENLRELFS QFGKTLSVKV GKSKGFGFVS YEKHEDANKA 
+D4AC21.1/225-294    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+C5WPD4.1/242-292    ---------- ---------- QFGPIVSVKI MSSLGFGFVS FQNPESAIKA 
+B9GH32.1/107-174    LFVKNLDFSI SSSCLESIFS KYGTILSCKV ARSKGFGFVQ FESQDSALVA 
+B9GH32.1/295-362    LYVKNLNVDI DDKKLKEVFS AYGKILSVKV GTSKQFGFVC FASPEEANKA 
+A5B3Z9.1/212-283    LYIKNLDPDV TEEALREKFF EFGKIASLVI GMSRGFGFVN FESPEDAKRA 
+Q6IQ30.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+O04319.1/114-183    LYVKNLDSSI TSSCLERMFC PFGSILSCKV GQSKGFGFVQ FDTEQSAVSA 
+O04319.1/304-375    LYVKNLSESM NETRLREIFG CYGQIVSAKV MCSKGFGFVC FSNCEESKQA 
+P31209.2/366-435    LFIKNLQDEV DDERLKAEFS AFGTITSAKI MTSKGFGFVC YTTPEEANKA 
+B2RXY9.1/193-253    IYVKNLHANV DEQRLQDLFS QFGNMQSVKV GQSRGFGFVN FEKHEEAQKA 
+B2RXY9.1/296-365    LYVKNLDDSI NDERLKEVFS TYGVITSAKV SHSKGFGFVC FSSPEEATKA 
+A2A5N3.1/193-253    IYVKNLHANV DEQRLQDLFS QFGNMQSVKV GQSRGFGFVN FEKHEEAQKA 
+A2A5N3.1/296-365    LYVKNLDDSI NDERLKEVFS TYGVITSAKV SHSKGFGFVC FSSPEEATKA 
+Q9D4E6.1/307-375    -YVKNLDDGI DDERLRKEFS PFGTITSAKV TMSKGFGFVC FSSPEEATKA 
+Q4VC03.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+Q13310.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+D3Z5M2.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+A4IFC3.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+B1ANR0.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+B4NNJ8.1/320-445    ---------- ---------- ---------- ---------- ---------- 
+D2I596.1/309-378    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+B4JL62.1/290-395    ---------- ---------- ---------- ---------- ---------- 
+C5YBU9.1/128-201    IFIKNLDKTI DNKTLHETFS SFGTILSCKV AMSKGFGFVQ YEKEEAAQNA 
+C5YBU9.1/329-399    LYLKNLDDSI GDDQLRELFS NFGKITSYKV GLSKGSGFVA FSTREEASQA 
+Q99LF8.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+C0PPV9.1/259-363    IFVGRLDPNA TDEDLRQVFG QYGELVSVKI PVGKGCGFVQ FGNRASAEEA 
+Q91YZ8.1/296-365    LYIKNLDDTI DDEKLRREFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+B9GNX9.1/266-364    IFVGGLDPNV TDEDLKQPFS QYGEIVSVKI PVSKGCGFVQ FANRNNAEEA 
+A3KFU8.1/296-365    LYIKNLDDTI DDEKLRREFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+B9N4W3.1/235-341    IFVGGIDSDV TDEDLRQPFS QFGEVVSVKI PVGKGCAFVQ FANRKNAEDA 
+Q6PHQ9.1/296-365    LYIKNLDDTI DDEKLRREFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+B9MVK8.1/264-361    IFVGGLDPNV TDEDLKQPFS QYGEIVSVKI PVGKGCGFVQ FANRDNAEEA 
+D3AVQ3.1/284-354    LYIKNLDDSI DSDKLRATFS AYGTITSSKV SSSKGFGFVC YSTPDEASKA 
+A3KFU5.1/296-365    LYIKNLDDTI DDEKLRREFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+A5BPW5.1/140-241    IFVGGLDPNV SDEDLRQPFS QYGEIVSVKI PVGKGCGFVQ FANRNNAEDA 
+Q3UX16.1/225-294    LYIKNLDDTI DDEKLRREFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+C0PT30.1/259-364    IFVGRLDPNA TDEDLRQVFG QYGELVSVKI PVGKGCGFVQ FGNRASAEEA 
+B4K3C6.1/67-191     ---------- ---------- ---------- ---------- ---------- 
+C4Q4K6.1/224-340    IFVYNLSPEV EESNLWHLFG PFGAVQSIKI NKCKGFAFVT MSNYEEAVLA 
+B9H7X8.1/113-180    VFIKNLDTSI DNKALQETFA SFGPVLSCKV AVSKGYGFVQ FENEEAAQSA 
+B9H7X8.1/304-377    LYLKNLDDKI DDEKLKELFS EFGSITSCKV MLSKGSGFVA FSTPEEASRA 
+B3S2W8.1/76-163     IFVGDLSPDI DTTLLRSAFN QFGHVSDARV GKPRGYGFVS YQFKHEAENA 
+B3S2W8.1/165-267    VYVGNLSAGT TEETLRRIFI PFGPIADIRV FPDKNYAFIR YMSHDHATNA 
+Q6CDH3.1/332-401    LYIKNLDDTI DDDKLRAEFA PHGTITSAKV MVSKGFGFVC YSSPEEATKA 
+B9R7H3.1/281-377    IFVGGLDPNV TDEDLKQPFS QYGEIVSVKI PVGKGCGFVQ FASRSNAEEA 
+Q7T3G5.1/297-366    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+Q3UTA6.1/197-266    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FPSREEATKA 
+B3NHT3.1/152-330    ---------- ---------- ---------- ---------- ---------- 
+B4MHJ9.1/106-306    ---------- ---------- ---------- ---------- ---------- 
+A5BF74.1/281-378    IFVGGLDSEV TDEDLRQSFS QFGEVVSVKI PVGKGCGFVQ FANRNSAEDA 
+Q8QGJ7.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+B4J985.1/306-430    ---------- ---------- ---------- ---------- ---------- 
+B8LRZ2.1/277-352    IFVGGLDPSV TDEMLRQLFG QFGELVHVKI PVGKRCGFVQ FNNRASAEEA 
+A5E351.1/72-416     ---------- ---------- ---------- ---------- ---------- 
+D2H6M0.1/296-365    LYVKNLDDSI DDEKLRKEFS PYGVITSAKV MTSKGFGFVC FSSPEEATKA 
+O42323.1/299-489    ---------- ---------- ---------- ---------- ---------- 
+A9NX92.1/275-351    IFVGGLDPSV TDEMLRQLFG QFGELVHVKI PVGKRCGFVQ FNNRASAEEA 
+B9GT62.1/311-387    LYLKNLGDTI DEERLKELFS EFGSITSCKV MLSKGSGFVA FSTPEEASRA 
+Q5KBW2.1/367-401    ---------- ---------- ---------- GVSRGFGFVC YSSPDEATKA 
+Q2PEV8.1/238-322    IFVGNLDPNV TDDHLRQVFS QYGELVHVKI PSGKRCGFVQ FSDRSSAEEA 
+B6U4M0.1/324-393    LYLKNLDDSI GDDQLRELFS NFGKITSCKV GLSKGSGFVA FSTREEASQA 
+A8NF86.1/337-404    --IKNLEDDV DDDKLRAEFE PFGTITSCKV GQSKGFGFVC FSSPDEATKA 
+B4N2I1.1/44-159     ---------- ---------- ---------- ---------- ---------- 
+Q2I2V8.1/539-606    LHLSNIPPTV DEDTLKEAFS QHGTVANFKF FPKRKMALLQ MGSVEEAIHA 
+B3MYX8.1/14-153     ---------- ---------- ---------- ---------- ---------- 
+Q4RNX8.1/296-365    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+D1ZFW1.1/794-871    ---------- ---------- ---------- ---------- ---------- 
+B9RIB9.1/231-294    IFVGNLDPNV TEEELRPIFL QFGEIVYVKI PVGRGCGFVQ FATRASAEEA 
+C0SAP5.1/281-410    ---------- ---------- ---------- ---------- ---------- 
+B9HRX8.1/250-356    IFVGGIDSDV TDEDLRQPFS QFGEVVSVKM PTGKGCAFVQ FANRKNAEDA 
+Q7SGG0.1/13-167     ---------- ---------- ---------- ---------- ---------- 
+Q9FPJ8.1/236-325    IFVGGLDANV TDDELKSIFG QFGELLHVKI PPGKRCGFVQ YANKASAEHA 
+Q9FFU0.1/236-325    IFVGGLDANV TDDELKSIFG QFGELLHVKI PPGKRCGFVQ YANKASAEHA 
+A5E1Y8.1/358-537    ---------- ---------- ---------- ---------- ---------- 
+Q15164.1/107-176    LYIKNLDDTI DDEKLRKEFS PFGSITSAKV MLSKGFGFVC FSSPEEATKA 
+D3ZAS7.1/296-365    LYVKNLDDSI NDDRLKEVFS TYGVITSAKV SHSKGFGFVC FSSPEEATKA 
+B6K033.1/364-434    LFIKNLSDEV DDNLLKTEFS AFGTITSAKV MTSKGFGFVC YSSPEEATKA 
+Q5TST0.3/683-841    ---------- ---------- ---------- ---------- ---------- 
+B6K6T8.1/356-424    -FVKNLQDEI DDERLKSEFS AFGTITSAKV NKSKGFGFVC YSNPEEATKA 
+C1GDP1.1/281-415    ---------- ---------- ---------- ---------- ---------- 
+B9H7X9.1/314-387    LYLKNLDDKI DDEKLKELFS EFGSITSCKV MLSKGSGFVA FSTPEEASRA 
+Q7Q9F7.4/282-381    LFFRNLAYSV QESDIRTLFE QYGPVAEVDV PIDKGFGTVT FMIPEHAVTA 
+Q10N87.1/216-288    LYMKNLDDDI TEELIKLKFS QYGLVISVKI GTSKGFGFVS FQNPESAKRA 
+A3F293.1/10-109     ---------- ---------- ---------- ---------- ---------- 
+B4JPX4.1/284-409    ---------- ---------- ---------- ---------- ---------- 
+Q8RXR5.1/110-177    IFIKNLDESI DHKALHDTFS SFGNIVSCKV AVSKGYGFVQ YANEESAQKA 
+P42731.1/126-193    IFIKNLDESI DHKALHDTFS SFGNIVSCKV AVSKGYGFVQ YANEESAQKA 
+Q2VIP3.1/296-365    LYVKNLDDGI DDERLRKAFS PFGTITSAKV MMSKGFGFVC FSSPEEATKA 
+A3F295.1/6-117      ---------- ---------- ---------- ---------- ---------- 
+A9S4M3.1/42-65      ---------- ---------- ---------- --QQGCCFVK YSTVEEADRA 
+Q54BM2.1/286-356    LYIKNIDDSI DNDKLREVFS QFGTITSAKA TTSKGFGFVC YTAPDEATRA 
+Q3ZCS4.1/296-365    LYVKNLDDGI DDERLRKAFS PFGTITSAKV MMSKGFGFVC FSSPEEATKA 
+A3F290.1/9-110      ---------- ---------- ---------- ---------- ---------- 
+A9TLC5.1/312-382    LYLKNLDDTV DDEKLRELFA DYGTITSCKV GQSRGSGFVA FSSPEEATRA 
+A5E7X5.1/33-235     ---------- ---------- ---------- ---------- ---------- 
+A3F299.1/12-111     ---------- ---------- ---------- ---------- ---------- 
+Q5VX58.1/296-365    LYVKNLDDGI DDERLRKAFS PFGTITSAKV MMSKGFGFVC FSSPEEATKA 
+Q9H361.2/296-365    LYVKNLDDGI DDERLRKAFS PFGTITSAKV MMSKGFGFVC FSSPEEATKA 
+Q2VIN9.1/296-365    LYVKNLDDAI DDERLRKAFS PFGTITSAKV MMSKGFGFVC FSSPEEATKA 
+A9T3C5.1/56-79      ---------- ---------- ---------- --QQGCCFVK YSTVEEAERA 
+Q4PF35.1/18-283     ---------- ---------- ---------- ---------- ---------- 
+C5WUD2.1/243-339    VFVGGLDPSV TDELLKQTFS PYGELLYVKI PVGKRCGFVQ YSNRASAEEA 
+Q4P8R9.1/368-401    ---------- ---------- ---------- -VSRGFGFVC YSAPEEANKA 
+Q55F37.1/112-343    ---------- ---------- ---------- ---------- ---------- 
+Q54LR6.1/53-262     ---------- ---------- ---------- ---------- ---------- 
+B4NBP3.1/171-277    VYCGGFPPNI SDDLMHKHFM QFGPIQDVRV FKEKGFAFIK FVTKEAAARA 
+D3B9K1.1/622-823    ---------- ---------- ---------- ---------- ---------- 
+B8AL31.1/216-288    LYMKNLDDDI TEELIKLKFS QYGLVISVKI GTSKGFGFVS FQNPESAKRA 
+Q4P3Y1.1/128-184    ---------- ---------- ---------- ---------- ---------- 
+Q4VXU2.1/296-365    LYVKNLDDSI DDDKLRKEFS PYGVITSAKV MTSKGFGFVC FSSPEEATKA 
+Q9VYA6.1/174-225    ---------- ---------- ---------- ---------- ---------- 
+Q25AW7.1/146-228    ---------- ---------- ---------- ---------- ---------- 
+Q2VIN7.1/296-365    LYVKNLDDGI DDERLRKAFS PFGTITSAKV MMSKGFGFVC FSSPEEATKA 
+D0N277.1/201-234    ---------- ---------- ---------- -RSKGCGLVE YATEDEAAKA 
+Q6R969.1/253-362    VFVGGLDSEV TDEELRQSFS QFGNVVSVKI PAGKGCGFVQ FSERSAAEDA 
+B4KT28.1/222-266    ---------- ---------- ---------- ---------- ---------- 
+Q98SP8.2/296-365    LYVKNLDDGI DDDRLRKEFL PYGTITSAKV MTSKGFGFVC FSSPEEATKA 
+B9RY32.1/285-382    IFVGGIDSDI SDEDLRQPFS QFGEVVSVKI PAGKGCGFVQ FADRKSAEDA 
+B4NP54.1/2-69       ---------- ---------- ---------- ---------- ---------- 
+Q86KE5.1/77-311     ---------- ---------- ---------- ---------- ---------- 
+Q2V9C2.1/258-357    VFVGGLDSDV TDEELRQSFS QFGNVVSVKI PAGKGCGFVQ FSERSAAEDA 
+Q9LEB4.1/261-347    IFVGGLDPTV AEEHLRQVFS PYGELVHVKI VAGKRCGFVQ FGTRASAEQA 
+Q4P2T9.1/335-396    ---------- ---------- ---------- ---------- ---------- 
+A5C5B3.1/256-335    IFVGGLDSNV TDDYLRQVFS QYGELVHVKI PVGKRCGFVQ FANRACAEQA 
+B3MKU5.1/256-639    ---------- ---------- ---------- ---------- ---------- 
+Q86NT0.1/173-270    ---------- ---------- ---------- ---------- ---------- 
+A8NN12.1/68-136     ---------- ---------- ---------- ---------- ---------- 
+A3CUY7.1/2-69       LYVGNLTYSV NEEQLKELFS QYGTVNDVRV IERKGFGFVE MSSPEEAEAA 
+B0X8C2.1/150-263    ---------- ---------- ---------- ---------- ---------- 
+A5E3S9.1/278-450    ---------- ---------- ---------- ---------- ---------- 
+Q9FX88.1/338-415    IFVGGLDADV TEEDLMQPFS DFGEVVSVKI PVGKGCGFVQ FANRQSAEEA 
+Q54X31.1/100-217    ---------- ---------- ---------- ---------- ---------- 
+Q10HZ8.1/240-333    VFVGGLDPSV TDEVLKQAFS PYGELVYVKI PVGKRCGFVQ YSNRASAEEA 
+Q9AY92.1/240-333    VFVGGLDPSV TDEVLKQAFS PYGELVYVKI PVGKRCGFVQ YSNRASAEEA 
+Q10HZ7.1/240-333    VFVGGLDPSV TDEVLKQAFS PYGELVYVKI PVGKRCGFVQ YSNRASAEEA 
+B8AKU6.1/240-333    VFVGGLDPSV TDEVLKQAFS PYGELVYVKI PVGKRCGFVQ YSNRASAEEA 
+Q2V9A1.1/201-306    IFVGGLDSDV TDEELRQSFT QFGEVVSVKI PAGKGCGFVQ FSDRSSAQEA 
+A2YEJ5.1/343-416    LYLKNLDDDI NDEHLRKLFE CFGEVASCKV MLSKGCGFVS FATVEDANNA 
+B4KQM5.1/242-419    ---------- ---------- ---------- ---------- ---------- 
+Q69X94.1/342-415    LYLKNLDDDI NDEHLRKLFE CFGEVASCKV MLSKGCGFVS FATVEDANNA 
+Q8LBV8.1/233-325    VFVGGLDASV TDDHLKNVFS QYGEIVHVKI PAGKRCGFVQ FSEKSCAEEA 
+C0P488.1/242-336    VFVGGLDPSV TDELLKQTFS PYGELLYVKI PVGKRCGFVQ YSNRASAEEA 
+B3M300.1/220-284    VYCGGFPPNI SDDLMHKHFV QFGPIQDVRV FKDKGFAFIK FVTKEAAARA 
+Q9SAB3.1/234-326    VFVGGLDASV TDDHLKNVFS QYGEIVHVKI PAGKRCGFVQ FSEKSCAEEA 
+Q0DQQ8.1/284-377    VFVGGLDPSV TDEVLKQAFS PYGELVYVKI PVGKRCGFVQ YSNRASAEEA 
+C0PFW8.1/269-336    LIVKNINPGI EGSDLRALFQ QYGDVQTFDT SCSHGIVTVS YYDIRAAQDA 
+C0HHH3.1/270-337    LIVKNINPGI EGSDLRALFQ QYGDVQTFDT SCSHGIVTVS YYDIRAAQDA 
+Q9M6E6.1/117-184    IFIKNLDKAI DHKALHDTFS AFGNILSCKV AVSKGYGFVQ YDSEEAAQKA 
+Q2FSR7.1/6-69       LYVGNLTYSV KEDQLKDLFS QYGDVVSVKI IEQKGFGFVE MGTSEEAQAA 
+C0SUE2.1/77-175     ---------- ---------- ---------- ---------- ---------- 
+A0CJW3.1/434-742    ---------- ---------- ---------- ---------- ---------- 
+B4ME65.1/311-417    ---------- ---------- ---------- ---------- ---------- 
+B9I0E1.1/253-334    IFVGALDPSV TDDTLRAVFS KYGELVHVKI PAGKRCGFVQ FANRTSAEQA 
+Q8LFI9.1/244-343    IFVGGIDPDV IDEDLRQPFS QFGEVVSVKI PVGKGCGFVQ FADRKSAEDA 
+B4PH83.1/181-247    ---------- ---------- ---------- ---------- ---------- 
+B9FTY9.1/365-439    LYLKNLDDDI NDEHLRKLFE CFGEVASCKV MLSKGCGFVS FATVEDANNA 
+B3M562.1/702-895    ---------- ---------- ---------- ---------- ---------- 
+C4QZM5.1/235-294    VFVKNFDTES TEDELRELFE SYGPITSIHL QVNKGFGFVN FAEHDDAVKA 
+D3BFK6.1/320-381    ------NLSI TEDQIRTIFS QHGDLEFVKL HVKPGLAFVQ FKASESAQKA 
+A3GHN7.2/350-468    VFVGGLSSEV TESTLFTLFK PFGIIQQVKI PPGKNCGFIK YSTREEAEEA 
+Q54C48.1/271-342    LWLGNVNSNV SYELLKQIFD QFGNVDTIRI LHGRGCAFVN FFTVESAAAA 
+Q0WW84.1/287-386    IFVGGIDPDV IDEDLRQPFS QFGEVVSVKI PVGKGCGFVQ FADRKSAEDA 
+Q54FL0.1/951-1244   ---------- ---------- ---------- ---------- ---------- 
+B4MC02.1/171-283    VYCGGFPPNI SDELMHKHFM QFGPIQDVRV FKDKGFAFIK FVSKEAAARA 
+A7AT74.1/621-689    -IVKNLAFQA TKQDLYKLFS FYGNVKSVRI SNNRGFAFVE YSSKQESARA 
+Q9LJL7.1/287-386    IFVGGIDPDV IDEDLRQPFS QFGEVVSVKI PVGKGCGFVQ FADRKSAEDA 
+B4NE44.1/470-686    ---------- ---------- ---------- ---------- ---------- 
+A0BQD1.1/165-319    ---------- ---------- ---------- ---------- ---------- 
+Q05196.2/328-400    LYLKNLDDSV NDEKLKEMFS EYGNVTSCKV GLSRGFGFVA YSNPEEALLA 
+A9TFH5.1/223-287    IFVGGLDPAV GDEDLRNVFG QFGELVYVKI PAGKGCGFVQ FTHRACAEEA 
+A1C5H3.1/188-267    ---------- ---------- ---------- ---------- ---------- 
+A9NWA0.1/248-328    IFVGGLDPNA TDEDLRQVFG PFGEIVYVKI PVGKGCGFVQ FTNRSSAEEA 
+B4JY35.1/15-92      ---------- ---------- ---------- ---------- ---------- 
+D0H0K7.1/432-591    ---------- ---------- ---------- ---------- ---------- 
+Q6DGV1.1/174-209    ---------- ---------- ---------- --SKGCAFVK YSTHAEAQAA 
+B4KN27.1/225-337    ---------- ---------- ---------- ---------- ---------- 
+B3NV15.1/1200-1273  ---------- ---------- ---------- ---------- ---------- 
+B5LEQ5.1/179-214    ---------- ---------- ---------- --SKGCAFVK YSSHAEAQAA 
+Q6C9A9.1/660-764    ---------- ---------- ---------- ---------- ---------- 
+B4JIH9.1/171-286    VYCGGFQPHI SDELMHKHFM QFGPIQDVRV FKDKGFAFIK FVAKEAAARA 
+Q5TSQ4.3/457-676    ---------- ---------- ---------- ---------- ---------- 
+A9TZW4.1/245-319    IFVGGLDPAV GDEDLRNVFG QFGELVYVKI PAGKGCGFVQ FTHRACAEEA 
+B4PZT3.1/1188-1272  ---------- ---------- ---------- ---------- ---------- 
+D4APH2.1/480-541    LLLKNFTYGV SSEDIRKLCE PFGQLTRLLM PPSGTIAIVE FAMPDEALRA 
+D3BH34.1/115-236    ---------- ---------- ---------- ---------- ---------- 
+C4XVP0.1/46-78      ---------- ---------- ---------- --SKGSAFVR YADRETALSA 
+C5GQY8.1/409-612    ---------- ---------- ---------- ---------- ---------- 
+B4L803.1/240-323    ---------- ---------- ---------- ---------- ---------- 
+C5DIP1.1/2-75       VYVGNVDPKV SKELLYELFL QIGPVAKIRL QTHQGFAFVE FNSPQDAEYA 
+D3B7T2.1/209-345    ---------- ---------- ---------- ---------- ---------- 
+
+Q9UPQ9.4/2-1714     QTALHMCVLG NTTIL
+A8MYY3.2/16-949     ---------- -----
+A8MYY3.2/946-1098   ---------- -----
+A8MYY3.2/1098-1618  QTALHMCVLG NTTIL
+B0QY77.1/1-879      ---------- -----
+B0QY77.1/879-1390   QTALHM---- -----
+B1ATC3.1/2-1028     ---------- -----
+B1ATC3.1/1015-1647  ---------- -----
+B1ATC3.1/1646-1790  QKSLHMCVLG NTTIL
+B3N1G0.1/6-1168     QMALNNCVLA NTTIF
+B3P9S0.1/6-1187     QMALNNCVLA NTTIF
+B4E231.1/1-251      ---------- -----
+B4E231.1/251-762    QTALHM---- -----
+B4IIY1.1/6-1184     QMALNNCVLA NTTIF
+B4PW21.1/6-1181     QMALNNCVLA NTTIF
+B4R2G2.1/6-1123     QMALNNCVLA NTTIF
+B5ME23.2/16-165     ---------- -----
+B5ME23.2/165-368    ---------- -----
+B5ME23.2/368-888    QTALHMCVLG NTTIL
+B7ZC94.1/2-868      ---------- -----
+B7ZC94.1/855-1477   ---------- -----
+B7ZC94.1/1478-1622  QKSLHMCVLG NTTIL
+C9J5L7.1/16-949     ---------- -----
+C9J5L7.1/946-1098   ---------- -----
+C9J5L7.1/1098-1618  QTALHMCVLG NTTIL
+C9JA83.1/3-471      ---------- -----
+C9JA83.1/468-986    QKSLHMCVLG NTTIL
+C9JAR8.1/20-121     ---------- -----
+C9JAR8.1/119-1283   ---------- -----
+C9JAR8.1/1280-1798  QKSLHMCVLG NTTIL
+D2GZL8.1/5-902      ---------- -----
+D2GZL8.1/900-1051   ---------- -----
+D2GZL8.1/1051-1571  QTALHMCVLG NTTIL
+D2H997.1/2-866      ---------- -----
+D2H997.1/853-1477   ---------- -----
+D2H997.1/1476-1620  QKSLHMCVLG NTTIL
+D2I222.1/1-1790     QKSLHMCVLG NTTIL
+D3ZRA6.1/2-1000     ---------- -----
+D4A372.1/1-97       ---------- -----
+D4A372.1/95-1822    QKSLHMCVLG NTTIL
+Q05CE3.1/20-1014    ---------- -----
+Q29CP6.2/6-1206     QMALNNCVLG NTTIF
+Q3TRH0.1/1-49       ---------- -----
+Q3TRH0.1/46-194     ---------- -----
+Q3TRH0.1/194-719    QTALHMCVLG NTTIL
+Q3UHC0.2/4-818      ---------- -----
+Q3UHC0.2/805-1437   ---------- -----
+Q3UHC0.2/1436-1580  QKSLHMCVLG NTTIL
+Q3UHK8.1/20-1269    ---------- -----
+Q3UHK8.1/1266-1782  QKSLHMCVLG NTTIL
+Q4S9I4.1/33-1574    ---------- -----
+Q4S9I4.1/1569-1729  QKSLHMCVLG NTTIL
+Q4T574.1/1-220      ---------- -----
+Q4T574.1/239-596    ---------- -----
+Q4T574.1/639-850    ---------- -----
+Q4T574.1/894-1324   ---------- -----
+Q4T574.1/1322-1473  QKSLHMCVLG NTTIL
+Q8BKI2.2/38-1167    ---------- -----
+Q8BKI2.2/1167-1691  QTALHMCVLG NTTIL
+Q8BWL0.1/2-169      ---------- -----
+Q8BWL0.1/169-693    QTALHMCVLG NTTIL
+Q8NDV7.2/20-121     ---------- -----
+Q8NDV7.2/119-1847   QKSLHMCVLG NTTIL
+Q8SY33.1/6-1183     QMALNNCVLA NTTIF
+Q9HCJ0.3/4-822      ---------- -----
+Q9HCJ0.3/810-1437   ---------- -----
+Q9HCJ0.3/1434-1580  QKSLHMCVLG NTTIL
+Q9UPQ9.4/2-1714     QTALHMCVLG NTTIL
+B4H887.1/32-1036    QMALNNCVLG NTTIF
+Q3TRK2.1/1-88       ---------- -----
+Q3TRK2.1/88-612     QTALHMCVLG NTTIL
+Q8BNF0.2/9-877      ---------- -----
+B4MF11.1/6-1186     QMALNNCVLG NTTIF
+B4NHM7.1/6-1235     QMTLNNCVLG NTTIF
+D0Z7B2.1/6-1203     QMALNNCVLG NTTIF
+B4JZV3.1/6-1211     QMALNNCVLG NTTIF
+Q1LZM4.1/2-292      ---------- -----
+Q1LZM4.1/292-736    ---------- -----
+Q4S4D3.1/1-379      ---------- -----
+Q4S4D3.1/395-556    ---------- -----
+Q4S4D3.1/557-654    ---------- -----
+Q4S4D3.1/651-825    ---------- -----
+Q4S4D3.1/823-1014   QSALHMCVLG NTTIL
+Q4S4D3.1/1091-1092  ---------- -----
+Q3UUG8.1/1-613      QKSLHMCVLG NTTIL
+C3ZJT1.1/159-315    ---------- -----
+C3ZJT1.1/328-369    ---------- -----
+C3ZJT1.1/371-689    ---------- -----
+C3ZJT1.1/730-1268   QKSLHTCVLG NTTIL
+B0WTJ5.1/228-1292   QQALNNCVLG NTTIC
+Q8BXM6.1/4-513      QKSLHMCVLG NTTIL
+Q99JR3.2/24-541     QKSLHMCVLG NTTIL
+Q172C6.1/6-1041     QQALNNCVLG NTTIC
+B4L7C4.1/6-1178     ---------- -----
+Q172C7.1/363-538    ---------- -----
+Q172C7.1/573-1399   QQALNNCPLG SSTIG
+Q6P7B1.1/2-313      QTALHMCVLG NTTIL
+Q3UQ45.1/7-386      QKSLHMCVLG NTTIL
+Q4T0A8.1/27-228     ---------- -----
+Q4T0A8.1/329-402    ---------- -----
+Q4T0A8.1/405-529    ---------- -----
+Q4T0A8.1/526-678    QKSLHMCVLG NTTIL
+B7ZB91.1/13-478     ---------- -----
+Q7Q3B9.4/7-766      ---------- -----
+Q7Q3B9.4/781-1165   QLALNNCVLG NTTIC
+Q8BX83.2/38-410     ---------- -----
+Q172C8.1/192-646    ---------- -----
+Q172C8.1/672-1173   QMALNNCMLG STTIC
+B0WXH0.1/311-1189   ---------- -----
+B0WXH0.1/1191-1389  QQALNNCPLG STNIG
+B0R1E2.1/1-289      ---------- -----
+B0R1E2.1/290-439    QKSLHMCVLG NTTIL
+B1H1W1.1/13-388     ---------- -----
+A7UUT0.1/13-626     ---------- -----
+A7UUT0.1/686-771    ---------- -----
+A7UUT0.1/838-1165   QLALNNCQLG NTTII
+Q66JU9.1/2-193      QTALHMCVLG NTTIL
+B4DKJ5.1/2-276      ---------- -----
+Q8BWM2.1/1-223      QKSLHMCVLG NTTIL
+A0NFA3.2/8-516      ---------- -----
+A0NFA3.2/687-1082   QQALNNCTLG SSTIS
+B7PWH5.1/252-389    ---------- -----
+B7PWH5.1/349-695    ---------- -----
+B7PWH5.1/720-969    QSALHNCILS NTTML
+Q8VD67.1/1-130      QTALHMCVLG NTTIL
+Q148P0.1/1-130      QTALHMCVLG NTTIL
+Q9JHZ1.1/1-130      QTALHMCVLG NTTIL
+B0WXG8.1/386-1198   ---------- -----
+B0WXG8.1/1199-1242  QLALNNCMLG NTTIC
+Q4TA89.1/1-282      QGALHMCVLG NTTIL
+Q4T0A9.1/1-255      ---------- -----
+Q4T0A9.1/370-579    ---------- -----
+Q6ZPQ4.1/1-243      ---------- -----
+Q4TA88.1/5-275      ---------- -----
+Q4TA88.1/319-457    ---------- -----
+B3KSX2.1/4-277      ---------- -----
+B8RJB3.1/9-266      ---------- -----
+A7SDW4.1/430-1260   ---------- -----
+A7SDW4.1/1319-1584  RNNLNGMMVK GMQLI
+A8PU70.1/566-908    ---------- -----
+Q4T5V2.1/1-136      ---------- -----
+B4DST4.1/1-168      ---------- -----
+B3RQ20.1/1143-1332  QSRLNNCKIM DSTLE
+Q8BXV9.1/2-142      ---------- -----
+A7T6Q0.1/2-56       RNNLNGMMVK GMQLI
+C1K8B6.1/4-244      ---------- -----
+C1K890.1/4-244      ---------- -----
+A5BE57.1/246-278    VEALNGAMLG SKKLF
+A5BE57.1/307-381    LTTLNGTLLH GRSLI
+C1K8V5.1/4-177      ---------- -----
+Q2GV87.1/66-278     ---------- -----
+Q8MSF0.1/1-14       -MALNNCVLA NTTIF
+B4H886.1/6-148      ---------- -----
+A9USE7.1/720-774    ---------- -----
+A9USE7.1/997-1077   FSALSGTHLY GRRLA
+C5WVW4.1/223-289    VQRLHGTMIG QQ---
+P20105.2/153-385    ---------- -----
+P20105.2/537-654    ---------- -----
+C4IYK3.1/223-290    VQRLHGTMIG QQA--
+B6UA93.1/223-290    VQRLHGTMIG QQA--
+B9RQB9.1/109-178    RTALHDTMLK EKKLV
+B9RQB9.1/236-270    VDALNGYQLE SRTLF
+B9RQB9.1/300-374    LNALNGAVFQ GKSLV
+B8APB9.1/226-292    VQRLHGTTIG QQVV-
+Q10R21.1/226-292    VQRLHGTTIG QQVV-
+Q0DUQ0.1/248-314    VQRLHGTTIG QQVV-
+Q8BZH2.1/5-63       ---------- -----
+B4PJL3.1/173-393    ---------- -----
+B4PJL3.1/533-654    ---------- -----
+B5DF80.1/306-375    VTEMNGRIVA TKPLV
+C1GEW9.1/11-129     ---------- -----
+C1GVG2.1/279-439    ---------- -----
+B2GUY3.1/194-262    VEEMNGKEMS GKSIF
+B2GUY3.1/296-365    VTEMNGRIVG SKPLV
+B3M4K4.1/89-378     ---------- -----
+B3M4K4.1/533-691    ---------- -----
+D4AC14.1/194-262    VEEMNGKEMS GKSIF
+D4AC14.1/296-365    VTEMNGRIVG SKPLV
+Q4T1P6.1/6-46       ---------- -----
+D4AC21.1/123-191    VEEMNGKEMS GKSIF
+D4AC21.1/225-294    VTEMNGRIVG SKPLV
+C5WPD4.1/242-292    QETMHGMLLG SKALV
+B9GH32.1/107-174    QTALHDTMLG GKKL-
+B9GH32.1/295-362    LVALNGHP-- -----
+A5B3Z9.1/212-283    LEALNGLQLG SKVLV
+Q6IQ30.1/296-365    VTEMNGRIVG SKPLV
+O04319.1/114-183    RSALHGSMVY GKKLV
+O04319.1/304-375    KRYLNGFLVD GKPIV
+P31209.2/366-435    VTEMNQRMLA GKPLY
+B2RXY9.1/193-253    VDHMNG---- -----
+B2RXY9.1/296-365    VTEMNGRIVG TKPLV
+A2A5N3.1/193-253    VDHMNG---- -----
+A2A5N3.1/296-365    VTEMNGRIVG TKPLV
+Q9D4E6.1/307-375    VTEMNGKIVA TKPLV
+Q4VC03.1/296-365    VTEMNGRIVG SKPLV
+Q13310.1/296-365    VTEMNGRIVG SKPLV
+D3Z5M2.1/296-365    VTEMNGRIVG SKPLV
+A4IFC3.1/296-365    VTEMNGRIVG SKPLV
+B1ANR0.1/296-365    VTEMNGRIVG SKPLV
+B4NNJ8.1/320-445    ---------- -----
+D2I596.1/309-378    VTEMNGRIVG SKPLV
+B4JL62.1/290-395    ---------- -----
+C5YBU9.1/128-201    IKSLNGMLIN D----
+C5YBU9.1/329-399    LTEMNGKMIS GKPLY
+Q99LF8.1/296-365    VTEMNGRIVG SKPLV
+C0PPV9.1/259-363    LQRLHGTVIR QQTVL
+Q91YZ8.1/296-365    VTEMNGRIVG SKPLV
+B9GNX9.1/266-364    LQKLNGTVIG KQTV-
+A3KFU8.1/296-365    VTEMNGRIVG SKPLV
+B9N4W3.1/235-341    LQSLNGTTIG KQTV-
+Q6PHQ9.1/296-365    VTEMNGRIVG SKPLV
+B9MVK8.1/264-361    LQKLNGTVIG KQTV-
+D3AVQ3.1/284-354    VAEMHGRMVG SKPLY
+A3KFU5.1/296-365    VTEMNGRIVG SKPLV
+A5BPW5.1/140-241    LQKLNGTVIG KQTV-
+Q3UX16.1/225-294    VTEMNGRIVG SKPLV
+C0PT30.1/259-364    LQRLHGTVIR QQTVL
+B4K3C6.1/67-191     ---------- -----
+C4Q4K6.1/224-340    IHSLNGYVLD NRILQ
+B9H7X8.1/113-180    INRLNGMLIN DKE--
+B9H7X8.1/304-377    LNGMNGKMIG KKPLV
+B3S2W8.1/76-163     MQSMNGAWLG GRNIR
+B3S2W8.1/165-267    IVVIHGTAVE GSQV-
+Q6CDH3.1/332-401    VTEMNHRLVA GKPLY
+B9R7H3.1/281-377    LQKLNGTVIG KQTV-
+Q7T3G5.1/297-366    VTEMNGRIVG SKPLV
+Q3UTA6.1/197-266    VTEMNGRIVG SKPLV
+B3NHT3.1/152-330    ---------- -----
+B4MHJ9.1/106-306    ---------- -----
+A5BF74.1/281-378    LQRLNGTVIG KQTV-
+Q8QGJ7.1/296-365    VTEMNGRIVG SKPLV
+B4J985.1/306-430    ---------- -----
+B8LRZ2.1/277-352    LQMLHGTVLG QQAIW
+A5E351.1/72-416     ---------- -----
+D2H6M0.1/296-365    VTEMNGRIVG TKPLV
+O42323.1/299-489    ---------- -----
+A9NX92.1/275-351    LQMLHGTVLG QQAIW
+B9GT62.1/311-387    LSEMNGKMIG KKPLV
+Q5KBW2.1/367-401    VSEMNGKMIG TKPLY
+Q2PEV8.1/238-322    IRVLNGTLLG GQ---
+B6U4M0.1/324-393    LTEMNGKMIS GKPLY
+A8NF86.1/337-404    VAEMNNKMIG TKPLY
+B4N2I1.1/44-159     ---------- -----
+Q2I2V8.1/539-606    LIAMHNYQLA ES---
+B3MYX8.1/14-153     ---------- -----
+Q4RNX8.1/296-365    VTEMNGRIVG SKPLV
+D1ZFW1.1/794-871    ---------- -----
+B9RIB9.1/231-294    IQRMQGHVIG Q----
+C0SAP5.1/281-410    ---------- -----
+B9HRX8.1/250-356    LQSLNGTTIG KQTV-
+Q7SGG0.1/13-167     ---------- -----
+Q9FPJ8.1/236-325    LSVLNGTQLG GQSI-
+Q9FFU0.1/236-325    LSVLNGTQLG GQSI-
+A5E1Y8.1/358-537    ---------- -----
+Q15164.1/107-176    VTEMNGRIVG SKPLV
+D3ZAS7.1/296-365    VTEMNGRIVG TKPLV
+B6K033.1/364-434    IAEMNQRMLA GKPLY
+Q5TST0.3/683-841    ---------- -----
+B6K6T8.1/356-424    IAEMNQRMLA GKPLY
+C1GDP1.1/281-415    ---------- -----
+B9H7X9.1/314-387    LNGMNGKMIG KKPLV
+Q7Q9F7.4/282-381    YNELNGTFLQ GRMIP
+Q10N87.1/216-288    KESMNGMLLG SKTLV
+A3F293.1/10-109     ---------- -----
+B4JPX4.1/284-409    ---------- -----
+Q8RXR5.1/110-177    IEKLNGMLLN DKQ--
+P42731.1/126-193    IEKLNGMLLN DKQ--
+Q2VIP3.1/296-365    VTEMNGRIVA TKPLV
+A3F295.1/6-117      ---------- -----
+A9S4M3.1/42-65      IRALHN---- -----
+Q54BM2.1/286-356    VTEMNGRMIG TKPLY
+Q3ZCS4.1/296-365    VTEMNGRIVA TKPLV
+A3F290.1/9-110      ---------- -----
+A9TLC5.1/312-382    VTEMNGKMVG SKPLV
+A5E7X5.1/33-235     ---------- -----
+A3F299.1/12-111     ---------- -----
+Q5VX58.1/296-365    VTEMNGRIVA TKPLV
+Q9H361.2/296-365    VTEMNGRIVA TKPLV
+Q2VIN9.1/296-365    VTEMNGRIVA TEPLV
+A9T3C5.1/56-79      IRALHN---- -----
+Q4PF35.1/18-283     ---------- -----
+C5WUD2.1/243-339    IRMLNGSQLG GQSI-
+Q4P8R9.1/368-401    VSEMNGKMLD NRPLY
+Q55F37.1/112-343    ---------- -----
+Q54LR6.1/53-262     ---------- -----
+B4NBP3.1/171-277    IEH------- -----
+D3B9K1.1/622-823    ---------- -----
+B8AL31.1/216-288    KESMNGMLLG SKTLV
+Q4P3Y1.1/128-184    ---------- -----
+Q4VXU2.1/296-365    VTEMNGRIVG TKPLV
+Q9VYA6.1/174-225    ---------- -----
+Q25AW7.1/146-228    ---------- -----
+Q2VIN7.1/296-365    VTEMNGRIVA TKPLV
+D0N277.1/201-234    IAELNNTELE GRLIF
+Q6R969.1/253-362    IEKLNGTVIG AQTVR
+B4KT28.1/222-266    ---------- -----
+Q98SP8.2/296-365    VTEMNGRIVS TKPLV
+B9RY32.1/285-382    LQSLNGTTIG KQTV-
+B4NP54.1/2-69       ---------- -----
+Q86KE5.1/77-311     ---------- -----
+Q2V9C2.1/258-357    IEKLNGTVIG TQTVR
+Q9LEB4.1/261-347    LSSLNGTQLG GQSI-
+Q4P2T9.1/335-396    ---------- -----
+A5C5B3.1/256-335    LAGLNGTQLG AQSI-
+B3MKU5.1/256-639    ---------- -----
+Q86NT0.1/173-270    ---------- -----
+A8NN12.1/68-136     ---------- -----
+A3CUY7.1/2-69       KEALNDTVFE GRTL-
+B0X8C2.1/150-263    ---------- -----
+A5E3S9.1/278-450    ---------- -----
+Q9FX88.1/338-415    IGNLNGTVIG KNTV-
+Q54X31.1/100-217    ---------- -----
+Q10HZ8.1/240-333    IRMLNGSQLG GQSI-
+Q9AY92.1/240-333    IRMLNGSQLG GQSI-
+Q10HZ7.1/240-333    IRMLNGSQLG GQSI-
+B8AKU6.1/240-333    IRMLNGSQLG GQSI-
+Q2V9A1.1/201-306    IQKLSGAIIG K----
+A2YEJ5.1/343-416    ILKMNGKMVG KKPLV
+B4KQM5.1/242-419    ---------- -----
+Q69X94.1/342-415    ILKMNGKMVG KKPLV
+Q8LBV8.1/233-325    LRMLNGVQLG GTTV-
+C0P488.1/242-336    IRVLNGSQLG GQSI-
+B3M300.1/220-284    IEHTHNSEVH -----
+Q9SAB3.1/234-326    LRMLNGVQLG GTTV-
+Q0DQQ8.1/284-377    IRMLNGSQLG GQSI-
+C0PFW8.1/269-336    VRAVHNKPLG LM---
+C0HHH3.1/270-337    VRAVHNKPLG LM---
+Q9M6E6.1/117-184    IEKLNGMLLN DKQ--
+Q2FSR7.1/6-69       MDALNQTVFE GRTM-
+C0SUE2.1/77-175     ---------- -----
+A0CJW3.1/434-742    ---------- -----
+B4ME65.1/311-417    ---------- -----
+B9I0E1.1/253-334    LSMLNGTQIA GQNI-
+Q8LFI9.1/244-343    IESLNGTVIG KNTV-
+B4PH83.1/181-247    ---------- -----
+B9FTY9.1/365-439    ILKMNGKMVG KKPLV
+B3M562.1/702-895    ---------- -----
+C4QZM5.1/235-294    VEALN----- -----
+D3BFK6.1/320-381    LDALNGVEVM GKNLK
+A3GHN7.2/350-468    IAAMQGFIIG GNRVR
+Q54C48.1/271-342    RNGLNGTMVC GMPLK
+Q0WW84.1/287-386    IESLNGTVIG KNTV-
+Q54FL0.1/951-1244   ---------- -----
+B4MC02.1/171-283    IEHTHNSE-- -----
+A7AT74.1/621-689    VESLQHSHLY GRHLV
+Q9LJL7.1/287-386    IESLNGTVIG KNTV-
+B4NE44.1/470-686    ---------- -----
+A0BQD1.1/165-319    ---------- -----
+Q05196.2/328-400    MKEMNGKMIG RKPLV
+A9TFH5.1/223-287    LQRLHQTVIG T----
+A1C5H3.1/188-267    ---------- -----
+A9NWA0.1/248-328    LQKLHGTIIG QQSI-
+B4JY35.1/15-92      ---------- -----
+D0H0K7.1/432-591    ---------- -----
+Q6DGV1.1/174-209    ISALHGSQTA SSSLV
+B4KN27.1/225-337    ---------- -----
+B3NV15.1/1200-1273  ---------- -----
+B5LEQ5.1/179-214    INALHGSQTA SSSLV
+Q6C9A9.1/660-764    ---------- -----
+B4JIH9.1/171-286    IEHTHNTEVH -----
+Q5TSQ4.3/457-676    ---------- -----
+A9TZW4.1/245-319    LQRLHQTVIG T----
+B4PZT3.1/1188-1272  ---------- -----
+D4APH2.1/480-541    FKGL------ -----
+D3BH34.1/115-236    ---------- -----
+C4XVP0.1/46-78      VRNLNNMNVG NRYLR
+C5GQY8.1/409-612    ---------- -----
+B4L803.1/240-323    ---------- -----
+C5DIP1.1/2-75       SKCLNNTV-- -----
+D3B7T2.1/209-345    ---------- -----
+

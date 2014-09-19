@@ -1,0 +1,127 @@
+<head>
+  <title>Belvu - Quick Start</title>
+</head>
+
+<body>
+<h1>Belvu - Quick Start</h1>
+
+<ul>
+  <li><a href="release_notes.html">What's new</a></li>
+  <li><a href="#t_overview">Overview</a></li>
+  <li><a href="#t_controls">Controls</a></li>
+  <li><a href="#t_styles">Styles</a></li>
+</ul>
+
+
+<div id="t_overview">
+  <h2>Overview</h2>
+  <p>Belvu - a multiple alignment viewer.</p>
+  <p>This page gives a quick-start guide to using Belvu. Other documentation is available here:</p>
+  <ul>
+    <li><a href="release_notes.html">What's new</a> (revision history)</li>
+    <li><a href="belvu_usage.txt">Usage</a> (command line options)</li>
+    <li><a href="Belvu_manual/Belvu_manual.pdf">User manual</a></li>
+    <li><a href="todo.html">Outstanding issues</a></li>
+  </ul>
+</div>
+
+
+<div id="t_controls">
+  <h2>Controls</h2>
+  <div id="t_mouse">
+    <h3>Mouse</h3>
+    <h4>Left mouse button</h4>
+    <ul>
+      <li>Click on a residue to select the row and column (current selection will be shown in the feedback box at the top).</li>
+      <li>Double click on a sequence to fetch.</li>
+      <li>Scrollbars: drag and page.</li>
+    </ul>
+    
+    <h4>Middle mouse button</h4>
+    <ul>
+      <li>In alignment: select column and display crosshair. Drag to move the crosshair; release to centre on column.</li>
+      <li>Scrollbars: drag and jump.</li>
+    </ul>
+    
+    <h4>Right mouse button</h4>
+    <ul>
+      <li>File menu (or Text menu when in the feedback box on the toolbar).</li>
+    </ul>
+    
+    <h4>Mouse wheel</h4>
+    <ul>
+      <li>You can scroll horizontally and vertically using your mouse's scroll wheel, if it has these functions.</li>
+    </ul>
+  </div>
+
+  <div id="t_keyboard">
+    <h3>Keyboard shortcuts</h3>
+    <h4>Application</h4>
+    <ul>
+      <li>Ctrl-Q: Quit application</li>
+      <li>Ctrl-W: Close current window</li>
+      <li>Ctrl-H: Show this help page</li>
+      <li>Ctrl-S: Save alignment</li>
+      <li>Shift-Ctrl-S: Save alignment as</li>
+      <li>Ctrl-P: Print</li>
+      <li>Ctrl-F: Find</li>
+    </ul>
+    
+    <h4>Display</h4>
+    <ul>
+      <li>T: Toggle color mode</li>
+      <li>= (equal): Zoom in (increase text size)</li> 
+      <li>- (minus): Zoom out (decrease text size)</li> 
+    </ul>
+    
+    <h4>Editing</h4>
+    <ul>
+      <li>Ctrl-R: Make non-redundant</li>
+      <li>Ctrl-T: Remove partial sequences</li>
+    </ul>
+    
+    <h4>Navigation</h4>
+    <ul>
+      <li>Arrow keys: Scroll one page up/down/left/right</li>
+      <li>Ctrl and Arrow keys: Scroll one row or column up/down/left/right</li>
+      <li>PageUp: Scroll one page up</li>
+      <li>PageDown: Scroll one page down</li>
+      <li>Home: Go to Top</li>
+      <li>End: Go to Bottom</li>
+      <li>Insert: Go to Start of line</li>
+      <li>Delete: Go to End of line</li>
+      <li>, (comma): Scroll one column left</li>
+      <li>. (period): Scroll one column right</li>
+      <li>Ctrl-comma: Scroll one page left</li>
+      <li>Ctrl-period: Scroll one page right</li>
+      <li>Shift-Ctrl-comma: Go to Start of line</li>
+      <li>Shift-Ctrl-period: Go to End of line</li>
+    </ul>
+  </div>
+</div>
+    
+
+<div id="t_styles">
+  <h2>Styles</h2>
+  <p>You can change the look of GTK programs such as Belvu using the gtkrc file. Create or edit the file called <code>.gtkrc-2.0</code> in your home directory. Here are some suggestions for styles that you can modify:</p>
+  <pre>
+# Change the default font size
+gtk-font-name = "san serif 12"
+
+style "scrollbar-style"
+{
+# Change the color of the scrollbars
+        bg[NORMAL] = "#82cafa"
+        bg[INSENSITIVE] = "#82cafa"
+        bg[PRELIGHT] = "#97daff"
+
+# Change the size of the scrollbars
+        GtkRange::slider-width=12
+}
+
+class "*Scrollbar*" style "scrollbar-style"
+
+  </pre>
+</div>
+
+</body>

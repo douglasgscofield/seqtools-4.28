@@ -1,0 +1,7 @@
+Eric Sonnhammer Original author of blixem, dotter and belvu
+
+Richard Durbin and Jean Thierry-Mieg Original authors of the acedb package, which incorporated blixem, dotter and belvu.
+
+Ed Griffiths, Roy Storey and Malcolm Hinsley Authors of the ZMap code from which the web browser, pfetch code and libpfetch library were taken.
+
+Gemma Barson Extensively re-wrote blixem, dotter and belvu and removed dependencies on the acedb package.  Created the separate SeqTools package, including its documentation and build scripts.

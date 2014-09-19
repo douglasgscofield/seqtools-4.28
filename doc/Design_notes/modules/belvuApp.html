@@ -1,0 +1,88 @@
+<head>
+  <title>SeqTools - belvuApp</title>
+</head>
+
+
+<body>
+<div class="outer">
+  <h1>belvuApp</h1>
+  <p>
+    The belvuApp module contains the code for the Belvu application.
+  </p>
+
+  <h2><code>main()</code> function</h2>
+  <p>
+    The Belvu <code>main()</code> function lives in <code>belvuMain.c</code>.  The <code>main()</code> function performs the following jobs.
+    <ul>
+      <li>read in the command-line arguments that were passed to Belvu;
+      <li>print usage information if incorrect arguments, or the help argument, were passed;
+      <li>parse the input alignment file (or the input distance matrix, if argument <code>-T R</code> was given;
+      <li>convert swissprot name suffixes to organisms;
+      <li>set the default colours for organisms;
+      <li>read in the scores file, if given;
+      <li>sort alignments by the default sort order (or the given sort order, if passed as an argument);
+      <li>read in match segments from a match file, if given, or look for match footers in the input alignment file, if given;
+      <li>set the initial residue colours;
+      <li>print the conservation table and exit, if requested;
+      <li>read in residue and/or markup colours from a colour file, if given;
+      <li>make the alignment non-redundant, if requested;
+      <li>remove partial sequences, if requested;
+      <li>remove gappy columns, if requested;
+      <li>remove gappy sequences, if requested;
+      <li>save the alignment and exit, if requested;
+      <li>create bootstrap trees and exit, if requested;
+      <li>output model probabilities and exit, if requested;
+      <li>print subfamilies and exit, if requested;
+      <li>show the annotation window, if requested;
+      <li>display bootstrap trees, if requested;
+      <li>display the main window (and/or the tree, if requested); and
+      <li>enter the main GTK loop to await user interaction.
+    </ul>
+  </p>
+
+  <h2>The Belvu window</h2>
+  <p><code>belvuWindow.h/.c</code></p>
+  <p>
+    We use GTK+ widgets to create the Belvu graphical components. The main Belvu window is created by the <code>createBelvuWindow()</code> function in <code>belvuWindow.c</code>.
+  </p>
+  <p>
+    A Belvu window comprises the following components:
+    <ul>
+      <li>Menubar
+      <li>Toolbar
+      <li>Alignment section
+      <li>Statusbar
+    </ul>
+  </p>
+
+  <h3>The alignment section</h3>
+  <p><code>belvuAlignment.h/.c</code></p>
+  <p>
+    This is the main portion of the Belvu window and shows the actual alignment.  There are two main modes for this window: normal and 'wrapped'.  The normal mode is currently only used for the alignment in the main window.  The wrapped mode is used whenever we create a wrapped-alignment window for printing; we can have as many wrapped-alignment windows as we like.
+  </p>
+  <p>
+    In normal mode, there are two drawing areas: one for the static columns such as name, start and end; these do not scroll horizontally (although they do scroll vertically).  The other drawing area displays the sequence data, and scrolls both horizontally and vertically.  In wrapped mode, only the sequence area is displayed (although sequence names are still drawn, they are all drawn inside the one widget and the whole thing scrolls together).  Since the sequence area always exists, this widget controls the vertical scrolling; if the columns area also exists, it is scrolled in sync with the sequence area.
+  </p>
+  <p>
+    In normal mode, the user will be interacting with the widget a lot, so update speed is essential; therefore, only the currently-visible characters are drawn.  Wrapped mode, however, is designed for printing, so the whole area must be drawn, which can be slow.  There is also a limitation on the size of this window because we use a GdkPixmap to do the drawing, and we get a crash if we request a GdkPixmap that is too large (this appears to be undocumented, so we have had to guess a reasonable upper limit on the size).  The size limit is unlikley to be a problem though seeing as this window is intended to be printed, and the maximum window size is already much larger than anyone would reasonably want to print.
+  </p>
+
+  <h2>The Tree window</h2>
+  <p><code>belvuTree.h/.c</code></p>
+  <p>
+    This window displays the tree.  There is only ever one tree (stored in the main context), and it must be calculated before the tree window can be shown.  The underlying tree must be recalculated whenever it is invalidated by making changes such as deleting sequences or columns; we don't recalculate the tree automatically because it can take a long time and the user may have further edits to make.  The tree window must therefore be able to handle an invalid (null) tree until the user requests it to be recalculated.  There is only ever one tree window; if the user re-opens it, we re-display the original window.
+  </p>
+
+  <h2>The Conservation Plot</h2>
+  <p><code>belvuConstPlot.h/.c</code></p>
+  <p>
+    This window shows the plot of the conservation profile.  There is only ever one conservation plot window.
+  </p>
+
+  <h2>The Annotation Window</h2>
+  <p>
+    This displays a list of all the annotation lines.  There is only ever one annotation window.  It is currently only available if requested on the command-line, and cannot be reopened if closed; it would make more sense to be able to open it from within the program.
+  </p>
+  
+</div>
+</body>

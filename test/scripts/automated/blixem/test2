@@ -1,0 +1,26 @@
+#!/bin/ksh
+#
+# Description:
+#   Test Blixem's usage text
+#
+# Results:
+#   The usage text should be as documented in the results file
+#
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+results_file="$test_dir/$test_name""_results"
+
+# Run blixem and check if there are any differences in output to the saved results
+diffs=`blixem 2>&1 | diff "$results_file" -`
+
+# If there were any problems or differences, set RC
+if [[ $? -ne 0 || $diffs != "" ]] 
+then
+  RC=1
+fi
+
+exit $RC

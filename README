@@ -1,0 +1,36 @@
+=================================================================
+WELCOME TO THE SEQTOOLS PACKAGE
+
+This package is aimed at those involved in genome annotation 
+and contains tools for detailed analysis of sequences/alignments.
+
+Homepage: www.sanger.ac.uk/resources/software/seqtools/
+Author:   Gemma Barson <gemma.barson@sanger.ac.uk>
+
+=================================================================
+
+
+THE TOOLS
+---------
+blixem - an interactive browser of pairwise alignments that have been stacked up in a "master-slave" multiple alignment; it is not a 'true' multiple alignment but a 'one-to-many' alignment. It displays an overview section showing the positions of genes and alignments around the alignment window, and a detail section showing the actual alignment of protein or nucleotide sequences to the genomic DNA sequence.
+
+blixemh - the same as blixem but with additional functionality for fetching sequences via HTTP (currently only supported for authorised users).
+
+dotter - a graphical dot-matrix program for detailed comparison of two sequences. Every residue in one sequence is compared to every residue in the other, with one sequence plotted on the x-axis and the other on the y-axis. Noise is filtered out so that alignments appear as diagonal lines.
+
+belvu - a multiple sequence alignment viewer and phylogenetic tool. It has an extensive set of user-configurable modes to color residues by conservation or by residue type, and some basic alignment editing capabilities. It can generate distance matrices between sequences and construct distance-based trees, either graphically or as part of a phylogenetic software pipeline. 
+
+
+INSTALLATION
+------------
+See the INSTALL file.
+
+
+USAGE
+-----
+Run the individual programs without arguments to see their usage information, or view the documentation from this folder: doc/User_doc/index.html.
+
+Help pages can also be accessed from within the programs using the 'Help' menu, the lifebuoy icon on the toolbar or the Ctrl-H shortcut key.
+
+Sample data and examples can be found in the 'examples' directory.
+

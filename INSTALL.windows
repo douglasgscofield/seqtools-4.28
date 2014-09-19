@@ -1,0 +1,64 @@
+
+INSTALLING SEQTOOLS ON WINDOWS
+==============================
+
+We don't officially support Windows. However, it should be possible to get the SeqTools software working under Cygwin (a linux-like environment within Windows). This file explains how to set this up. Please note that although we have tested this on Windows XP Pro we do not make any guarantees that it will work, particularly on different versions of Windows.
+
+
+Installing Cygwin
+-----------------
+
+1. Go to http://www.cygwin.com/install.html
+2. Click on setup-x86.exe (or setup-x86_64.exe if you have a 64-bit machine).
+3. Click on Save and save it somewhere you can find it (you may want to run it again in the future to install additional packages).
+4. Click on Run.
+5. Go through the installation wizard accepting all the default options up until the Choose Download Site page. Here I chose http://cygwin.mirror.constant.com.
+6. On the Select Packages page, select these packages (just click on 'Skip' to toggle it to the latest version):
+      Devel/gcc-core
+      Devel/make
+      Devel/pkg-config
+      Libs/libcurl-devel
+      Libs/libglib2.0-devel (also tick the SOURCE checkbox)
+      Libs/libgtk2.0-devel  (also tick the SOURCE checkbox)
+      Libs/readline
+      Web/wget
+      X11/xinit
+7. Accept the default option on the next page and then installation should start.  This may take some time.
+8. When installation is complete, select Finish.  This should create a Cygwin Terminal shortcut on your Desktop and/or Start Menu.
+
+
+Installing SeqTools
+-------------------
+
+Open the Cygwin Terminal from the Desktop shortcut / Start Menu and type the following commands (replacing 'xx' with the version of seqtools that you want to download):
+
+  wget ftp://ftp.sanger.ac.uk/pub4/resources/software/seqtools/PRODUCTION/seqtools-xx.tar.gz
+  tar -xf seqtools-xx.tar.gz
+  cd seqtools-xx
+  ./configure
+  make
+  make install
+
+
+Running SeqTools
+----------------
+
+From the Cygwin Terminal, type these commands:
+
+  export DISPLAY=:0
+  startxwin -- -emulate3buttons &
+  
+You can then run the programs by typing the executable name (i.e. blixem, dotter or belvu). Run the program without arguments to see help about command-line arguments and other usage information.
+ 
+
+
+Notes on Drives
+===============
+
+Cygwin uses a "fake" root directory to make it look like you are in a linux-like filesystem. This is very different from Windows' filesystem, so it can be confusing to start with if you want to find your Cygwin files in Windows or vice versa. Here's a list of some useful locations to help find your way around (assuming you installed Cygwin in the default location):
+
+WHAT                    REAL LOCATION IN WINDOWS           PATH FROM INSIDE CYGWIN
+Windows C drive         C:                                 /cygdrive/c
+Windows user directory  C:\Documents and Settings\<user>   /cygdrive/c/Documents and Settings/<user>
+Cygwin root directory   C:\cygwin                          /
+Cygwin user directory   C:\cygwin\home\<user>              /home/<user>

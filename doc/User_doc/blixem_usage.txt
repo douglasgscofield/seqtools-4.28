@@ -1,0 +1,208 @@
+ Blixem - display multiple alignments against a reference sequence.
+
+ Usage: blixem [options] [<sequencefile>] <datafile> [X options] 
+
+   <sequencefile> contains the reference sequence in FASTA format.
+   <datafile> is a GFF v3 file containing alignments and other features.
+   If <sequencefile> is ommitted, <datafile> should contain the reference
+   sequence in FASTA format, below a comment line that reads ##FASTA.
+
+   Both <sequencefile> and <datafile> can be substituted by "-"
+   for reading from stdin (pipe).  If <sequencefile> is piped, the first
+   line should contain the sequence name and the second the sequence itself.
+
+
+ Options:
+  -t <type>, --display-type=<type>  MANDATORY
+    Whether to display sequences in nucleotide or protein mode. Must be one of:
+      N = nucleotide
+      P = protein
+
+  -a <names>, --alignment-names=<names>
+    Specify a string giving the names of the alignments, e.g. "EST_mouse EST_human" etc.
+
+  -c <file>, --config-file=<file>
+    Read configuration options from 'file'.
+
+  --compiled
+    Show package compile date.
+
+  --dataset
+    Optional string to indicate a data-set that the alignments are from.
+
+  --dotter-first-match
+    Call Dotter on the first match to the right of the default start coord.
+
+  --fetch-server <nodeid:port>
+    Causes Blixem to get sequences from a fetch server at machine 'nodeid' on the given
+    port (default 22100).
+
+  -h, --help
+    More detailed usage information.
+
+  --hide-big-picture
+    Hide the big picture section on start-up.
+
+  --hide-inactive-strand
+    Hide the inactive strand (i.e. the reverse strand, or the forward strand if the -R option
+    is used).
+
+  --highlight-diffs
+    Enable 'highlight differences' mode, where mismatches (rather than matches) are highlighted.
+
+  --invert-sort
+    Invert sorting order
+
+  -m <from[:to]>, --map-coords=<from[:to]>
+    Map the coordinate system so that the given 'from' coordinate maps to the given
+    'to' coordinate (or to '1' if 'to' is not given).
+
+  -n, --negate-coords
+    When showing the reverse strand, negate the display coordinates.
+
+  -o <n>, --offset=<n>
+    Offset the reference sequence coordinate system by n.
+
+  --optional-data
+    Parse additional data such as organism and tissue-type on start-up.
+
+  --remove-input-files
+    Delete the input files after they have been parsed.
+
+  -r, --reverse-strand
+    Indicates that the given reference sequence is the reverse strand.
+
+  --save-temp-files
+    Save any temporary files created by Blixem.
+
+  --show-coverage
+    Display the coverage section on start-up.
+
+  --sort-mode=<mode>
+    Default sort mode. Use --help option to see details.
+
+  --squash-matches
+    Compress the alignment lists on start-up.
+
+  -s <n>, --start-coord=<n>
+    Start with the display centred on coordinate n.
+
+  --start-next-match
+    Start with the display centred on the first match to the right of the default start coord.
+
+  -y <file>, --styles-file=<file>
+    Read color options from a key-value file. Use --help option to see details.
+
+  --version
+    Show package version number.
+
+  -z <start:end>, --zoom-range=<start:end>
+    Specify the initial range of coordinates to zoom the big picture in to.
+
+  --zoom-whole
+    Start with the big picture zoomed out to view the full reference sequence range.
+
+ Some X options:
+ -acefont <font> Main font.
+ -font    <font> Menu font.
+
+
+FEATURES
+  The prefered file format for <datafile> is GFF v3. (However, Blixem is still compatible with
+  older file formats such as exblx and seqbl, as used by MSPcrunch).
+
+  Blixem is mainly aimed at displaying alignments, but can also show other features such as
+  transcripts, variations and polyA tails. The supported SO terms are:
+    match
+    nucleotide_match
+    protein_match
+    match_part
+    match_set
+    transcript
+    primary_transcript
+    processed_transcript
+    mRNA
+    CDS
+    UTR
+    exon
+    intron
+    SNP
+    copy_number_variation
+    substitution
+    insertion
+    deletion
+    sequence_alteration
+    polyA_signal_sequence
+    polyA_site
+    read
+    region
+
+SORT MODE
+  The sort mode is specified with the --sort-mode=<mode> argument, where <mode> is
+  one of the following:
+    s = by Score
+    i = by Identity
+    n = by Name
+    p = by Position
+
+  If optional data is loaded on start-up using the --optional-data argument, then the following
+  sort modes are also valid:
+    t = by Tissue type
+    m = by Strain
+    g = by Gene name
+    o = by Organism
+
+COLOR KEY FILE
+  The color key file is specified with the -y <file> or --styles-file=<file> argument. This is a .ini-
+  like file that specifies attributes such as fill and line colors for features from particular 
+  sources (say EST_Human or polya_signal). The file should contain one or more source stanzas followed
+  by one or more key=value pairs, i.e. 
+
+    [<source>]
+      <key>=<value>
+      ...
+
+  <key> can be one of:
+      colours:                 default colours
+      transcript-cds-colours:  used to specify a different colour 
+                               for CDS sections of transcripts
+
+  <value> is a semi-colon separated list of fill and line colours of the format:
+      <normal|selected> <fill|border> <colour>
+
+  <colour> can be in any of the forms accepted by XParseColor; these include name 
+           for a colour from rgb.txt, such as DarkSlateGray, or a hex specification 
+           such as #305050.
+
+  Example:
+    colours=normal border #0000af ; selected border #0000af ; normal fill white ; \
+            selected fill #ffddcc ; 
+    transcript-cds-colours=normal border #0000af ; selected border #0000af ; \
+            normal fill white ; selected fill #ffddcc ; 
+
+  Note that selection colors will be calculated automatically if they are not
+  specified (a darker shade of the default color will be used when the feature is selected).
+
+MSPcrunch
+  To make the datafile from blast output, run MSPcrunch with option -q.
+
+ o To pipe MSPcrunch output directly to Blixem, use "-"
+   as the second parameter ([datafile]).  Example:
+
+   MSPcrunch -q <my.blast_output> | blixem <my.seq> -
+
+ o The BLAST program (blastp, blastn, blastx, tblastn, tblastx)
+   is automatically detected from the Blast output header by MSPcrunch
+   and is passed on to Blixem in the seqbl format (-q).
+
+-----
+ Written by Gemma Barson <gb10@sanger.ac.uk>
+ Based on original code by Erik Sonnhammer <Erik.Sonnhammer@sbc.su.se> 
+
+ Reference: Sonnhammer ELL & Durbin R (1994). A workbench for Large Scale
+            Sequence Homology Analysis. Comput. Applic. Biosci. 10:301-307.
+
+ See http://www.sanger.ac.uk/resources/software/seqtools/ for more info.
+
+ Copyright (c) 2009-2011: Genome Research Ltd.
+ Blixem is distributed under the GNU Public License; see http://www.gnu.org/copyleft/gpl.txt

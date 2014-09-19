@@ -1,0 +1,26 @@
+#!/bin/ksh
+#
+# Description:
+#   Test Blixem in nucleotide mode. Features include nucleotide matches, transcripts
+#   variations, polyA sites and signals
+#
+# Results:
+#   Blixem's graphical display should start up showing the alignments and transripts.
+#   Variations and polyA features can be displayed from the Settings dialog.
+#
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+
+blixem -t N -s 337622 -m 210623 -z 335873:338382 -n --dataset=human $data_dir/chr4_ref_seq.fasta $data_dir/chr4_dna_align.gff
+
+# If there was an error, set RC
+if [ $? -ne 0 ] 
+then
+  RC=1
+fi
+
+exit $RC

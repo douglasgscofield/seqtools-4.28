@@ -1,0 +1,87 @@
+
+INSTALLING SEQTOOLS
+===================
+
+Supported platforms are Linux and Mac OS X (Intel).  The installation procedure for both is as follows.  It is also possible to install on Windows using Cygwin - see the instructions in INSTALL.windows for how to set this up.
+
+To install in the default location (usually /usr/bin), type the following commands on a command line:
+> ./configure
+> make
+> make install
+
+You may need to use sudo to run 'make install' if you do not have root privileges:
+> sudo make install
+
+Alternatively, to install in a different location (e.g. one that does not require root privileges), use the --prefix argument with ./configure.  For example, the following would install the programs in the directory foo/bar in your home directory:
+> ./configure --prefix=~/foo/bar
+> make
+> make install
+
+Note that on Macs, GTK+ is often installed in a different location to the default, in which case the configure script will fail.  See the "Non-default location" section below for more details.
+
+
+
+DEPENDENCIES
+============
+
+This section describes what to do if the installation fails due to missing dependencies.
+
+
+COMPILER
+--------
+The ./configure script will fail if you do not have a compiler installed.
+
+To install a compiler on Debian-like systems, type the following in the Terminal:
+> sudo apt-get install build-essential
+
+To install a compiler on a Mac, you can install Xcode from your OS X installation disc (or you can download Xcode from the Apple developer site, https://developer.apple.com/).  On the disc, open the Optional Installs folder and run Xcode.mpkg.  Make sure you tick the UNIX Dev Support (for OS X versions 10.5 or later) or the Command Line Support option (version 10.4).
+
+
+
+GTK+
+----
+The SeqTools programs require GTK+ version 2.12 or later to be installed on your system.  Both the libraries and the headers are required in order to build SeqTools.  The configure script will give an error if GTK+ is not found.  It might be that GTK+ is installed but is in a non-default location, so check this first (see the instructions below).  If you do need to install it, we recommend that you get your systems department to do this for you if possible.  The installation takes some time and is easier if you have root privileges.
+
+
+Non-default location
+--------------------
+If GTK+ is installed but is in a different location to the default (/usr/lib), then you need to tell the configure script its location, e.g. if GTK+ is installed in /opt/local/lib (common on Macs) then you would run configure as follows:
+> ./configure PKG_CONFIG_PATH=/opt/local/lib/pkgconfig LDFLAGS="-Xlinker -rpath -Xlinker /opt/local/lib"
+
+The most common locations where GTK+ might be installed are: /usr/lib, /usr/local/lib, /opt/lib, /opt/local/lib.  To check whether GTK+ is installed (and which version is installed), you can check the contents of the gtk+-2.0.pc file in the pkgconfig directory, e.g.:
+> more /opt/local/lib/pkgconfig/gtk+-2.0.pc
+
+Note that we used the -rpath linker option in the example above to make sure the programs always link to the correct version.  If you have multiple versions of the GTK+ libraries on your system and your program links to an incorrect version, then you will probably see errors about missing GTK, GDK or GLib functions when you try to run the program.
+
+
+Installing GTK+ on UNIX-like systems
+------------------------------------
+If GTK+ is not installed, you can install it on Debian-like systems as follows:
+> sudo apt-get install libgtk2.0-dev
+
+
+Installing GTK+ on Macs
+-----------------------
+To install GTK+ on a Mac we recommend that you use MacPorts (www.macports.org).  GTK+ has a lot of dependencies, and MacPorts installs the correct versions of those dependencies for you.
+
+You can check whether MacPorts is already available on your system by typing the following in the Terminal:
+> which port 
+
+If MacPorts is not installed, you can get a default installation on Leopard, Snow Leopard or Lion using the .dmg files available on the MacPorts website.  These will install MacPorts (as well as any ports you install using it) in /opt/local/.  Note that they require root privileges to run.  For a custom installation you will need to install MacPorts from source; see their website for details.
+
+Once MacPorts is installed, you can install GTK+ by typing the following in the Terminal:
+> sudo port install gtk2
+
+
+
+LIBCURL
+-------
+blixemh requires the libcurl library to be installed on your system; "./configure" will give a warning if libcurl is not found, and will exclude blixemh from the installation process. 
+
+Firstly, if you do not require the facility to fetch sequences using HTTP (currently only available to authorised users), then you can use blixem instead of blixemh, and you do not need to worry about this.
+
+If you do require the HTTP functionality, you need to install the development version of the libcurl library.
+
+On Debian-like systems this can be installed as follows:
+> sudo apt-get install libcurl4-gnutls-dev
+

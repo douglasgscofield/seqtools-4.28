@@ -1,0 +1,24 @@
+#!/bin/ksh
+#
+# Description:
+#   Test reading a file without stripping coordinates
+#   from the sequence names
+#
+# Results:
+#   The sequence names should include the coordinates
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+
+belvu -Ti -R $data_dir/PF02171_seed.stock
+
+# If there was an error, set RC
+if [ $? -ne 0 ] 
+then
+  RC=1
+fi
+
+exit $RC

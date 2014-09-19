@@ -1,0 +1,47 @@
+#!/bin/ksh
+#
+#
+# Description:
+#   Test Dotter in batch mode: save both the dot-matrix and an exported PDF of the plot.
+#
+# Results:
+#   The output file 'output.dot' and 'output.pdf' should be the same as the files
+#   'test3_result.dot' and 'test3_result.pdf' respectively.
+#
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+results_file1="$test_dir/$test_name""_results.dot"
+results_file2="$test_dir/$test_name""_results.pdf"
+output_file1="$test_dir"/"output.dot"
+output_file2="$test_dir"/"output.pdf"
+
+# Run belvu and check if there are any differences to the saved results
+dotter -b $output_file1 -e $output_file2 -q 246634 -f $data_dir/chr4_dna_align.gff $data_dir/chr4_ref_seq_short.fasta $data_dir/DA730641.fasta
+diffs=`diff $results_file1 $output_file1`
+
+# If there were any problems or differences, set RC
+if [[ $? -ne 0 || $diffs != "" ]]
+then
+  RC=1
+fi
+
+# Now check the second results file
+diffs=`diff $results_file2 $output_file2`
+
+# If there were any problems or differences, set RC
+if [[ $? -ne 0 || $diffs != "" ]]
+then
+  RC=1
+fi
+
+if [ $RC -eq 1 ]
+then
+  print "$test_name FAILED"
+fi
+
+exit $RC
+

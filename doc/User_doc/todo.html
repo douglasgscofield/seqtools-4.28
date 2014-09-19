@@ -1,0 +1,61 @@
+<head>
+  <title>SeqTools - To Do</title>
+</head>
+
+
+<body>
+  <h2>SeqTools package to-do lists</h2>
+
+  <h3>Blixem</h3>
+  <ul>
+    <li>Issues
+    <ul>
+      <li>Variations: the variations track is experimental code and will need to be improved, in particular in its handling of overlapping features.
+      <li>Feature-series: this functionality was disabled when Blixem and Dotter were re-written at version 4. We should consider whether this is still a useful feature and, if so, whether to use the original SFS file format or to switch to GFF.  The SFS file format is documented <a href="http://sfixem.sbc.su.se/SFS_desc.html">here</a>.
+      <li>Multiple row selections: using the up/down arrow keys to move the row selection doesn't always work if there are adjacent rows from the same match sequence.
+      <li>DNA search: this currently just jumps to the start of the DNA section that was found; we should also highlight the found DNA in the reference sequence.
+      <li>Printing: the pfetch window should have a print option.
+    </ul>
+    <br/>
+    <li>Enhancements
+    <ul>
+      <li>It would be nice to be able to view the sequence data for an insertion (a vertical yellow line in a match sequence) in Blixem, e.g. by hovering over it with the mouse.
+      <li>When you hover over an exon in the exon view in Blixem (when bumped), it would be nice if info about the exon were shown in the toolbar feedback area.
+      <li>When running Dotter on a large range it takes a long time to start up and there is no indication that anything is happening; it would be good to have a status bar of some description, and a cancel button. When running from Blixem, we should report if Dotter fails to start.
+      <li>When calling Dotter from Blixem, start Dotter with the crosshair placed at the currently-selected coords in Blixem (if applicable).
+      <li>Cosmetic: the %ID labels on the big picture grid should be right-aligned.
+      <li>Button tooltips: the zoom buttons in the big-picture should have tooltips.
+    </ul>
+  </ul>
+
+  <h3>Dotter</h3>
+  <ul>
+    <li>Issues
+    <ul>
+      <li>There is a bug where the dot-plot can appear blacked-out if the plot is very wide and you zoom in (say to about half of the default compression factor).
+    </ul>
+    <br/>
+    <li>Enhancements
+    <ul>
+      <li>If you hit the boundary of one sequence when moving along a diagonal in Dotter and continue to press the movement keys (,.[]), then it stops moving on the one sequence but continues to move along the other, i.e. it goes off the diagonal. It would be nicer if it stopped moving altogether.
+    </ul>
+  </ul>
+
+  <h3>Belvu</h3>
+  <ul>
+    <li>Issues
+    <ul>
+      <li>Printing: the pfetch window should have a print option; so should the Annotations window.
+      <li>In the colour-by-conservation colour schemes, the foreground colour is tied to the background colour.  This means that if the same background colour is specified more than once, the foreground colours are ambiguous.
+      <li>Colours dialog: the dialog for editing the residue colours used to have a section at the bottom showing residues grouped by colour. This has not been implemented in the new Belvu yet.
+      <li>For short alignments, the initial window size is too large.
+    </ul>
+    <br/>
+    <li>Enhancements
+    <ul>
+      <li>Undo function (<a href="https://rt.sanger.ac.uk/Ticket/Display.html?id=214316">RT:214316</a>).
+      <li>Search-for-residues function (<a href="https://rt.sanger.ac.uk/Ticket/Display.html?id=212364">RT:212364</a>).
+    </ul>
+</ul>
+
+</body>

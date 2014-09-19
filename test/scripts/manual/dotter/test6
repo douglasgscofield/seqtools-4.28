@@ -1,0 +1,25 @@
+#!/bin/ksh
+#
+# Description:
+#   Test Dotter in protein->protein mode.
+#
+# Results:
+#   Dotter starts up showing the dot-plot pixelmap. Strong matches show as diagonal lines, e.g.
+#   there is a match starting at horizontal coord 82452 and vertical coord 111.
+#
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+
+dotter -q 82341 $data_dir/chr4_translation_frame1.fasta $data_dir/Q9H8G1.fasta
+
+# If there was an error, set RC
+if [ $? -ne 0 ] 
+then
+  RC=1
+fi
+
+exit $RC

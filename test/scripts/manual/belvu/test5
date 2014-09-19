@@ -1,0 +1,25 @@
+#!/bin/ksh
+#
+# Description: 
+#   Test loading of match segments from a match-footer section
+#
+# Results:
+#   The match segment "seg_match" should appear in the alignment list
+#   with coordinates 3->30 and score 20.0. Its sequence is
+#   WLPLHTLinsertAACGEFYLVDSLLKH, starting at column 3.
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+
+belvu -T i $data_dir/PF02171_seed_segs.stock
+
+# If there was an error, set RC
+if [ $? -ne 0 ] 
+then
+  RC=1
+fi
+
+exit $RC

@@ -1,0 +1,180 @@
+
+ Belvu - View multiple alignments in pretty colours.
+
+ Usage: belvu [options]  <multiple_alignment>|-
+
+ <multiple_alignment>|- = file or pipe in Stockholm/Selex/MSF/Fasta format (see below).
+
+
+ Options:
+
+  -c          Print Conservation table.
+  -l <file>   Load residue color code file.
+
+              Format: <symbol> <color>
+              (Lines starting with # are ignored (comment lines))
+
+              Example of color code file:
+
+                  # Aroma
+                  F YELLOW
+                  Y YELLOW
+                  W YELLOW
+
+                  # Yuck
+                  D RED 
+                  N GREEN
+                  X BLUE
+
+              Available colors:
+
+                    WHITE 
+                    BLACK 
+                    LIGHTGRAY
+                    DARKGRAY
+                    RED 
+                    GREEN
+                    BLUE
+                    YELLOW
+                    CYAN 
+                    MAGENTA
+                    LIGHTRED 
+                    LIGHTGREEN 
+                    LIGHTBLUE
+                    DARKRED 
+                    DARKGREEN 
+                    DARKBLUE
+                    PALERED 
+                    PALEGREEN 
+                    PALEBLUE
+                    PALEYELLOW 
+                    PALECYAN 
+                    PALEMAGENTA
+                    BROWN 
+                    ORANGE 
+                    PALEORANGE
+                    PURPLE 
+                    VIOLET 
+                    PALEVIOLET
+                    GRAY 
+                    PALEGRAY
+                    CERISE 
+                    MIDBLUE
+
+
+  -L <file>  Load markup and organism color code file.
+             Colour the markup text by residue or colour organism in tree.
+
+	     Example to set color of letters A and B:
+	     A GREEN
+	     B YELLOW
+
+	     Example to set color of organism human:
+	     #=OS BLUE human
+
+
+  -m <file>   Read file with matching sequences segments. This is used to
+              display a match of  a query sequence to a family.  The format
+              of the match is :
+
+              Line 1: Name/start-end score
+              Line 2: Query sequence in matching segment, no pads!
+              Line 3: Sequence of matching segments (qstart1 qend1 fstart1
+              fend2 qstart2 qend2 fstart2 fend2  etc...).
+
+              Example:
+
+              ZK673.9/238-260 21.58
+              CPENWVQFTGNGTQYGVCLRGFT
+              1 2 1 2  4 7 8 11  
+
+              NOTE: A sometimes easier way of doing this is to concatenate
+              the match to the end of the alignment, after a line with
+              exactly this string within the quotes: # matchFooter
+
+
+  -r          Read alignment in 'raw' format (Name sequence).
+
+              Example of raw alignment file: 
+
+                  seq1_name MFILKTP
+                  seq1_name MYI.RTP
+
+  -R          Do not parse coordinates when reading alignment.
+  -o <format> Write alignment or tree to stdout in this format and exit.
+                Valid formats: Mul(Stockholm), Selex, MSF, 
+                FastaAlign, Fasta, tree.
+  -X <cutoff> Print UPGMA-based subfamilies at cutoff <cutoff>.
+  -n <cutoff> Make non-redundant to <cutoff> %identity at startup.
+  -Q <cutoff> Remove columns more gappy than <cutoff>.
+  -q <cutoff> Remove sequences more gappy than <cutoff>.
+  -G          Penalize gaps in pairwise comparisons.
+  -i          Ignore gaps in conservation calculation.
+  -P          Remove partial sequences at startup.
+  -C          Don't write coordinates to saved file.
+  -z <char>   Separator char between name and coordinates in saved file.
+  -a          Show alignment annotations on screen (Stockholm format only).
+  -p          Output random model probabilites for HMMER.
+              (Based on all residues.)
+  -S <order>  Sort sequences in this order.
+                a -> alphabetically
+                o -> by Swissprot organism, alphabetically
+                s -> by score
+                n -> by Neighbor-joining tree
+                u -> by UPGMA tree
+                S -> by similarity to first sequence
+                i -> by identity to first sequence
+  -s <file>   Read in file of scores.A column with scores will
+              automatically appear after the coordinates.
+
+              Format: <score> <sequence_id>
+
+              Example of score file:
+
+                  2.78 seq_1/180-206
+                  2.78 seq_2/180-206
+                  3.79 seq_3/42-94
+
+
+  -T <method> Tree options:
+                i -> Start up showing tree
+                I -> Start up showing only tree
+                d -> Show distances in tree
+                n -> Neighbor-joining
+                u -> UPGMA
+                c -> Don't color tree by organism
+                o -> Don't display sequence coordinates in tree
+                b -> Use Scoredist distance correction (default)
+                j -> Use Jukes-Cantor distance correction
+                k -> Use Kimura distance correction
+                s -> Use Storm & Sonnhammer distance correction
+                r -> Use uncorrected distances
+                p -> Print distance matrix and exit
+                R -> Read distance matrix instead of alignment
+                     (only in combination with Tree routines)
+  -b <n>      Apply boostrap analysis with <n> bootstrap samples
+  -B          Print out bootstrap trees and exit
+              (Negative value -> display bootstrap trees on screen)
+  -O <label>  Read organism info after this label (default OS)
+  -t <title>  Set window title.
+  -u          Start up with uncoloured alignment (faster).
+  -h, --help  Show this help information
+  --compiled  Show package compile date
+  --version   Show package version number
+ setenv BELVU_FETCH to desired sequence fetching program.
+ setenv BELVU_FONT_SIZE to specify window font size.
+ setenv BELVU_STATUSBAR_SIZE to specify statusbar font size (0 => hide statusbar).
+
+-----
+ Written by Gemma Barson <gb10@sanger.ac.uk>
+ Based on original code by Erik Sonnhammer <Erik.Sonnhammer@sbc.su.se> 
+
+ Reference: Scoredist: A simple and robust protein sequence distance estimator.
+            Erik LL Sonnhammer and Volker Hollich.
+            BMC Bioinformatics 6:108 (2005)
+
+ See http://www.sanger.ac.uk/resources/software/seqtools/ for more info.
+
+ Copyright (c) 2011: Genome Research Ltd.
+ Belvu is distributed under the GNU Public License; see http://www.gnu.org/copyleft/gpl.txt
+

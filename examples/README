@@ -1,0 +1,24 @@
+EXAMPLES
+
+This directory contains sample data that you can try out the programs with. Below are minimal incantations for each program to use this sample data.
+
+There are more examples available in the 'test' directory.
+
+
+Blixem (nucleotide mode):
+blixem -t N chr4_ref_seq.fasta chr4_dna_align.gff
+
+Blixem (protein mode):
+blixem -t P chr4_ref_seq.fasta chr4_protein_align.gff
+
+Dotter (nucleotide-nucleotide mode):
+dotter chr4_ref_seq_short.fasta DA730641.fasta
+
+Dotter (nucleotide-protein mode):
+dotter chr4_ref_seq_short.fasta Q9H8G1.fasta
+
+Dotter (protein-protein mode):
+dotter chr4_translation_frame1.fasta Q9H8G1.fasta
+
+Belvu:
+belvu PF02171_seed.stock

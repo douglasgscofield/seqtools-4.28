@@ -1,0 +1,501 @@
+<head>
+  <title>SeqTools - Release Notes</title>
+</head>
+
+
+<body>
+<h2>SeqTools - Release Notes</h2>
+
+<h4>Version 4.27</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>You can now drag and drop features into Blixem. The dragged data must be text in GFF3 format (RT234245).
+    <li>Dotter auto-coords now uses the big picture range to make it more consistent (RT131802).
+  </ul>
+  <li>Dotter
+  <ul>
+    <li>Dotter's windows are now dockable. You can toggle docKing with Ctrl-K, and toggle the Alignment and Greyramp tool visibility with Ctrl-A and Ctrl-G respectively (RT398273).
+    <li>Splice sites are now highlighted in the alignment tool for known HSPs (RT335980).
+    <li>Fix a crash with showing HSPs.
+  </ul>
+</ul>
+
+<h4>Version 4.26</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Add lines to show colinearity between alignment blocks.
+  </ul>
+</ul>
+
+<h4>Version 4.25</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Add support for fetching sequence data from SQLite databases.
+  </ul>
+</ul>
+
+<h4>Version 4.24</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Add support for a "cigar_bam" attribute in GFF, which contains a BAM-style cigar string.
+  </ul>
+</ul>
+
+<h4>Version 4.23</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Minor change to use the GFF Gap string in preference to the new cigar_bam attribute (which isn't fully implemented yet)
+  </ul>
+</ul>
+
+<h4>Version 4.22</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Add new config options for linking and squashing features
+    <li>Add a Clear button to the Find dialog
+    <li>Work-in-progress to add support for a cigar_bam attribute in the GFF
+  </ul>
+  <li>Dotter
+  <ul>
+    <li>Make sure dotter doesn't try to use X if it's not required
+  </ul>
+</ul>
+
+<h4>Version 4.21</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Splice-site highlighting is enabled by default
+    <li>Improved support for small screens
+    <li>New colour scheme (RT329278)
+  </ul>
+  <li>Dotter
+  <ul>
+    <li>Add command-line arguments to specify sequence types (so Dotter does not have to guess)
+  </ul>
+</ul>
+
+<h4>Version 4.20</h4>
+<ul>
+  <li>All
+  <ul>
+    <li>Minor internal robustness improvements
+  </ul>
+</ul>
+
+<h4>Version 4.19</h4>
+<ul>
+  <li>All
+  <ul>
+    <li>Usage/version/help info are now printed to stdout, with successful exit code
+  </ul>
+</ul>
+
+<h4>Version 4.18</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Add option to abbreviate window title prefixes
+    <li>Improve coverage view scale and labelling
+  </ul>
+</ul>  
+
+<h4>Version 4.17</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Copy match/reference sequence to the clipboard from the right-click menu
+    <li>Allow loading of non-native file formats using fetch methods
+  </ul>
+  <li>Dotter
+  <ul>
+    <li>Fix crash on long slices
+    <li>Fix intermittent label rendering on long slices
+  </ul>
+</ul>
+
+<h4>Version 4.16</h4>
+<ul>
+  <li>All
+  <ul>
+    <li>Fixed a bug where the link in the About dialog did not work.
+    <li>Include the following font in the preferences list when searching for a fixed-width font: DejaVu Sans Mono
+  </ul>
+  <li>Blixem
+  <ul>
+    <li>Fixed a bug where Blixem was passing incorrect values in the %s and %e substitution variables for fetch method arguments (RT286051).
+  </ul>
+  <li>Dotter
+  <ul>
+    <li>Fixed a bug where the sequence labels in the Alignment tool were truncated.
+    <li>Removed deprecated drawing functions from Dotter (might address RT281848: intermittent problems with drawing axis labels).
+  </ul>
+</ul>
+
+<h4>Version 4.15</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Fix a bug where blixem column label text overlaps
+    <li>Fix a bug where the source column is sometimes blank
+    <li>Make sure all stdout messages are flushed
+    <li>Improved error handling: check executables are in the path before trying to call them
+  </ul>
+</ul>
+
+<h4>Version 4.14</h4>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Sequence-fetching has been generalised so that it can now be used by users outside the Sanger. Data sources can be specified in the config file.
+    <li>The config file can now be used to specify whether features with the same name should be linked under the same parent.
+    <li>Fix an error that can occur when opening the help page in Firefox.
+  </ul>
+  <li>Belvu
+  <ul>
+    <li>Added keyboard shortcuts for Make-non-redundant (Ctrl-R) and Remove-partial-sequences (Ctrl-T)
+  </ul>
+</ul>
+  
+<h4>Version 4.13.2</h4>
+<ul>
+  <li>Blixem
+    <ul>
+      <li>Fixed a compilation error on Ubuntu 12.04.
+    </ul>
+  </ul>
+
+<h4>Version 4.13.1</h4>
+<ul>
+  <li>Blixem
+    <ul>
+      <li>Fixed a bug where features were not being linked under the same parent correctly.
+    </ul>
+  </ul>
+
+<h4>Version 4.13</h4>
+<ul>
+  <li>Blixem
+    <ul>
+      <li>Fixed a bug where the --squash-matches argument was being overridden by the config file.
+    </ul>
+  <li>Dotter
+    <ul>
+      <li>You can now select and copy sequence from the alignment tool using the mouse.
+      <li>Fixed a bug where the coordinates in the alignment tool were wrong if you set the display length to an even number.
+      <li>Fixed an issue where the greyramp tool had the wrong context menu.
+      <li>Fixed some bugs with printing: the alignment tool labels were not printed correctly; Ctrl-P on the alignment tool printed the wrong window; the background colour was not white in the print; the background colour in the alignment tool was getting messed up after a print operation.
+    </ul>
+  </ul>
+
+<h3>Version 4.12</h3>
+<ul>
+  <li>Blixem
+    <ul>
+      <li>Performance improvements when reading in large GFF files.
+      <li>Short reads are now counted as duplicates in the 'squashed' view even if they are from different sources.
+      <li>The detail-view now scrolls the selected match into view when you jump to the next/previous match. This also now works when matches are squashed.
+      <li>Fixed some bugs with handling of short read data that was causing some reads to appear misaligned.
+      <li>Fixed a bug where the sort order was incorrect for short reads.
+      <li>Fixed a bug in protein mode where the variations track would flicker, and you were unable to select features in the variations track.
+      <li>Removed duplicate sequence data from the sample GFF files.
+    </ul>
+</ul>
+
+<h3>Version 4.10.1</h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Added examples directory
+    <li>Improvements to test scripts
+    <li>Fixed incorrect return value from Blixem's main function
+  </ul>
+</ul>
+
+
+<h3>Version 4.10</h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Display settings are now saved on exit.
+  </ul>
+  <li>Dotter
+  <ul>
+    <li>Fixed a bug where exons were not always being displayed.
+    <li>Fixed a bug where Dotter would fail when comparing a very long horizontal sequence to a short vertical sequence (<a href="https://rt.sanger.ac.uk/Ticket/Display.html?id=242777">RT:242777</a>).
+    <li>Fixed an issue where you could not scroll to the very edge of the plot (<a href="https://rt.sanger.ac.uk/Ticket/Display.html?id=251308">RT:251308</a>).
+  </ul>
+  <li> Belvu
+  <ul>
+    <li>Fixed a crash when running in non-graphical mode.
+  </ul>
+</ul>
+
+<h3>Version 4.9</h3>
+<ul>
+  <li>Blixem
+    <ul>
+      <li>Fixed a bug from version 4.7 where blixem would crash if no config file was given.
+      <li>Fixed a bug in Blixem where Dotter would fail to start after opening the Blixem help page.
+    </ul>
+
+  <li>General
+    <ul>
+      <li>Fixed some memory leaks.
+    </ul>
+</ul>
+
+<h3>Version 4.8.1</h3>
+<ul>
+  <li>Blixem
+    <ul>
+      <li>Fixed a buffer overrun bug introduced in version 4.7.
+    </ul>
+</ul>
+
+<h3>Version 4.8</h3>
+<ul>
+  <li>Blixem
+    <ul>
+      <li>Improvements to installation scripts.
+      <li>Updated user manuals for changes since version 4.2.
+      <li>Fixed an issue where Blixem would fail to start if a config file was given but did not contain pfetch groups.
+    </ul>
+</ul>
+
+<h3>Version 4.7</h3>
+<ul>
+  <li>Blixem
+    <ul>
+      <li>Overlapping items in the variations track are now drawn on separate lines rather than being drawn over the top of each other.
+      <li>Split codons are now highlighted in exons in the detail view.
+      <li>Improvements to navigation in the big picture: double-clicking/dragging now scrolls the selected range (like middle-clicking/dragging); left-clicking on the highlight box and dragging allows it to be moved; the cursor now changes when dragging the highlight box; and the horizontal mouse wheel now works when over the transcript view.
+      <li>If you change column visibility or sizes, these settings are now remembered when you close and re-open Blixem.  You can revert to the default column visibility and sizes using the 'Reset to defaults' button on the Settings dialog.
+    </ul>
+
+  <li>Dotter
+    <ul>
+      <li>Fixed an issue with printing where only the visible part of the scrolled window was printed.
+      <li>Added the ability to export plots to PDF.  In batch mode, either the dot-matrix or the PDF, or both, can be saved.
+    </ul>
+    
+</ul>
+
+<h3>Version 4.6</h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Made the main window title more informative.
+    <li>Exons can now be selected by clicking in the big picture, and are sorted in the same order as the detail view.
+  </ul>
+  <li>Dotter
+  <ul>
+    <li>The transcript sections can now be bumped.
+    <li>The area near the border where alignments cannot be calculated (due to the sliding window calculation) is now shaded in red.
+  </ul>
+</ul>
+
+<h3>Version 4.5</h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Blixem now highlights regions in the reference sequence that are gaps (<a href="https://rt.sanger.ac.uk/Ticket/Display.html?id=225707">RT:225707</a>)
+    <li>Blixem now handles gap characters in the reference sequence (<a href="https://rt.sanger.ac.uk/Ticket/Display.html?id=226652">RT:226652</a>)
+    <li>Fixed a bug where multiple UTRs in the same exon are not displayed (<a href="https://rt.sanger.ac.uk/Ticket/Display.html?id=225220">RT:225220</a>)
+  </ul>
+  <br/>
+  <li>Belvu
+  <ul>
+    <li>Fixed a bug with the last column not being fully shown.
+    <li>Fixed a bug with columns not being resized correctly after deleting sequences.
+    <li>Made sure all terminal messages are terminated with a line break.
+    <li>Added <code>BELVU_STATUSBAR_SIZE</code> environment variable to allow the statusbar to have a different font size to the main window. (Set this to zero to hide the statusbar.)
+    <li>Fixed an issue where the fetch and annotations windows were not using the font size specified by <code>BELVU_FONT_SIZE</code>.
+    <li>Fixed a bug where the wrong colour scheme was selected in the menu when loading a residue colour scheme on start-up.
+    <li>Improved the size of the fetch window.
+    <li>Fixed a performance issue when reading in files with many annotation lines.
+  </ul>
+</ul>
+
+<h3>Version 4.4.1</h3>
+<ul>
+  <li>Belvu
+  <ul>
+    <li>Fixed a potential crash when opening the tree window if the user scrolls the mouse-wheel at the same time.
+    <li>Fixed an issue where user could not re-select the sort-by-similarity/id option after changing the selection.
+    <li>Added a fix to make sure tree cannot get so large that it causes a crash.
+    <li>Fixed a bug with sorting by similarity on start up when the first line is a markup line.
+  </ul>
+</ul>
+
+<h3>Version 4.4</h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>There is a new --zoom-range argument, which allows the caller to specify the initial big picture range.
+    <li>Reference sequence coordinates can now be specified in the FASTA definition line in the sequence file; the line format must be:&nbsp;&nbsp;&nbsp;<code>>name start end</code>
+    <li>Fixed a bug where introns that are partially out of range were not being shown.
+    <li>Fixed a bug where short reads were incorrectly being squashed onto the same line in 'squash matches' mode when their sources are different.
+    <li>Fixed a bug where the initial exon view height was sometimes being calculated incorrectly.
+    <li>Fixed a bug where starting Dotter fails if the fetch command returns a string such as "no match".
+  </ul>
+  <br/>
+  <li>Belvu
+  <ul>
+    <li>Added Belvu to the SeqTools package.
+    <li>The functionality to left-click a menu to get a default action has been removed; left- or right-clicking a menu will now always show the drop-down menu.  The default left-click actions have been moved to a toolbar adjacent to the menu; hover over the toolbar icons for tooltips.
+    <li>There is a new status bar at the bottom of the window; look out for feedback and helpful hints here.
+    <li>The color menu now only contains the color schemes; the other settings from this menu have been moved to the new Settings menu.
+    <li>You can quickly toggle between color-by-residue and color-by-conservation modes using the keyboard shortcut 't'.
+    <li>The 'toggle last palette' menu option has been removed because its original purpose (of being able to switch back to a custom color scheme) was not clear. There is now a 'custom' entry in the color scheme sub-menu that you can use for this purpose.  (Note that this only applies to color-by-residue mode.)
+    <li>There are some new keyboard shortcuts - see the <a href="belvu_quick_start.html">quick start guide</a> for details.
+    <li>You can now control the text size of the alignments using the zoom buttons on the toolbar.  You can change the text size of the menus using the <code>BELVU_FONT_SIZE</code> environment variable (e.g. <code>setenv BELVU_FONT_SIZE 14</code>).  NB To change the font size for all GTK applications, use the <code>~/.gtkrc-2.0</code> file instead (e.g. <code>gtk-font-name="sans serif 14"</code>).
+    <li>You can now search for an alignment by name using the Find button on the toolbar (or the Ctrl-F shortcut key).
+    <li>You can "tear off" drop-down menus using the dotted line at the top.
+    <li>You now get a different cursor when you are in the remove-many-sequences mode, rather than a dialog box that you must close to exit the mode; you can now exit this mode by deselecting the option in the toolbar or menu; by pressing the 'Esc' key; or by left-clicking anywhere in the alignment window.
+    <li>When you edit the alignment, the tree becomes invalidated and must be recalculated using the 'Recalculate tree' option on the File menu or right-click menu.
+    <li>If you change a tree by clicking a branch to swap nodes/re-root the tree, then the current tree window will be updated (rather than creating a new tree window, as in the old Belvu).  If the alignment is sorted by tree order, then it will be updated to reflect the new tree.  To revert to the original tree, you can recalculate it using the 'Recalculate tree' option on the File menu or right-click menu.
+  </ul>
+</ul>
+
+<h3>Version 4.2</h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Blixem now supports fetching of short-read data from BAM files.
+    <li>Blixem command-line arguments have changed.
+  </ul>
+</ul>
+
+<h3>Version 4.1.14 </h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Short reads: The 'short_read' feature type is now supported.
+    <li>Coverage: A new 'coverage view' has been added to show coverage depth - it can be enabled via the View dialog.
+    <li>Sorting: The sort-by drop-down box has been replaced with a Sort dialog, allowing sorting by multiple columns - open it with the Sort button on the toolbar.  The 'invert sort order' option has been moved from the Settings dialog to the Sort dialog.
+    <li>Search by column: When grouping or finding sequences, you can now search on data in different columns, not just the Name column.  See the Group and Find dialogs.
+    <li>Groups: You can now hide all sequences that are not in a group.  See the Groups dialog.
+  </ul>
+  <br/>
+  <li>Dotter
+  <ul>
+    <li>The 'short_read' feature type is now supported.
+    <li>The right-click menu has been shortened by placing the display options into a sub-menu.
+  </ul>
+</ul>
+
+<h3>Version 4.1.13 </h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Replaced the Help dialog with HTML help pages.
+  </ul>
+  <br/>
+  <li>Dotter
+  <ul>
+    <li>Fixed some bugs with scrolling in the alignment tool.
+    <li>Replaced the Help dialog with HTML help pages.
+  </ul>
+</ul>
+
+<h3>Version 4.1.12 </h3>
+<ul>
+<li>Blixem
+  <ul>
+    <li>You can now change the active reading frame by clicking in a list header (as well as in the list itself).
+  </ul>
+</ul>
+
+<h3>Version 4.1.11 </h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>The 'Source' column is now enabled by default.  It is also sortable and its contents are now shown in the feedback area.
+    <li>Column widths can now be specified in the Blixem config file (which is supplied via the <code>-c</code> command line argument).
+  </ul>
+  <br/>
+  <li>Dotter
+  <ul>
+    <li>Fixed an issue where Dotter was overwriting the primary clipboard contents on startup.
+  </ul>
+</ul>
+
+<h3>Version 4.1.10 </h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Fixed a bug with populating optional data for protein variants.
+  </ul>
+</ul>
+
+<h3>Version 4.1.9 </h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Printing now scales to fit the page.
+    <li>Fixed a bug where splice sites were incorrectly being shown at termini.
+  </ul>
+  <br/>
+  <li>Dotter
+  <ul>
+    <li>You can now print from Dotter.
+    <li>There is now an exon view for the vertical sequence.
+    <li>There are now separator lines between sequences when Dottering multiple sequences.
+  </ul>
+</ul>
+
+<h3>Version 4.1.6</h3>
+<ul>
+  <li>Dotter
+  <ul>
+    <li>You can now copy coordinates from the alignment tool using the right-click menu.
+    <li>Re-added the exon view for the vertical sequence.
+  </ul>
+</ul>
+
+<h3>Version 4.1.5 </h3>
+<ul>
+  <li>Blixem  
+  <ul>
+    <li>Close all Dotters: There is a new menu option to close all Dotters started from the current Blixem. Right-click in Blixem to see the menu.
+  </ul>
+  <br/>
+  <li>Dotter
+  <ul>
+    <li>Dotter re-vamp: Dotter has been re-written to facilitate future improvements.  Most of the changes so far are under-the-hood, but you will notice a few cosmetic differences and additional shortcuts.
+    <li>Menu bar: As well as the right-click menu, there is now a menu-bar at the top of the main Dotter window.
+    <li>CDS/UTR regions: Exons are now separated into CDS and UTR regions: CDS regions are coloured green and UTR red.
+    <li>Close all sub-Dotters: You can close all related Dotter windows using the Quit menu option or Ctrl-Q.  This will close all sub-Dotters that were started under the same parent Dotter (by middle-dragging to zoom in to a region).  To just close an individual Dotter window, click on the x in the corner of the window or use your system shortcut for closing a window (e.g. Ctrl-W, or Cmd-W on Macs).  Note that the alignment tool and greyramp tool will be destroyed along with their parent - however, if the parent window is still open then these tools can be re-opened using the relevant menu options or keyboard shortcuts.
+    <li>Close all Dotters from Blixem: All Dotter windows spawned from a Blixem will be closed when that Blixem is closed.
+    <li>Navigation keys: You no longer need to hold Shift when moving diagonally along an alignment using the keys ',.[]'. You can hold down Shift to move a single nucleotide at a time along a protein sequence, rather than moving a whole amino-acid.
+    <li>Keyboard shortcuts: The following keyboard shortcuts have been added to show the Alignment tool, main Dotter window or Greyramp tool, respectively: Ctrl-A, Ctrl-D and Ctrl-G.
+    <li>Settings dialog: The Parameter Control dialog box has been replaced by a more intuitive Settings dialog.  From here you can change the zoom or edit the display range.
+  </ul>
+</ul>
+
+<h3>Version 4.1.4 </h3>
+<ul>
+  <li>Blixem
+  <ul>
+    <li>Variations: SNPs, insertions, deletions etc. can be highlighted in the reference sequence, and shown in a 'variations track' above the reference sequence. See the Settings dialog or double-click the reference sequence to show/hide the variations track. Double-click a variation to open its URL. This is an experimental feature and the display is quite crude - please give us feedback on how you would like variations to be displayed, particularly where they overlap.
+    <li>PolyA tails: PolyA tails can be shown and polyA signals highlighted in the reference sequence. See the Settings dialog.
+    <li>CDS/UTR regions: Exons are now separated into CDS and UTR regions: CDS regions are coloured green and UTR red. Don't forget, you can quickly bump/un-bump the exon view by pressing 'b'.
+    <li>Moused-over item feedback: There is now an additional feedback area on the toolbar that shows information about the currently moused-over item.
+    <li>Status bar: There is now a status bar at the bottom of the window, which shows non-critical messages and warnings.
+    <li>Grid scale: The grid scale now has a finer level of granularity; you can set %ID per cell to as low as 0.1 (see the Settings dialog).
+  </ul>
+  <br/>
+  <li>Dotter
+  <ul>
+    <li>New Dotter: Dotter has had a re-vamp - check the Dotter Help page for more info.
+  </ul>
+</ul>
+
+</body>

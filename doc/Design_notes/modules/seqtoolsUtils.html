@@ -1,0 +1,68 @@
+<head>
+  <title>SeqTools - seqtoolsUtils</title>
+</head>
+
+
+<body>
+<div class="outer">
+  <h1>seqtoolsUtils</h1>
+  <p>
+    The seqtoolsUtils module contains code that is common to both Blixem and Dotter. The more significant functionality is described below.
+  </p>
+
+  <h2>Features</h2>
+  <p><code>blxmsp.h/.c</code></p>
+  <p>
+    The seqtoolsUtils module defines structs for our features. Supported features include matches, exons, introns, SNPs, polyA tails and polyA signals.
+  </p>
+
+  <h2>File parsing</h2>
+  <p><code>blxparser.h/.c, blxGff3parser.h/.c</code></p>
+  <p>
+    Functions to parse the features file. The recommended file format is GFF version 3. However, the older exblx/seqbl file formats (as output from MSPcrunch) are also supported. Note that the reference sequence can be passed as part of the features file or in a separate file - if the latter, then it is parsed separately by the main() function, not by this module.
+  </p>
+
+  <h2>Sequence translation</h2>
+  <p><code>translate.c, iupac.h</code></p>
+  <p>
+    Defines various functions and matrices used to reverse/complement nucleotide sequences and to translate nucleotide sequences to peptides.
+  </p>
+
+  <h2>Web browser</h2>
+  <p><code>seqtoolsWebBrowser.c</code></p>
+  <p>
+    Defines functions to open a URL in the user's default web browser.
+  </p>
+
+  <h2>Coordinate conversions</h2>
+  <p><code>utilities.c</code></p>
+  <p>
+    There are two functions that underpin all conversion of coordinates between how they are displayed and how they are stored: <code>convertDisplayIdxToDnaIdx</code> and <code>convertDnaIdxToDisplayIdx</code>.  They convert a DNA index to display coords and vice versa.  The display coords are either DNA or peptide coords depending on whether Blixem is in nucleotide or protein mode.  These functions also take care of inverting the coords if the display is reversed (i.e. if the reverse strand is active) - this is necessary because the GtkAdjustment for the scrollbar can only handle a forward range, i.e. it assumes values increase from left-to-right; if we want to display values as decreasing from left-to-right then we need to invert the values.
+  </p>
+
+  <h2>Drawing and Printing</h2>
+  <p><code>utilities.c</code></p>
+  <p>
+    Printing in GTK+ is performed using the Cairo graphics package.  We must provide some way of telling Cairo what to draw*.  We implement this as follows:
+    <ul>
+      <li>Each widget's expose function draws to a pixmap (i.e. GdkDrawable) and then pushes this pixmap to the screen.  The pixmap is cached by setting it as a property on the widget using <code>widgetSetDrawable</code>.  If the cached pixmap already exists, the expose function will not re-create it; it will just push the existing pixmap to the screen.  (To force the widget to re-draw itself you must therefore clear the cached pixmap, using the <code>widgetClearCachedDrawable</code> function.)
+      <li>The cached pixmap can be retrieved using the <code>widgetGetDrawable</code> function.  The pixmap can be printed by Cairo, so this provides a way to print the contents of an individual widget.  Only widgets that have a cached pixmap will be printed.
+      <li>In order to print multiple widgets (e.g. all of the child widgets in a container such as the top-level window), we must combine the pixmaps of the individual widgets.  We do this by recursing through all of the child widgets, extracting their cached pixmaps (if they have one), and drawing them onto a single, overall pixmap.  Their position on the main pixmap can be found by translating the top-left corner position from the widget's coordinate system (0,0) to the overall parent widget's coordinate system.  (See the <code>collatePixmaps</code> function.)
+      <li>The print operation is initiated using the <code>blxPrintWidget</code> function.  This creates a GtkPrintOperation and sets the print-settings and page-setup for it, if given (i.e. these can be cached by the calling function so that the same settings can be used the next time a print is performed).  It then runs the print operation, which opens the print dialog.  When the user OKs the dialog, this function updates the input print settings with the returned settings from the dialog.
+      <li>When the user OKs the print dialog, the <code>onBeginPrint</code> callback is called.  This function does any preparation required, e.g. setting the number of pages required.
+      <li>Next, <code>onDrawPage</code> is called to do the drawing for each page.
+    </ul>
+  </p>
+  <p>*UPDATE: A lot of the functions used here are now deprecated.  It looks like GTK has improved support for drawing widgets' windows directly, which probably means that all of the pixmap stuff mentioned here is no longer necessary.</p>
+
+  <p>
+    Current issues with this are:
+    <ul>
+      <li>We always assume a single page and scale the entire image down to fit (this is usually adequate for Blixem and Dotter).
+      <li>Text quality is really poor.
+      <li>Items in a scrollable window are not clipped to the visible region; this is generally not an issue because other widgets will be drawn over the unwanted regions. However, if not all of the widgets are drawn, some of the unwanted regions may be visible.
+    </ul>
+  </p>
+
+</div>
+</body>

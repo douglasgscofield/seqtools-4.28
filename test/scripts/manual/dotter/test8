@@ -1,0 +1,28 @@
+#!/bin/ksh
+#
+# Description:
+#   Tests loading a dot-matrix plot from file for a long sequence versus itself.
+#
+# Results:
+#   Dotter's graphical display should start up, showing the dot-plot. It should start
+#   almost instantly - much quicker than the same test where the plot is calculated
+#   from the input sequences (test2). You should be able to interact with the plot as
+#   if it were created from the original sequences, including being able to change
+#   the contrast using the greyramp tool.
+#
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+
+dotter -l $data_dir/chr4_vs_chr4.dot -q 246634 -s 246634 -f $data_dir/chr4_dna_align.gff $data_dir/chr4_ref_seq.fasta $data_dir/chr4_ref_seq.fasta
+
+# If there was an error, set RC
+if [ $? -ne 0 ] 
+then
+  RC=1
+fi
+
+exit $RC

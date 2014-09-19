@@ -1,0 +1,30 @@
+#!/bin/ksh
+#
+#
+# Description:
+#   Test Dotter in batch mode: export the dot-matrix.
+#
+# Results:
+#   The output file 'output.dot' should be the same as the file 'test1_result.dot'
+#
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+results_file="$test_dir/$test_name""_results"
+output_file="$test_dir"/"output.dot"
+
+# Run belvu and check if there are any differences to the saved results
+dotter -b $output_file -q 246634 -f $data_dir/chr4_dna_align.gff $data_dir/chr4_ref_seq_short.fasta $data_dir/DA730641.fasta
+diffs=`diff $results_file $output_file`
+
+# If there were any problems or differences, set RC
+if [[ $? -ne 0 || $diffs != "" ]]
+then
+  print "$test_name FAILED"
+  RC=1
+fi
+
+exit $RC

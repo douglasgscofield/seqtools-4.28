@@ -1,0 +1,26 @@
+#!/bin/ksh
+#
+# Description:
+#   Test that the residue colors and markup colors are loaded correctly
+#   on startup. Test loading both color files to check that they do not 
+#   interfere with each other.
+#
+# Results:
+#   The residues and markup letters should use the colors specified in 
+#   the input files.
+
+RC=0
+
+test_name=`basename $0`
+test_dir=`dirname $0`
+data_dir=$test_dir/../../../data
+
+belvu -l $data_dir/cgph_pale.color -L $data_dir/markup.color $data_dir/PF02171_seed.stock
+
+# If there was an error, set RC
+if [ $? -ne 0 ] 
+then
+  RC=1
+fi
+
+exit $RC

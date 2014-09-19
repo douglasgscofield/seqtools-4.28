@@ -1,0 +1,51 @@
+<head>
+  <title>SeqTools - Build System</title>
+</head>
+
+
+<body>
+<div class="outer">
+  <h1>Build System</h1>
+  This page describes how to compile the SeqTools package using the Autotools scripts included with the source code.
+
+  <h2>Autotools</h2>
+  <p>
+    The SeqTools package is configured and built using the GNU Build System (aka Autotools).  The relevant configuration files are listed below:
+    <ul>
+      <li>src/version.m4: This specifies the version number for the build. It is included by configure.ac, which sets the version number in the PACKAGE_VERSION variable in the config.h file, which is included by the code.
+      <li>src/configure.ac: This file is processed by autoconf to produce the configure file.
+      <li>src/Makefile.am: This file is processed by automake to produce the Makefile.in file.
+      <li>src/AUTHORS, src/COPYING, src/README, src/NEWS, src/ChangeLog: These files are for information.
+      <li>subdirectory Makefile.am files: The subdirectories blixemApp, dotterApp, seqtoolsUtils and libpfetch all contain a Makefile.am file, which is processed by automake to create a Makefile.in file in that directory.
+    </ul>
+  </p>
+
+  <p>
+    The build process is as follows:
+    <ul>
+      <li>Run '<code>autoreconf -i</code>' in the <code>src</code> directory. This runs autoheader, aclocal, autoconf and automake and creates the configure script (and some other required files) in the src directory.
+      <li><code>cd</code> to the directory where the code is to be built (this can be src or any other directory, e.g. src/build) and run the configure script from there. This will create a makefile in the build directory (and subdirectories for blixemApp, dotterApp, seqtoolsUtils and libpfetch, which all contain a makefile for building that module). It will also create the config.h file that will be included by the code, and a few other required files.
+      <li>Run <code>make</code> in the build directory to build everything (or in a subdirectory to build just that module).
+    </ul>
+  </p>
+
+  <h2>Modules</h2>
+  <p>
+    The source code includes the following modules. Each module has its own subdirectory with a makefile that produces a <code>.a</code> convenience library that is statically linked by the executables that require that code. The executables are built by the main <code>Makefile</code> in the <code>src</code> directory. The blixem and blixemh executables both use the same source code (the blixemApp code) but blixemh is compiled using the <code>PFETCH_HTML</code> flag, which conditionally compiles some additional code.
+    <ul>
+      <li>blixemApp: Blixem application code.
+      <li>dotterApp: Dotter application code.
+      <li>seqtoolsUtils: Generic utility functions. Required by dotter, blixem and blixemh.
+      <li>libpfetch: Utilities for fetching sequences over http. Required by blixemh.
+    </ul>
+  </p>
+
+  <h2>Dependencies</h2>
+  <p>
+    <ul>
+      <li>All of the executables in the SeqTools package require the GLib and GTK+ libraries. These are built using pkg-config. configure.ac specifies which version of the libraries are required.
+      <li>blixemh uses the libpfetch library, which requires the libcurl library.
+    </ul>
+  </p>
+</div>
+</body>
