@@ -91,11 +91,14 @@ typedef struct _DotterOptions
     gboolean watsonOnly;      /* only show the watson (forward) strand of the ref seq */
     gboolean crickOnly;       /* only show the crick (reverse) strand of the ref seq */
     gboolean hspsOnly;        /* only draw HSPs (i.e. don't calculate the dot-plot, just draw lines where we know HSPs should be) */
+    int greyrampWhite;        /* greyramp white limit */
+    int greyrampBlack;        /* greyramp black limit */
     gboolean swapGreyramp;    /* swap the default black/white points on the greyramp tool (inverts the colors) */
     gboolean breaklinesOn;    /* whether to enable breaklines between sequences */
     gboolean hozScaleRev;     /* revese the horizontal scale */
     gboolean vertScaleRev;    /* revese the vertical scale */
     gboolean negateCoords;    /* negate the displayed coords when the scale is reversed, i.e. so they still appear to increase from left-to-right */
+    gboolean suppressScale;   /* suppress printing the coordinate scale on x- and y-axis */
     gboolean abbrevTitle;     /* abbrev window title prefix to save space */
     
     BlxMessageData msgData;   /* data to be passed to the message handlers */

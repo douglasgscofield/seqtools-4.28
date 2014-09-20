@@ -222,6 +222,9 @@ static DotplotProperties* dotplotCreateProperties(GtkWidget *widget,
                                                   DotterWindowContext *dwc,
                                                   const gboolean hspsOn,
                                                   const gboolean breaklinesOn,
+                                                  const gboolean scaleOn,
+                                                  const int greyrampWhite,
+                                                  const int greyrampBlack,
                                                   const char *exportFileName)
 {
   DotplotProperties *properties = (DotplotProperties*)g_malloc(sizeof *properties);
@@ -242,6 +245,8 @@ static DotplotProperties* dotplotCreateProperties(GtkWidget *widget,
       properties->colorMap = insertGreyRamp(properties);
       gtk_widget_set_default_colormap(properties->colorMap);
     }
+  properties->greyrampWhite = greyrampWhite;
+  properties->greyrampBlack = greyrampBlack;
   
   properties->image = NULL;
 
@@ -257,6 +262,7 @@ static DotplotProperties* dotplotCreateProperties(GtkWidget *widget,
   
   properties->gridlinesOn = FALSE;
   properties->breaklinesOn = breaklinesOn;
+  properties->scaleOn = scaleOn;
   properties->hozLabelsOn = TRUE;
   properties->vertLabelsOn = TRUE;
 
@@ -672,7 +678,7 @@ static gboolean onButtonReleaseDotplot(GtkWidget *dotplot, GdkEventButton *event
           if (qRange.max - qRange.min > 10 && sRange.max - sRange.min > 10)
             {
 	      g_debug("Calling dotter internally with the range: q=%d %d, s=%d %d\n", qRange.min, qRange.max, sRange.min, sRange.max);
-              callDotterInternal(dc, &qRange, &sRange, zoomFactor, properties->breaklinesOn) ;
+              callDotterInternal(dc, &qRange, &sRange, zoomFactor, properties->breaklinesOn, properties->scaleOn, properties->greyrampWhite, properties->greyrampBlack);
             }
         }
       
@@ -810,11 +816,14 @@ static GtkWidget* createDotplotDrawingArea(DotterWindowContext *dwc,
                                            const char *exportFileName,
                                            const gboolean hspsOn,
                                            const gboolean breaklinesOn,
+                                           const gboolean scaleOn,
                                            const char *initWinsize,
                                            const int pixelFacIn,
                                            const int zoomFacIn,
                                            const int qcenter,
-                                           const int scenter)
+                                           const int scenter,
+                                           const int greyrampWhite,
+                                           const int greyrampBlack)
 {
   DEBUG_ENTER("createDotplotDrawingArea");
 
@@ -825,7 +834,7 @@ static GtkWidget* createDotplotDrawingArea(DotterWindowContext *dwc,
 
   GtkWidget *dotplot = (showPlot ? gtk_layout_new(NULL, NULL) : NULL);
   
-  DotplotProperties *properties = dotplotCreateProperties(dotplot, dwc, hspsOn, breaklinesOn, exportFileName);
+  DotplotProperties *properties = dotplotCreateProperties(dotplot, dwc, hspsOn, breaklinesOn, scaleOn, greyrampWhite, greyrampBlack, exportFileName);
   
   if (loadFileName)
     {
@@ -1004,17 +1013,20 @@ GtkWidget* createDotplot(DotterWindowContext *dwc,
                          const char *exportFileName,
                          const gboolean hspsOn,
                          const gboolean breaklinesOn,
+                         const gboolean scaleOn,
                          const char *initWinsize,
                          const int pixelFacIn,
                          const int zoomFacIn,
                          const int qcenter,
                          const int scenter,
+                         const int greyrampWhite,
+                         const int greyrampBlack,
                          GtkWidget **dotplot)
 {
   DEBUG_ENTER("createDotplot");
 
   /* Create the actual drawing area for the dot plot */
-  *dotplot = createDotplotDrawingArea(dwc, loadFileName, saveFileName, exportFileName, hspsOn, breaklinesOn, initWinsize, pixelFacIn, zoomFacIn, qcenter, scenter);
+  *dotplot = createDotplotDrawingArea(dwc, loadFileName, saveFileName, exportFileName, hspsOn, breaklinesOn, scaleOn, initWinsize, pixelFacIn, zoomFacIn, qcenter, scenter, greyrampWhite, greyrampBlack);
 
   /* Create and realise the container widgets etc. only if not in batch mode, or if
    * in batch mode and exporting to PDF (which requires the widget to draw itself). */
@@ -2394,7 +2406,11 @@ static void drawScaleMarkers(GtkWidget *dotplot,
       int y1 = horizontal ? staticBorder - tickHeight : currentPos;
       int y2 = horizontal ? staticBorder : currentPos;
 
-      gdk_draw_line(drawable, gc, x1, y1, x2, y2);
+      /* If we want to draw the scales, keep all calculations for plotting grid lines */
+      if (properties->scaleOn)
+        {
+          gdk_draw_line(drawable, gc, x1, y1, x2, y2);
+        }
       
       /* Draw a grid line, if applicable */
       drawGridline(drawable, properties, x2, y2, horizontal);
@@ -2404,8 +2420,11 @@ static void drawScaleMarkers(GtkWidget *dotplot,
         {
           if (majorTickIdx < (int)scale->labels->len)
             {
-              GtkWidget *label = g_array_index(scale->labels, GtkWidget*, majorTickIdx);
-              drawTickmarkLabel(dotplot, dc, drawable, label, coord, x1, y1, &properties->plotRect, horizontal);
+              if (properties->scaleOn)
+                {
+                  GtkWidget *label = g_array_index(scale->labels, GtkWidget*, majorTickIdx);
+                  drawTickmarkLabel(dotplot, dc, drawable, label, coord, x1, y1, &properties->plotRect, horizontal);
+                }
             }
           
           ++majorTickIdx;

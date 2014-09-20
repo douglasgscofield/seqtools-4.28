@@ -174,12 +174,15 @@ static GtkWidget* createDotterInstance(DotterContext *dotterCtx,
                                        const char *exportFileName,
                                        const gboolean hspsOn,
                                        const gboolean breaklinesOn,
+                                       const gboolean scaleOn,
                                        const char* winsizeIn,
                                        const int pixelFacIn,
                                        const int zoomFacIn,
                                        const int qcenter,
                                        const int scenter,
-                                       const gboolean greyramSwap,
+                                       const int greyrampWhite,
+                                       const int greyrampBlack,
+                                       const gboolean greyrampSwap,
                                        char *windowColor);
 
 static void                       onQuitMenu(GtkAction *action, gpointer data);
@@ -1071,7 +1074,7 @@ void dotter (const BlxBlastMode blastMode,
 
   if (!options->memoryLimit) 
     {
-      options->memoryLimit = 0.5; /* Mb */
+      options->memoryLimit = 64.0; /* Mb */
     }
 
   /* Get score matrix */
@@ -1123,11 +1126,14 @@ void dotter (const BlxBlastMode blastMode,
                        options->exportfile,
                        options->hspsOnly,
                        options->breaklinesOn,
+                       ! options->suppressScale,
                        options->winsize,
                        options->pixelFacset,
                        options->dotterZoom,
                        qcenter,
                        scenter,
+                       options->greyrampWhite,
+                       options->greyrampBlack,
                        options->swapGreyramp,
                        options->windowColor);
 
@@ -1146,11 +1152,14 @@ static GtkWidget* createDotterInstance(DotterContext *dotterCtx,
                                        const char *exportFileName,
                                        const gboolean hspsOn,
                                        const gboolean breaklinesOn,
+                                       const gboolean scaleOn,
                                        const char* winsizeIn,
                                        const int pixelFacIn,
                                        const int zoomFacIn,
                                        const int qcenter,
                                        const int scenter,
+                                       const int greyrampWhite,
+                                       const int greyrampBlack,
                                        const gboolean greyrampSwap,
                                        char *windowColor)
 {
@@ -1165,11 +1174,14 @@ static GtkWidget* createDotterInstance(DotterContext *dotterCtx,
                                            exportFileName,
                                            hspsOn,
                                            breaklinesOn,
+                                           scaleOn,
                                            winsizeIn,
                                            pixelFacIn,
                                            zoomFacIn,
                                            qcenter,
                                            scenter,
+                                           greyrampWhite,
+                                           greyrampBlack,
                                            &dotplot);
   
   /* Only create the graphical elements if there is a graphical dotplot widget */
@@ -1178,7 +1190,7 @@ static GtkWidget* createDotterInstance(DotterContext *dotterCtx,
       GtkWidget *greyrampContainer = gtk_frame_new(NULL); /* container for when docked */
       gtk_frame_set_shadow_type(GTK_FRAME(greyrampContainer), GTK_SHADOW_NONE);
       GtkWidget *greyrampWindow = NULL; /* container for when undocked */
-      GtkWidget *greyrampTool = createGreyrampTool(dotterWinCtx, 40, 100, greyrampSwap, &greyrampWindow);
+      GtkWidget *greyrampTool = createGreyrampTool(dotterWinCtx, greyrampWhite, greyrampBlack, greyrampSwap, &greyrampWindow);
       registerGreyrampCallback(greyrampTool, dotplot, dotplotUpdateGreymap);
       blxSetWidgetColor(greyrampWindow, windowColor);
 
@@ -1246,10 +1258,13 @@ void callDotterInternal(DotterContext *dc,
                         const IntRange* const refSeqRange,
                         const IntRange* const matchSeqRange,
                         const gdouble zoomFactor,
-                        const gboolean breaklinesOn)
+                        const gboolean breaklinesOn,
+                        const gboolean scaleOn,
+                        const int greyrampWhite,
+                        const int greyrampBlack)
 {
   DotterWindowContext *dwc = createDotterWindowContext(dc, refSeqRange, matchSeqRange, zoomFactor, TRUE);
-  createDotterInstance(dc, dwc, NULL, NULL, NULL, FALSE, breaklinesOn, NULL, 0, 0, 0, 0, FALSE, NULL);
+  createDotterInstance(dc, dwc, NULL, NULL, NULL, FALSE, breaklinesOn, scaleOn, NULL, 0, 0, 0, 0, greyrampWhite, greyrampBlack, FALSE, NULL);
 }
 
 

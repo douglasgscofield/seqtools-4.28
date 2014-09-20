@@ -259,6 +259,8 @@ typedef struct _DotplotProperties
     int imageWidth;
     int imageHeight;
     GdkImage *image;                    /* the greyramp image */
+    int greyrampWhite;                  /* the greyramp white point */
+    int greyrampBlack;                  /* the greyramp black point */
     
     double expResScore;
     int pixelFac;
@@ -277,6 +279,7 @@ typedef struct _DotplotProperties
     
     gboolean gridlinesOn;               /* whether to show grid lines */
     gboolean breaklinesOn;              /* whether to show break-lines between sequences */
+    gboolean scaleOn;                   /* whether to show the horizontal and vertical scales */
     gboolean hozLabelsOn;               /* whether to show labels for features on the horizontal sequence */
     gboolean vertLabelsOn;              /* whether to show labels for features on the vertical sequence */
     
@@ -318,7 +321,10 @@ void                callDotterInternal(DotterContext *dc,
                                        const IntRange* const refSeqRange,
                                        const IntRange* const matchSeqRange,
                                        const gdouble zoomFactor,
-                                       const gboolean breaklinesOn);
+                                       const gboolean breaklinesOn,
+                                       const gboolean scaleOn,
+                                       const int greyrampWhite,
+                                       const int greyrampBlack);
 
 /* greyramptool.c */
 GtkWidget*          createGreyrampTool(DotterWindowContext *dwc, const int bottomVal, const int topVal, const gboolean swapValues, GtkWidget **greyrampWindow_out);
@@ -340,11 +346,14 @@ GtkWidget*          createDotplot(DotterWindowContext *dwc,
                                   const char *exportFileName,
                                   const gboolean hspsOn,
                                   const gboolean breaklinesOn,
+                                  const gboolean scaleOn,
                                   const char *initWinsize,
                                   const int pixelFacIn,
                                   const int zoomFacIn,
                                   const int qcenter,
                                   const int scenter,
+                                  const int greyrampWhite,
+                                  const int greyrampBlack,
                                   GtkWidget **dotplot);
 
 void                dotplotPrepareForPrinting(GtkWidget *dotplot);

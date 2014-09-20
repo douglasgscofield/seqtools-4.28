@@ -78,7 +78,7 @@
     Load dot matrix from <file>\n\
 \n\
   -m <float>, --memory-limit=<float>\n\
-    Memory usage limit in Mb (default 0.5)\n\
+    Memory usage limit in Mb (default 64.0)\n\
 \n\
   -z <int>, --zoom\n\
     Set zoom (compression) factor\n\
@@ -110,6 +110,9 @@
   -v, --reverse-vertical\n\
     Reverse and complement vertical_sequence (if DNA)\n\
 \n\
+  --suppress-scale\n\
+    Do not print horizontal and vertical scales\n\
+\n\
   -D, --disable-mirror\n\
     Don't display mirror image in self comparisons\n\
 \n\
@@ -137,11 +140,18 @@
   --abbrev-title-off\n\
     Do not abbreviate window title prefixes\n\
 \n\
-  --breakline_colour=<colour_str>\n\
+  --breakline-colour=<colour_str>\n\
     Set the colour used for breaklines between multiple sequences\n\
 \n\
   --session_colour=<colour_str>\n\
     Set the background colour of the dotter window\n\
+\n\
+  --greyramp-white=<int>\n\
+    Set the white point for the greyramp tool (default 40)\n\
+\n\
+  --greyramp-black=<int>\n\
+    Set the black point for the greyramp tool (default 100)\n\
+    If greyramp-black < greyramp-white then colors are reversed\n\
 \n\
   --compiled\n\
     Show package compile date\n\
@@ -208,6 +218,7 @@ static void setDefaultOptions(DotterOptions *options)
   options->hozScaleRev = FALSE;
   options->vertScaleRev = FALSE;
   options->negateCoords = FALSE;
+  options->suppressScale = FALSE;
   options->abbrevTitle = FALSE;
   
   options->msgData.titlePrefix = g_strdup(DOTTER_PREFIX);
@@ -216,6 +227,8 @@ static void setDefaultOptions(DotterOptions *options)
 
   options->breaklineColor = NULL;
   options->windowColor = NULL;
+  options->greyrampWhite = 40;
+  options->greyrampBlack = 100;
 }
 
 
@@ -369,6 +382,7 @@ int main(int argc, char **argv)
       {"compiled",		no_argument,        &showCompiled, 1},
       {"reverse-h-display",	no_argument,        &hozScaleRev, 1},
       {"reverse-v-display",	no_argument,        &vertScaleRev, 1},
+      {"suppress-scale",        no_argument,        &options.suppressScale, 1},
 
       {"help",                  no_argument,        0, 'h'},
       {"batch-save",            required_argument,  0, 'b'},
@@ -382,6 +396,8 @@ int main(int argc, char **argv)
       {"sequence-file",         required_argument,  0, 'F'},
       {"feature-file",          required_argument,  0, 'f'},
       {"hsp-mode",              no_argument,        0, 'H'},
+      {"greyramp-white",        required_argument,  0, 0},
+      {"greyramp-black",        required_argument,  0, 0},
       {"reverse-greyramp",      no_argument,        0, 'R'},
       {"reverse-horizontal",    no_argument,        0, 'r'},
       {"reverse-vertical",      no_argument,        0, 'v'},
@@ -393,7 +409,8 @@ int main(int argc, char **argv)
       {"horizontal-type",       required_argument,  0, 0},
       {"vertical-type",         required_argument,  0, 0},
       {"negate-coords",         no_argument,        0, 'N'},
-      {"breakline_colour",      required_argument,  0, 0},
+      {"breakline-colour",      required_argument,  0, 0},
+      {"session-colour",        required_argument,  0, 0},
       {"session_colour",        required_argument,  0, 0},
       {0, 0, 0, 0}
     };
@@ -431,13 +448,21 @@ int main(int argc, char **argv)
                 else
                   g_critical("Invalid value for vertical-type argument: expected 'p' or 'd'\n");
               }                
-            else if (stringsEqual(long_options[optionIndex].name, "breakline_colour", TRUE))
+            else if (stringsEqual(long_options[optionIndex].name, "breakline-colour", TRUE))
               {
                 options.breaklineColor = g_strdup(optarg);
               }
-            else if (stringsEqual(long_options[optionIndex].name, "session_colour", TRUE))
+            else if (stringsEqual(long_options[optionIndex].name, "session-colour", TRUE) || stringsEqual(long_options[optionIndex].name, "session_colour", TRUE))
               {
                 options.windowColor = g_strdup(optarg);
+              }
+            else if (stringsEqual(long_options[optionIndex].name, "greyramp-white", TRUE))
+              {
+                options.greyrampWhite = atoi(optarg);
+              }
+            else if (stringsEqual(long_options[optionIndex].name, "greyramp-black", TRUE))
+              {
+                options.greyrampBlack = atoi(optarg);
               }
             break;
           
