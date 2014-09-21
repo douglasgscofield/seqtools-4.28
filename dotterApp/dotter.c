@@ -573,6 +573,7 @@ static DotterContext* createDotterContext(DotterOptions *options,
   result->negateCoords = options->negateCoords;
   
   result->displayMirror = options->mirrorImage;
+  result->triangleMode = options->triangleMode;
   
   result->memoryLimit = options->memoryLimit;
   

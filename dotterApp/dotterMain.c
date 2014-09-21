@@ -116,6 +116,9 @@
   -D, --disable-mirror\n\
     Don't display mirror image in self comparisons\n\
 \n\
+  --triangle=u|l\n\
+    Display dotplot as upper 'u' or lower 'l' triangle.  Implies --disable-mirror.\n\
+\n\
   -w, --watson-only\n\
     For DNA: horizontal_sequence top strand only (Watson)\n\
 \n\
@@ -139,6 +142,12 @@
 \n\
   --abbrev-title-off\n\
     Do not abbreviate window title prefixes\n\
+\n\
+  --labels-off\n\
+    Do not add labels to the horizontal and vertical axes\n\
+\n\
+  --labels-size=<int>\n\
+    Size labels on horizontal and vertical axes to int\n\
 \n\
   --breakline-colour=<colour_str>\n\
     Set the colour used for breaklines between multiple sequences\n\
@@ -209,7 +218,8 @@ static void setDefaultOptions(DotterOptions *options)
   options->sname = NULL;
   options->sseq = NULL;
   
-  options->mirrorImage = TRUE;
+  // options->mirrorImage = TRUE;
+  options->triangleMode = DOTTER_TRIANGLE_BOTH;
   options->watsonOnly = FALSE;
   options->crickOnly = FALSE;
   options->hspsOnly = FALSE;
@@ -402,6 +412,7 @@ int main(int argc, char **argv)
       {"reverse-horizontal",    no_argument,        0, 'r'},
       {"reverse-vertical",      no_argument,        0, 'v'},
       {"disable-mirror",        no_argument,        0, 'D'},
+      {"triangle",              required_argument,  0, 't'},
       {"watson-only",           no_argument,        0, 'w'},
       {"crick-only",            no_argument,        0, 'c'},
       {"horizontal-offset",     required_argument,  0, 'q'},
@@ -471,7 +482,9 @@ int main(int argc, char **argv)
 	  
           case 'b': options.savefile = g_strdup(optarg);   break;
           case 'c': options.crickOnly = TRUE;              break;
-          case 'D': options.mirrorImage = FALSE;           break;
+          case 'D': // options.mirrorImage = FALSE;
+                    options.triangleMode = DOTTER_TRIANGLE_LOWER;
+                                                           break;
           case 'e': options.exportfile = g_strdup(optarg); break;
           case 'f': options.FSfilename = g_strdup(optarg); break;
           case 'F': 
@@ -497,6 +510,15 @@ int main(int argc, char **argv)
           case 's': options.soffset = atoi(optarg);        break;
           case 'S': 
             options.selfcall = TRUE;                       break;
+          case 't':
+            if (*optarg == 'u')
+              options.triangleMode = DOTTER_TRIANGLE_UPPER;
+            else if (*optarg == 'l')
+              options.triangleMode = DOTTER_TRIANGLE_LOWER;
+            else 
+              g_critical("Invalid value for -t/--triangle argument: expected 'u' or 'l'\n");
+            //options.mirrorImage = FALSE;
+            break;
           case 'v': sStrand = BLXSTRAND_REVERSE;	   break;
           case 'W': 
             options.winsize = (char*)g_malloc(strlen(optarg)+1);

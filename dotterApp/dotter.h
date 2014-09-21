@@ -58,6 +58,15 @@ typedef enum _DotterExportFormat
     DOTTER_EXPORT_SVG           /* Scalable vector graphics */
   } DotterExportFormat;
 
+/* Plot upper, lower or both triangles in dot plot */
+typedef enum _DotterTriangleMode
+  {
+    DOTTER_TRIANGLE_BOTH = 0,       /* Plot both triangles */
+    DOTTER_TRIANGLE_UPPER,          /* Plot upper triangles */
+    DOTTER_TRIANGLE_LOWER           /* Plot lower triangles */
+  } DotterTriangleMode;
+
+
 
 /* Options specifying the initial state for dotter */
 typedef struct _DotterOptions
@@ -88,6 +97,7 @@ typedef struct _DotterOptions
     char *sseq;               /* match (vertical) sequence data */
     
     gboolean mirrorImage;     /* display mirror image in self comparisons (i.e. so we only have to calculate half of the dot-plot) */
+    DotterTriangleMode triangleMode;  /* which triangle to plot? */
     gboolean watsonOnly;      /* only show the watson (forward) strand of the ref seq */
     gboolean crickOnly;       /* only show the crick (reverse) strand of the ref seq */
     gboolean hspsOnly;        /* only draw HSPs (i.e. don't calculate the dot-plot, just draw lines where we know HSPs should be) */

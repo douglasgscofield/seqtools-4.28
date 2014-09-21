@@ -190,6 +190,7 @@ typedef struct _DotterContext
   gboolean vertScaleRev;                    /* true if vertical coords should increase from bottom-to-top rather than top-to-bottom */
   gboolean negateCoords;                    /* negate displayed coords if the scale is reversed, i.e. so coords still appear to increase left-to-right */
   gboolean displayMirror;                   /* whether to display a mirror image in self comparisons */
+  DotterTriangleMode triangleMode;          /* which triangle displays */
   gboolean abbrevTitle;                     /* abbreviate window titles to save space */
 
   double memoryLimit;                       /* maximum Mb allowed for dotplot */
@@ -275,6 +276,7 @@ typedef struct _DotplotProperties
     gboolean crosshairFullscreen;       /* whether to show the crosshair over the whole widget or just within the dot-plot rectangle */
     
     gboolean pixelmapOn;                /* whether to show the dot-plot pixelmap or not */
+    DotterTriangleMode triangleMode;    /* what triangle of the dot-plot should be shown */
     DotterHspMode hspMode;              /* how (and whether) to show high-scoring pairs from Blast */
     
     gboolean gridlinesOn;               /* whether to show grid lines */
