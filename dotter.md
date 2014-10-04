@@ -50,14 +50,28 @@
   -R, --reverse-greyramp
     Reversed Greyramp tool at start.
 
+  --greyramp-white=<int>
+    Set the white point for the greyramp tool (default 40)
+    
+  --greyramp-black=<int>
+    Set the black point for the greyramp tool (default 100)
+    If greyramp-black < greyramp-white then colours are reversed
+
   -r, --reverse-horizontal
     Reverse and complement horizontal_sequence (if DNA)
 
   -v, --reverse-vertical
     Reverse and complement vertical_sequence (if DNA)
 
+  --suppress-scale
+    Do not print horizontal and vertical scales
+
   -D, --disable-mirror
-    Don't display mirror image in self comparisons
+    Don't display mirror image in self comparisons.  Now
+    equivalent to --triangle=u
+
+  --triangle=u|l
+    Display dotplot as upper 'u' or lower 'l' triangle.  
 
   -w, --watson-only
     For DNA: horizontal_sequence top strand only (Watson)
@@ -83,6 +97,15 @@
   --abbrev-title-off
     Do not abbreviate window title prefixes
 
+  --labels-off
+    Do not add labels to the horizontal and vertical axes
+
+  --labels-size=<int>
+    Size labels on horizontal and vertical axes to <int>
+
+  --breakline-colour=<colour_str>
+    Set the colour used for breaklines between multiple sequences
+
   --session_colour=<colour_str>
     Set the background colour of the dotter window
 
@@ -94,7 +117,10 @@
 
 -----
  Written by Gemma Barson <gb10@sanger.ac.uk>
- Based on original code by Erik Sonnhammer <Erik.Sonnhammer@sbc.su.se> 
+ 
+ Based on original code by Erik Sonnhammer <Erik.Sonnhammer@sbc.su.se>.
+
+ A few additional options added by Douglas Scofield <douglas.scofield@ebc.uu.se>
 
  Reference: Sonnhammer ELL & Durbin R (1995). A dot-matrix program
  	    with dynamic threshold control suited for genomic DNA and protein

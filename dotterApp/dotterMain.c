@@ -24,6 +24,9 @@
  * based on original code by
  *      Erik Sonnhammer   (SBC, Sweden)           <Erik.Sonnhammer@sbc.su.se>
  * 
+ * with a few options added/modified in 2014 by
+ *      Douglas Scofield  (Uppsala Univ, Sweden)  <douglas.scofield@ebc.uu.se>
+ * 
  * and utilizing code taken from the AceDB and ZMap packages, written by
  *      Richard Durbin    (Sanger Institute, UK)  <rd@sanger.ac.uk>
  *      Jean Thierry-Mieg (CRBM du CNRS, France)  <mieg@kaa.crbm.cnrs-mop.fr>
@@ -104,6 +107,13 @@
   -R, --reverse-greyramp\n\
     Reversed Greyramp tool at start.\n\
 \n\
+  --greyramp-white=<int>\n\
+    Set the white point for the greyramp tool (default 40)\n\
+\n\
+  --greyramp-black=<int>\n\
+    Set the black point for the greyramp tool (default 100)\n\
+    If greyramp-black < greyramp-white then colors are reversed\n\
+\n\
   -r, --reverse-horizontal\n\
     Reverse and complement horizontal_sequence (if DNA)\n\
 \n\
@@ -154,13 +164,6 @@
 \n\
   --session_colour=<colour_str>\n\
     Set the background colour of the dotter window\n\
-\n\
-  --greyramp-white=<int>\n\
-    Set the white point for the greyramp tool (default 40)\n\
-\n\
-  --greyramp-black=<int>\n\
-    Set the black point for the greyramp tool (default 100)\n\
-    If greyramp-black < greyramp-white then colors are reversed\n\
 \n\
   --compiled\n\
     Show package compile date\n\
